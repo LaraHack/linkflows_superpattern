@@ -1,0 +1,35 @@
+RewriteRule ^sp/terms/(.+)$ https://w3id.org/fair/sp/latest/$1 [R=302,L]
+RewriteRule ^sp/np/.+/(RA[A-Za-z0-9_\-]{43})$ http://purl.org/np/$1 [R=302,L]
+
+https://w3id.org/linkflows/superpattern/np/SP-Ontology/RAhHi9nNvSzFxTASfOgfDPnnAqwUCyQpGxK8-MXdxyP4I
+https://w3id.org/linkflows/superpattern/np/SP-Context-Class/RA8E-lbUWEXAInICVVenRxKNEeyD5eL6XvtrHdJoFPGiM
+https://w3id.org/linkflows/superpattern/np/SP-Subject-Class/RAcq2-xuBZgLIhFtwAHbvZUc064PKaXYgqaZ-E6_ENot8
+https://w3id.org/linkflows/superpattern/np/SP-Object-Class/RAI25IGZTXh1KZRZn47xvD4lAqn7zkt_rg7WWYRsmvBz4
+https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Subject-Class/RAAoxjfyl8bpz9hEz-t4hsZXptTR8_MjGkLZ-BdutjlKc
+https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Object-Class/RA_l0y8DIDjmCgR9MKh0h76xv0Ob5aXB_80876vZT9j1U
+https://w3id.org/linkflows/superpattern/np/SP-Potential-Activity-Object-Class/RAg-aR64AUKupex9M4Ni7eZ3UL3ry7HPGTq2hcepnPL8M
+https://w3id.org/linkflows/superpattern/np/is-same-as/RAxbz7TYbIzB4jTFFbZu25Pq575JacWoqE1TAQPH6K0V4
+https://w3id.org/linkflows/superpattern/np/compares-to/RAiAAhLg3dHfpmT5TVOflD3jkcwcgvWsc7HIkzYO4TAME
+https://w3id.org/linkflows/superpattern/np/has-similar-value-as/RAWD_3bdRHXZX8ucVMaQr1L9BEo4SGCmpwDwukeCymesA
+https://w3id.org/linkflows/superpattern/np/has-same-value-as/RAM2NoALKQOiu2q2xSYFnIsHEarcQ5p6CwXVmw9EIxpN0
+https://w3id.org/linkflows/superpattern/np/has-different-value-from/RAsZSp8Ll7R0T0N2xEPzsnhN9g7K7vJXT48w3iMiKEmiY
+https://w3id.org/linkflows/superpattern/np/has-smaller-value-than/RAHE0y9CojyT60Bk3FFu7pNznK97NI7bkyu48FziqfQ0o
+https://w3id.org/linkflows/superpattern/np/has-larger-value-than/RAtRbLPx9RN0O9pqd8mlGRgNKFtMBDzBkI2wcvkKhhexM
+https://w3id.org/linkflows/superpattern/np/has-causal-relation-with/RAq88QZ3LTJ6vzF76GCR7uu4CsWDZdR-poFzNrs50bdw8
+https://w3id.org/linkflows/superpattern/np/affects/RA6X75lKRJgZy7_OZbRDt6s5QAX_A2HPTM2vAiZ4kxqXc
+https://w3id.org/linkflows/superpattern/np/contributes-to/RAeJHZ2a8NpB7dyLOpChG9hswUhVTet8M81XQqQ0YdTgI
+https://w3id.org/linkflows/superpattern/np/enables/RAI_kov-NDDQPVqtUu5RLEP-DvyPqR0vCAh4jNwG2LNUU
+https://w3id.org/linkflows/superpattern/np/inhibits/RAexZTHMqRhZ0IbETi1EUB7a11ouFFft37Utjy1Ls_0kU
+https://w3id.org/linkflows/superpattern/np/prevents/RAoLyeWrKfKcABisbdAHrMHhkMLUONKkHEEL0mjNuFD-Q
+https://w3id.org/linkflows/superpattern/np/increases/RAM2CGYwonqlkF52ZcqZI1SwpsbN5ysfLWiOrcsGChPRY
+https://w3id.org/linkflows/superpattern/np/decreases/RA1cI6UaPbgRh4iaduAodZVuhoM4fUvsDkZ7asa9sT8p0
+https://w3id.org/linkflows/superpattern/np/requires/RAeKhO2yROxNiACqOC-KKmFbmjm-ZF1bUf8U2i1bdOxJQ
+https://w3id.org/linkflows/superpattern/np/causes/RA1NFphvrGy3zXMDha45k5GbnjZJtPIUWw8DLbg-RGcOc
+https://w3id.org/linkflows/superpattern/np/is-necessary-and-sufficient-for/RAKNkVBzTsMOh24U3SzBDwJBZrQX7RSJAVGzJpvHbPFnU
+https://w3id.org/linkflows/superpattern/np/is-caused-by/RACn5YG5eyEuU_K-gf_v6qY-VedHgvLHVO0ASxn8E8jtw
+https://w3id.org/linkflows/superpattern/np/has-spatiotemporal-relation-with/RAKJMN51zJb3xrqmhhHbdw--3crstTQkBmHmXLPLZbrMA
+https://w3id.org/linkflows/superpattern/np/includes/RA7_-sO5D6qR-Cng9cVY2p2UrFqMxh1KgDozA22mpdbOM
+https://w3id.org/linkflows/superpattern/np/is-included-in/RAJIz2QviEfUqmbRrSEV_G2qbg-r84o7N-Aoqy2hfI1s0
+https://w3id.org/linkflows/superpattern/np/co-occurs-with/RAIOfDzNWgG4WnQLzlkRBtSVpuAUONukWPAYowEnrnlOA
+https://w3id.org/linkflows/superpattern/np/is-followed-by/RALUCuU_8PQphk5qqIlG3SbIg50egU7coPs02gPIG826Q
+https://w3id.org/linkflows/superpattern/np/follows/RA2QyFF4SLsPoJoehl2iuI9BGw_5b49Jn-6gy9GqrMek8

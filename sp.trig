@@ -1,0 +1,1214 @@
+@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Ontology/RAhHi9nNvSzFxTASfOgfDPnnAqwUCyQpGxK8-MXdxyP4I> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Ontology/RAhHi9nNvSzFxTASfOgfDPnnAqwUCyQpGxK8-MXdxyP4I#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Ontology> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix linkflows: <https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:SP-Ontology dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:description "This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.";
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    dct:title "Linkflows SuperPattern (SP) Ontology";
+    vann:preferredNamespacePrefix "sp";
+    vann:preferredNamespaceUri "https://w3id.org/linkflows/sp/terms/";
+    a owl:Ontology;
+    rdfs:isDefinedBy latest:;
+    rdfs:seeAlso linkflows:Linkflows .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Context-Class/RA8E-lbUWEXAInICVVenRxKNEeyD5eL6XvtrHdJoFPGiM> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Context-Class/RA8E-lbUWEXAInICVVenRxKNEeyD5eL6XvtrHdJoFPGiM#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Context-Class> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:SP-Context-Class a owl:Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "SP Context Class"@en;
+    rdfs:subClassOf sp:Super-Pattern-Class;
+    skos:definition "A context class that contains all things of the class type"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Subject-Class/RAcq2-xuBZgLIhFtwAHbvZUc064PKaXYgqaZ-E6_ENot8> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Subject-Class/RAcq2-xuBZgLIhFtwAHbvZUc064PKaXYgqaZ-E6_ENot8#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Subject-Class> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:SP-Subject-Class a owl:Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "SP Subject Class"@en;
+    rdfs:subClassOf sp:Super-Pattern-Class;
+    skos:definition "A class that contains things of the type subject"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Object-Class/RAI25IGZTXh1KZRZn47xvD4lAqn7zkt_rg7WWYRsmvBz4> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Object-Class/RAI25IGZTXh1KZRZn47xvD4lAqn7zkt_rg7WWYRsmvBz4#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Object-Class> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:SP-Object-Class a owl:Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "SP Object Class"@en;
+    rdfs:subClassOf sp:Super-Pattern-Class;
+    skos:definition "A class that contains things of the type object"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Subject-Class/RAAoxjfyl8bpz9hEz-t4hsZXptTR8_MjGkLZ-BdutjlKc> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Subject-Class/RAAoxjfyl8bpz9hEz-t4hsZXptTR8_MjGkLZ-BdutjlKc#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Quantifiable-Subject-Class> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:SP-Quantifiable-Subject-Class a owl:Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "SP Quantifiable Subject Class"@en;
+    rdfs:subClassOf sp:SP-Subject-Class;
+    skos:definition "A class that contains things of the type subject that are quantifiable"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Object-Class/RA_l0y8DIDjmCgR9MKh0h76xv0Ob5aXB_80876vZT9j1U> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Object-Class/RA_l0y8DIDjmCgR9MKh0h76xv0Ob5aXB_80876vZT9j1U#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Quantifiable-Object-Class> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:SP-Quantifiable-Object-Class a owl:Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "SP Quantifiable Object Class"@en;
+    rdfs:subClassOf sp:SP-Object-Class;
+    skos:definition "A class that contains things of the type object that are quantifiable"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Potential-Activity-Object-Class/RAg-aR64AUKupex9M4Ni7eZ3UL3ry7HPGTq2hcepnPL8M> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Potential-Activity-Object-Class/RAg-aR64AUKupex9M4Ni7eZ3UL3ry7HPGTq2hcepnPL8M#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Potential-Activity-Object-Class> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:SP-Potential-Activity-Object-Class a owl:Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "SP Potential Activity Object Class"@en;
+    rdfs:subClassOf sp:SP-Object-Class;
+    skos:definition "A class that contains things of the type object that represent potential activities"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-same-as/RAxbz7TYbIzB4jTFFbZu25Pq575JacWoqE1TAQPH6K0V4> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-same-as/RAxbz7TYbIzB4jTFFbZu25Pq575JacWoqE1TAQPH6K0V4#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-same-as> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:is-same-as a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "is same as"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf foaf:member;
+    skos:definition "[subj] and [obj] are the same individual"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/compares-to/RAiAAhLg3dHfpmT5TVOflD3jkcwcgvWsc7HIkzYO4TAME> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/compares-to/RAiAAhLg3dHfpmT5TVOflD3jkcwcgvWsc7HIkzYO4TAME#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/compares-to> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:compares-to a rdf:Property;
+    rdfs:domain sp:SP-Quantifiable-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "compares to"@en;
+    rdfs:range sp:SP-Quantifiable-Object-Class;
+    rdfs:subPropertyOf foaf:member;
+    skos:definition "[quantifiable-subj] compares to the [quantifiable-obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-similar-value-as/RAWD_3bdRHXZX8ucVMaQr1L9BEo4SGCmpwDwukeCymesA> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-similar-value-as/RAWD_3bdRHXZX8ucVMaQr1L9BEo4SGCmpwDwukeCymesA#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-similar-value-as> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:has-similar-value-as a rdf:Property;
+    rdfs:domain sp:SP-Quantifiable-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "has similar value as"@en;
+    rdfs:range sp:SP-Quantifiable-Object-Class;
+    rdfs:subPropertyOf sp:compares-to;
+    skos:definition "[quantifiable-subj] has a value that is similar with [quantifiable-obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-same-value-as/RAM2NoALKQOiu2q2xSYFnIsHEarcQ5p6CwXVmw9EIxpN0> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-same-value-as/RAM2NoALKQOiu2q2xSYFnIsHEarcQ5p6CwXVmw9EIxpN0#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-same-value-as> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:has-same-value-as a rdf:Property;
+    rdfs:domain sp:SP-Quantifiable-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "has same value as"@en;
+    rdfs:range sp:SP-Quantifiable-Object-Class;
+    rdfs:subPropertyOf sp:has-similar-value-as;
+    skos:definition "[quantifiable-subj] has the same value as [quantifiable-obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-different-value-from/RAsZSp8Ll7R0T0N2xEPzsnhN9g7K7vJXT48w3iMiKEmiY> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-different-value-from/RAsZSp8Ll7R0T0N2xEPzsnhN9g7K7vJXT48w3iMiKEmiY#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-different-value-from> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:has-different-value-from a rdf:Property;
+    rdfs:domain sp:SP-Quantifiable-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "has different value from"@en;
+    rdfs:range sp:SP-Quantifiable-Object-Class;
+    rdfs:subPropertyOf sp:compares-to;
+    skos:definition "[quantifiable-subj] has a value that is different from [quantifiable-obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-smaller-value-than/RAHE0y9CojyT60Bk3FFu7pNznK97NI7bkyu48FziqfQ0o> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-smaller-value-than/RAHE0y9CojyT60Bk3FFu7pNznK97NI7bkyu48FziqfQ0o#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-smaller-value-than> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:has-smaller-value-than a rdf:Property;
+    rdfs:domain sp:SP-Quantifiable-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "has a smaller value than"@en;
+    rdfs:range sp:SP-Quantifiable-Object-Class;
+    rdfs:subPropertyOf sp:has-different-value-from;
+    skos:definition "[quantifiable-subj] has a smaller value than [quantifiable-obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-larger-value-than/RAtRbLPx9RN0O9pqd8mlGRgNKFtMBDzBkI2wcvkKhhexM> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-larger-value-than/RAtRbLPx9RN0O9pqd8mlGRgNKFtMBDzBkI2wcvkKhhexM#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-larger-value-than> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:has-larger-value-than a rdf:Property;
+    rdfs:domain sp:SP-Quantifiable-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "has a larger value than"@en;
+    rdfs:range sp:SP-Quantifiable-Object-Class;
+    rdfs:subPropertyOf sp:has-different-value-from;
+    skos:definition "[quantifiable-subj] has a larger value than [quantifiable-obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-causal-relation-with/RAq88QZ3LTJ6vzF76GCR7uu4CsWDZdR-poFzNrs50bdw8> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-causal-relation-with/RAq88QZ3LTJ6vzF76GCR7uu4CsWDZdR-poFzNrs50bdw8#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-causal-relation-with> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:has-causal-relation-with a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "has causal relation with"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf foaf:member;
+    skos:definition "[subj] has causal relation with [obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/affects/RA6X75lKRJgZy7_OZbRDt6s5QAX_A2HPTM2vAiZ4kxqXc> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/affects/RA6X75lKRJgZy7_OZbRDt6s5QAX_A2HPTM2vAiZ4kxqXc#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/affects> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:affects a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "affects"@en;
+    rdfs:range sp:SP-Potential-Activity-Object-Class;
+    rdfs:subPropertyOf foaf:member;
+    skos:definition "[subj] has an effect on the activity of [obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/contributes-to/RAeJHZ2a8NpB7dyLOpChG9hswUhVTet8M81XQqQ0YdTgI> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/contributes-to/RAeJHZ2a8NpB7dyLOpChG9hswUhVTet8M81XQqQ0YdTgI#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/contributes-to> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:contributes-to a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "contributes to"@en;
+    rdfs:range sp:SP-Potential-Activity-Object-Class;
+    rdfs:subPropertyOf sp:affects;
+    skos:definition "[subj] supports the activity of [obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/enables/RAI_kov-NDDQPVqtUu5RLEP-DvyPqR0vCAh4jNwG2LNUU> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/enables/RAI_kov-NDDQPVqtUu5RLEP-DvyPqR0vCAh4jNwG2LNUU#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/enables> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:enables a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "enables"@en;
+    rdfs:range sp:SP-Potential-Activity-Object-Class;
+    rdfs:subPropertyOf sp:contributes-to;
+    skos:definition "[subj] causes the activity to happen"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/inhibits/RAexZTHMqRhZ0IbETi1EUB7a11ouFFft37Utjy1Ls_0kU> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/inhibits/RAexZTHMqRhZ0IbETi1EUB7a11ouFFft37Utjy1Ls_0kU#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/inhibits> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:inhibits a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "inhibits"@en;
+    rdfs:range sp:SP-Potential-Activity-Object-Class;
+    rdfs:subPropertyOf sp:affects;
+    skos:definition "[subj] hinders the activity of [obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/prevents/RAoLyeWrKfKcABisbdAHrMHhkMLUONKkHEEL0mjNuFD-Q> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/prevents/RAoLyeWrKfKcABisbdAHrMHhkMLUONKkHEEL0mjNuFD-Q#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/prevents> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:prevents a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "prevents"@en;
+    rdfs:range sp:SP-Potential-Activity-Object-Class;
+    rdfs:subPropertyOf sp:inhibits;
+    skos:definition "[subj] causes the activity [obj] not to happen"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/increases/RAM2CGYwonqlkF52ZcqZI1SwpsbN5ysfLWiOrcsGChPRY> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/increases/RAM2CGYwonqlkF52ZcqZI1SwpsbN5ysfLWiOrcsGChPRY#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/increases> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:increases a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "increases"@en;
+    rdfs:range sp:SP-Potential-Activity-Object-Class;
+    rdfs:subPropertyOf sp:has-causal-relation-with;
+    skos:definition "[subj] causes the value of [obj] to increase"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/decreases/RA1cI6UaPbgRh4iaduAodZVuhoM4fUvsDkZ7asa9sT8p0> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/decreases/RA1cI6UaPbgRh4iaduAodZVuhoM4fUvsDkZ7asa9sT8p0#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/decreases> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:decreases a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "decreases"@en;
+    rdfs:range sp:SP-Potential-Activity-Object-Class;
+    rdfs:subPropertyOf sp:has-causal-relation-with;
+    skos:definition "[subj] causes the value of [obj] to decrease"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/requires/RAeKhO2yROxNiACqOC-KKmFbmjm-ZF1bUf8U2i1bdOxJQ> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/requires/RAeKhO2yROxNiACqOC-KKmFbmjm-ZF1bUf8U2i1bdOxJQ#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/requires> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:requires a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "requires"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf sp:has-causal-relation-with;
+    skos:definition "[subj] would not exist if [obj] did not exist"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/causes/RA1NFphvrGy3zXMDha45k5GbnjZJtPIUWw8DLbg-RGcOc> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/causes/RA1NFphvrGy3zXMDha45k5GbnjZJtPIUWw8DLbg-RGcOc#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/causes> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:causes a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "causes"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf sp:has-causal-relation-with;
+    skos:definition "[subj] creates the existence of [obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-necessary-and-sufficient-for/RAKNkVBzTsMOh24U3SzBDwJBZrQX7RSJAVGzJpvHbPFnU> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-necessary-and-sufficient-for/RAKNkVBzTsMOh24U3SzBDwJBZrQX7RSJAVGzJpvHbPFnU#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-necessary-and-sufficient-for> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:is-necessary-and-sufficient-for a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "is necessary and sufficient for"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf sp:causes;
+    skos:definition "[subj] creates the existence of [obj], and [obj] would not exist if [subj] did not exist"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-caused-by/RACn5YG5eyEuU_K-gf_v6qY-VedHgvLHVO0ASxn8E8jtw> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-caused-by/RACn5YG5eyEuU_K-gf_v6qY-VedHgvLHVO0ASxn8E8jtw#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-caused-by> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:is-caused-by a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "is caused by"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf sp:has-causal-relation-with;
+    owl:inverseOf sp:causes;
+    skos:definition "inverse of causes"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-spatiotemporal-relation-with/RAKJMN51zJb3xrqmhhHbdw--3crstTQkBmHmXLPLZbrMA> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-spatiotemporal-relation-with/RAKJMN51zJb3xrqmhhHbdw--3crstTQkBmHmXLPLZbrMA#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-spatiotemporal-relation-with> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:has-spatiotemporal-relation-with a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "has spatio-temporal relation with"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf foaf:member;
+    skos:definition "[subj] has a spatial and/or temporal relation with [obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/includes/RA7_-sO5D6qR-Cng9cVY2p2UrFqMxh1KgDozA22mpdbOM> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/includes/RA7_-sO5D6qR-Cng9cVY2p2UrFqMxh1KgDozA22mpdbOM#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/includes> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:includes a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "includes"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf sp:has-spatiotemporal-relation-with;
+    skos:definition "[subj] spatiotemporally includes [obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-included-in/RAJIz2QviEfUqmbRrSEV_G2qbg-r84o7N-Aoqy2hfI1s0> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-included-in/RAJIz2QviEfUqmbRrSEV_G2qbg-r84o7N-Aoqy2hfI1s0#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-included-in> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:is-included-in a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "is included in"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf sp:has-spatiotemporal-relation-with;
+    skos:definition "[obj] spatiotemporally includes [subj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/co-occurs-with/RAIOfDzNWgG4WnQLzlkRBtSVpuAUONukWPAYowEnrnlOA> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/co-occurs-with/RAIOfDzNWgG4WnQLzlkRBtSVpuAUONukWPAYowEnrnlOA#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/co-occurs-with> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:co-occurs-with a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "co occurs with"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf sp:has-spatiotemporal-relation-with;
+    skos:definition "[subj] is close to [obj] in terms of space and time"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-followed-by/RALUCuU_8PQphk5qqIlG3SbIg50egU7coPs02gPIG826Q> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-followed-by/RALUCuU_8PQphk5qqIlG3SbIg50egU7coPs02gPIG826Q#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-followed-by> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:is-followed-by a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "is followed by"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf sp:has-spatiotemporal-relation-with;
+    skos:definition "[subj] comes into existence before [obj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/linkflows/superpattern/np/follows/RA2QyFF4SLsPoJoehl2iuI9BGw_5b49Jn-6gy9GqrMek8> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/follows/RA2QyFF4SLsPoJoehl2iuI9BGw_5b49Jn-6gy9GqrMek8#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/follows> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  sp:follows a rdf:Property;
+    rdfs:domain sp:SP-Subject-Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "follows"@en;
+    rdfs:range sp:SP-Object-Class;
+    rdfs:subPropertyOf sp:has-spatiotemporal-relation-with;
+    skos:definition "[obj] comes into existence before [subj]"@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-03-18T14:33:00.590+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
