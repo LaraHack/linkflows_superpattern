@@ -88,9 +88,828 @@
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
 
+# Qualifier classes definitions:
 
+@prefix : <https://w3id.org/linkflows/superpattern/np/alwaysQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/alwaysQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-# Qualifier definitions (to add):
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:alwaysQualifier rdfs:label "always qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in all 100% cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/generallyQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/generallyQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:generallyQualifier rdfs:label "generally qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in at least 90% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/mostlyQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/mostlyQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:mostlyQualifier rdfs:label "mostly qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in at least 50% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/frequentlyQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/frequentlyQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:frequentlyQualifier rdfs:label "frequently qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in at least 10% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/sometimesQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/sometimesQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:sometimesQualifier rdfs:label "sometimes qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in at least 0.10% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canAlwaysQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canAlwaysQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canAlwaysQualifier rdfs:label "can always qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in all 100% cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canGenerallyQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canGenerallyQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canGenerallyQualifier rdfs:label "can generally qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in at least 90% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canMostlyQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canMostlyQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canMostlyQualifier rdfs:label "can mostly qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in at least 50% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canFrequentlyQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canFrequentlyQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canFrequentlyQualifier rdfs:label "can frequently qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in at least 10% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canSometimesQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canSometimesQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canSometimesQualifier rdfs:label "can sometimes qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in at least 0.10% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/neverQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/neverQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:neverQualifier rdfs:label "never qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in 0% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/generallyNotQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/generallyNotQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:generallyNotQualifier rdfs:label "generally not qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in at most 10% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/mostlyNotQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/mostlyNotQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:mostlyNotQualifier rdfs:label "mostly not qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in at most 50% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/frequentlyNotQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/frequentlyNotQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:frequentlyNotQualifier rdfs:label "frequently not qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in at most 90% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/sometimesNotQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/sometimesNotQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:sometimesNotQualifier rdfs:label "sometimes not qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] in at most 99.9% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canNeverQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canNeverQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canNeverQualifier rdfs:label "can never qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in 0% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canGenerallyNotQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canGenerallyNotQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canGenerallyNotQualifier rdfs:label "can generally not qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in at most 10% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canMostlyNotQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canMostlyNotQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canMostlyNotQualifier rdfs:label "can mostly not qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in at most 50% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canFrequentlyNotQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canFrequentlyNotQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canFrequentlyNotQualifier rdfs:label "can frequently not qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in at most 90% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/canSometimesNotQualifier/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/canSometimesNotQualifier> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:canSometimesNotQualifier rdfs:label "can sometimes not qualifier"@en ;
+    a owl:Class ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdf:Property ;
+    skos:definition "[subj] can in at most 99.9% of cases [has relation] with [obj]"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-03-18T22:55:08.868+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
 
 # Properties definitions:
 
