@@ -17,6 +17,146 @@
   <http://www.w3.org/2000/01/rdf-schema#label> "SuperPattern Instance"@en;
   <http://www.w3.org/2004/02/skos/core#definition> "the class of all instantiations of the super pattern"@en .
 
+<https://w3id.org/linkflows/superpattern/terms/alwaysQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/alwaysQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "always qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in all 100% cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/generallyQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/generallyQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "generally qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at least 90% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/mostlyQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/mostlyQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "mostly qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at least 50% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/frequentlyQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "frequently qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at least 10% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/sometimesQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/sometimesQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "sometimes qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at least 0.10% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canAlwaysQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can always qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in all 100% cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canGenerallyQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can generally qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at least 90% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canMostlyQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can mostly qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at least 50% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canFrequentlyQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can frequently qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at least 10% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canSometimesQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can sometimes qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at least 0.10% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/neverQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/neverQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "never qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in 0% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/generallyNotQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "generally not qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at most 10% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/mostlyNotQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "mostly not qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at most 50% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/frequentlyNotQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "frequently not qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at most 90% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/sometimesNotQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "sometimes not qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at most 99.9% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canNeverQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canNeverQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can never qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in 0% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canGenerallyNotQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can generally not qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at most 10% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canMostlyNotQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can mostly not qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at most 50% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canFrequentlyNotQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can frequently not qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at most 90% of cases [has relation] with [obj]"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/canSometimesNotQualifier>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "can sometimes not qualifier"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at most 99.9% of cases [has relation] with [obj]"@en .
+
 <https://w3id.org/linkflows/superpattern/terms/hasContextClass> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/hasContextClass>;

@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Thu Mar 18 22:55:15 EET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Thu Mar 18 23:27:57 EET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -93,8 +93,8 @@ This is a place holder text for the introduction. The introduction should briefl
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
 <tr><td><b>orcid-org</b></td><td>&lt;https://orcid.org&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
-<tr><td><b>terms</b></td><td>&lt;https://w3id.org/linkflows/superpattern/terms&gt;</td></tr>
-<tr><td><b>terms1</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>terms1</b></td><td>&lt;https://w3id.org/linkflows/superpattern/terms&gt;</td></tr>
 <tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
 <tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1&gt;</td></tr>
 <tr><td><b>latest</b></td><td>&lt;https://w3id.org/linkflows/superpattern/latest&gt;</td></tr>
@@ -123,16 +123,78 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/linkflows/superpattern/terms/causes"
-         title="https://w3id.org/linkflows/superpattern/terms/causes">
-         <span>causes</span>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/alwaysQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/alwaysQualifier">
+         <span>always qualifier</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/linkflows/superpattern/terms/coOccursWith"
-         title="https://w3id.org/linkflows/superpattern/terms/coOccursWith">
-         <span>co occurs with</span>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier">
+         <span>can always qualifier</span>
       </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier">
+         <span>can frequently not qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier">
+         <span>can frequently qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier">
+         <span>can generally not qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier">
+         <span>can generally qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier">
+         <span>can mostly not qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier">
+         <span>can mostly qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canNeverQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canNeverQualifier">
+         <span>can never qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier">
+         <span>can sometimes not qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier">
+         <span>can sometimes qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/causes"
+         title="https://w3id.org/linkflows/superpattern/terms/causes">causes</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/coOccursWith"
+         title="https://w3id.org/linkflows/superpattern/terms/coOccursWith">co occurs with</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/comparesTo"
@@ -142,39 +204,51 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/contributesTo"
-         title="https://w3id.org/linkflows/superpattern/terms/contributesTo">
-         <span>contributes to</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/contributesTo">contributes to</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/decreases"
-         title="https://w3id.org/linkflows/superpattern/terms/decreases">
-         <span>decreases</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/decreases">decreases</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/enables"
-         title="https://w3id.org/linkflows/superpattern/terms/enables">
-         <span>enables</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/enables">enables</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/follows"
-         title="https://w3id.org/linkflows/superpattern/terms/follows">
-         <span>follows</span>
+         title="https://w3id.org/linkflows/superpattern/terms/follows">follows</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier">
+         <span>frequently not qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier">
+         <span>frequently qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier">
+         <span>generally not qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/generallyQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/generallyQualifier">
+         <span>generally qualifier</span>
       </a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan"
-         title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">
-         <span>has a larger value than</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">has a larger value than</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan"
-         title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">
-         <span>has a smaller value than</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">has a smaller value than</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
@@ -188,9 +262,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"
-         title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">
-         <span>has different value from</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasObjectClass"
@@ -198,21 +270,15 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasRelation"
-         title="https://w3id.org/linkflows/superpattern/terms/hasRelation">
-         <span>has relation</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasRelation">has relation</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasSameValueAs"
-         title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">
-         <span>has same value as</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">has same value as</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs"
-         title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">
-         <span>has similar value as</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"
@@ -226,45 +292,31 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/includes"
-         title="https://w3id.org/linkflows/superpattern/terms/includes">
-         <span>includes</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/includes">includes</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/increases"
-         title="https://w3id.org/linkflows/superpattern/terms/increases">
-         <span>increases</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/increases">increases</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/inhibits"
-         title="https://w3id.org/linkflows/superpattern/terms/inhibits">
-         <span>inhibits</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/inhibits">inhibits</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/isCausedBy"
-         title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">
-         <span>is caused by</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">is caused by</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/isFollowedBy"
-         title="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">
-         <span>is followed by</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">is followed by</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/isIncludedIn"
-         title="https://w3id.org/linkflows/superpattern/terms/isIncludedIn">
-         <span>is included in</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/isIncludedIn">is included in</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor"
-         title="https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor">
-         <span>is necessary and sufficient for</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor">is necessary and sufficient for</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/isSameAs"
@@ -273,15 +325,41 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/linkflows/superpattern/terms/prevents"
-         title="https://w3id.org/linkflows/superpattern/terms/prevents">
-         <span>prevents</span>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier">
+         <span>mostly not qualifier</span>
       </a>
    </li>
    <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/mostlyQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/mostlyQualifier">
+         <span>mostly qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/neverQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/neverQualifier">
+         <span>never qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/prevents"
+         title="https://w3id.org/linkflows/superpattern/terms/prevents">prevents</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/requires"
-         title="https://w3id.org/linkflows/superpattern/terms/requires">
-         <span>requires</span>
+         title="https://w3id.org/linkflows/superpattern/terms/requires">requires</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier">
+         <span>sometimes not qualifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/sometimesQualifier"
+         title="https://w3id.org/linkflows/superpattern/terms/sometimesQualifier">
+         <span>sometimes qualifier</span>
       </a>
    </li>
 </ul>
@@ -346,16 +424,78 @@ This section provides details for each class and property defined by Linkflows S
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/linkflows/superpattern/terms/causes"
-            title="https://w3id.org/linkflows/superpattern/terms/causes">
-            <span>causes</span>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/alwaysQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/alwaysQualifier">
+            <span>always qualifier</span>
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/linkflows/superpattern/terms/coOccursWith"
-            title="https://w3id.org/linkflows/superpattern/terms/coOccursWith">
-            <span>co occurs with</span>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier">
+            <span>can always qualifier</span>
          </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier">
+            <span>can frequently not qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier">
+            <span>can frequently qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier">
+            <span>can generally not qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier">
+            <span>can generally qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier">
+            <span>can mostly not qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier">
+            <span>can mostly qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canNeverQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canNeverQualifier">
+            <span>can never qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier">
+            <span>can sometimes not qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier">
+            <span>can sometimes qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/causes"
+            title="https://w3id.org/linkflows/superpattern/terms/causes">causes</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/coOccursWith"
+            title="https://w3id.org/linkflows/superpattern/terms/coOccursWith">co occurs with</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/comparesTo"
@@ -365,39 +505,51 @@ This section provides details for each class and property defined by Linkflows S
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/contributesTo"
-            title="https://w3id.org/linkflows/superpattern/terms/contributesTo">
-            <span>contributes to</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/contributesTo">contributes to</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/decreases"
-            title="https://w3id.org/linkflows/superpattern/terms/decreases">
-            <span>decreases</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/decreases">decreases</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/enables"
-            title="https://w3id.org/linkflows/superpattern/terms/enables">
-            <span>enables</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/enables">enables</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/follows"
-            title="https://w3id.org/linkflows/superpattern/terms/follows">
-            <span>follows</span>
+            title="https://w3id.org/linkflows/superpattern/terms/follows">follows</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier">
+            <span>frequently not qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier">
+            <span>frequently qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier">
+            <span>generally not qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/generallyQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/generallyQualifier">
+            <span>generally qualifier</span>
          </a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan"
-            title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">
-            <span>has a larger value than</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">has a larger value than</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan"
-            title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">
-            <span>has a smaller value than</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">has a smaller value than</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
@@ -411,9 +563,7 @@ This section provides details for each class and property defined by Linkflows S
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"
-            title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">
-            <span>has different value from</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasObjectClass"
@@ -421,21 +571,15 @@ This section provides details for each class and property defined by Linkflows S
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasRelation"
-            title="https://w3id.org/linkflows/superpattern/terms/hasRelation">
-            <span>has relation</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasRelation">has relation</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasSameValueAs"
-            title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">
-            <span>has same value as</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">has same value as</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs"
-            title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">
-            <span>has similar value as</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"
@@ -449,45 +593,31 @@ This section provides details for each class and property defined by Linkflows S
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/includes"
-            title="https://w3id.org/linkflows/superpattern/terms/includes">
-            <span>includes</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/includes">includes</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/increases"
-            title="https://w3id.org/linkflows/superpattern/terms/increases">
-            <span>increases</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/increases">increases</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/inhibits"
-            title="https://w3id.org/linkflows/superpattern/terms/inhibits">
-            <span>inhibits</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/inhibits">inhibits</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/isCausedBy"
-            title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">
-            <span>is caused by</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">is caused by</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/isFollowedBy"
-            title="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">
-            <span>is followed by</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">is followed by</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/isIncludedIn"
-            title="https://w3id.org/linkflows/superpattern/terms/isIncludedIn">
-            <span>is included in</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/isIncludedIn">is included in</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor"
-            title="https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor">
-            <span>is necessary and sufficient for</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor">is necessary and sufficient for</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/isSameAs"
@@ -496,15 +626,41 @@ This section provides details for each class and property defined by Linkflows S
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/linkflows/superpattern/terms/prevents"
-            title="https://w3id.org/linkflows/superpattern/terms/prevents">
-            <span>prevents</span>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier">
+            <span>mostly not qualifier</span>
          </a>
       </li>
       <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/mostlyQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/mostlyQualifier">
+            <span>mostly qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/neverQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/neverQualifier">
+            <span>never qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/prevents"
+            title="https://w3id.org/linkflows/superpattern/terms/prevents">prevents</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/requires"
-            title="https://w3id.org/linkflows/superpattern/terms/requires">
-            <span>requires</span>
+            title="https://w3id.org/linkflows/superpattern/terms/requires">requires</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier">
+            <span>sometimes not qualifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/sometimesQualifier"
+            title="https://w3id.org/linkflows/superpattern/terms/sometimesQualifier">
+            <span>sometimes qualifier</span>
          </a>
       </li>
    </ul>
@@ -525,6 +681,11 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/inhibits">inhibits</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
@@ -537,6 +698,281 @@ This section provides details for each class and property defined by Linkflows S
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/alwaysQualifier">
+      <h3>always qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/alwaysQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier">
+      <h3>can always qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier">
+      <h3>can frequently not qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier">
+      <h3>can frequently qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier">
+      <h3>can generally not qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier">
+      <h3>can generally qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier">
+      <h3>can mostly not qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier">
+      <h3>can mostly qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canNeverQualifier">
+      <h3>can never qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canNeverQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier">
+      <h3>can sometimes not qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier">
+      <h3>can sometimes qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/causes">
       <h3>causes<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -544,6 +980,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/causes</p>
+      <div class="comment">
+         <span class="markdown">[subj] creates the existence of [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/causes">https://w3id.org/linkflows/superpattern/latest/causes</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -558,6 +1003,11 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor">is necessary and sufficient for</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
@@ -569,10 +1019,6 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">is caused by</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/causes">annotation property</a>
-            </dd>
          </dl>
       </div>
    </div>
@@ -583,6 +1029,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/coOccursWith</p>
+      <div class="comment">
+         <span class="markdown">[subj] is close to [obj] in terms of space and time</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/coOccursWith">https://w3id.org/linkflows/superpattern/latest/coOccursWith</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -591,14 +1046,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/coOccursWith">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -620,6 +1076,11 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
@@ -639,6 +1100,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/contributesTo</p>
+      <div class="comment">
+         <span class="markdown">[subj] supports the activity of [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/contributesTo">https://w3id.org/linkflows/superpattern/latest/contributesTo</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -653,14 +1123,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/enables">enables</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/contributesTo">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -672,6 +1143,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/decreases</p>
+      <div class="comment">
+         <span class="markdown">[subj] causes the value of [obj] to decrease</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/decreases">https://w3id.org/linkflows/superpattern/latest/decreases</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -680,14 +1160,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/decreases">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -699,6 +1180,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/enables</p>
+      <div class="comment">
+         <span class="markdown">[subj] causes the activity to happen</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/enables">https://w3id.org/linkflows/superpattern/latest/enables</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -707,14 +1197,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/contributesTo">contributes to</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/enables">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -726,6 +1217,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/follows</p>
+      <div class="comment">
+         <span class="markdown">[obj] comes into existence before [subj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/follows">https://w3id.org/linkflows/superpattern/latest/follows</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -734,15 +1234,116 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier">
+      <h3>frequently not qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/follows">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier">
+      <h3>frequently qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier">
+      <h3>generally not qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/generallyQualifier">
+      <h3>generally qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/generallyQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
          </dl>
       </div>
    </div>
@@ -753,6 +1354,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has a larger value than [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasLargerValueThan">https://w3id.org/linkflows/superpattern/latest/hasLargerValueThan</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -761,14 +1371,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -780,6 +1391,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has a smaller value than [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasSmallerValueThan">https://w3id.org/linkflows/superpattern/latest/hasSmallerValueThan</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -788,14 +1408,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -822,6 +1443,11 @@ This section provides details for each class and property defined by Linkflows S
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/requires"
                   title="https://w3id.org/linkflows/superpattern/terms/requires">requires</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -874,6 +1500,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has a value that is different from [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasDifferentValueFrom">https://w3id.org/linkflows/superpattern/latest/hasDifferentValueFrom</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -890,14 +1525,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">has a smaller value than</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -941,17 +1577,27 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasRelation</p>
+      <div class="comment">
+         <span class="markdown">links a subject class to an object class in a superpattern instance</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasRelation">https://w3id.org/linkflows/superpattern/latest/hasRelation</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted"
                      title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasRelation">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -963,6 +1609,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasSameValueAs</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has the same value as [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasSameValueAs">https://w3id.org/linkflows/superpattern/latest/hasSameValueAs</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -971,14 +1626,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -990,6 +1646,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has a value that is similar with [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasSimilarValueAs">https://w3id.org/linkflows/superpattern/latest/hasSimilarValueAs</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1004,14 +1669,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">has same value as</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1038,6 +1704,11 @@ This section provides details for each class and property defined by Linkflows S
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/isIncludedIn"
                   title="https://w3id.org/linkflows/superpattern/terms/isIncludedIn">is included in</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1090,6 +1761,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/includes</p>
+      <div class="comment">
+         <span class="markdown">[subj] spatiotemporally includes [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/includes">https://w3id.org/linkflows/superpattern/latest/includes</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1098,14 +1778,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/includes">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1117,6 +1798,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/increases</p>
+      <div class="comment">
+         <span class="markdown">[subj] causes the value of [obj] to increase</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/increases">https://w3id.org/linkflows/superpattern/latest/increases</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1125,14 +1815,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/increases">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1144,6 +1835,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/inhibits</p>
+      <div class="comment">
+         <span class="markdown">[subj] hinders the activity of [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/inhibits">https://w3id.org/linkflows/superpattern/latest/inhibits</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1158,14 +1858,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/prevents">prevents</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/inhibits">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1177,6 +1878,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isCausedBy</p>
+      <div class="comment">
+         <span class="markdown">inverse of causes</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isCausedBy">https://w3id.org/linkflows/superpattern/latest/isCausedBy</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1184,6 +1894,11 @@ This section provides details for each class and property defined by Linkflows S
                <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
                   title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1196,10 +1911,6 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/causes">causes</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/isCausedBy">annotation property</a>
-            </dd>
          </dl>
       </div>
    </div>
@@ -1210,6 +1921,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isFollowedBy</p>
+      <div class="comment">
+         <span class="markdown">[subj] comes into existence before [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isFollowedBy">https://w3id.org/linkflows/superpattern/latest/isFollowedBy</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1218,14 +1938,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/isFollowedBy">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1237,6 +1958,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isIncludedIn</p>
+      <div class="comment">
+         <span class="markdown">[obj] spatiotemporally includes [subj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isIncludedIn">https://w3id.org/linkflows/superpattern/latest/isIncludedIn</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1245,14 +1975,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/isIncludedIn">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1264,6 +1995,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor</p>
+      <div class="comment">
+         <span class="markdown">[subj] creates the existence of [obj], and [obj] would not exist if [subj] did not exist</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isNecessaryAndSufficientFor">https://w3id.org/linkflows/superpattern/latest/isNecessaryAndSufficientFor</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1272,14 +2012,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/causes">causes</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1293,6 +2034,11 @@ This section provides details for each class and property defined by Linkflows S
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isSameAs</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
@@ -1305,6 +2051,81 @@ This section provides details for each class and property defined by Linkflows S
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier">
+      <h3>mostly not qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/mostlyQualifier">
+      <h3>mostly qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/mostlyQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/neverQualifier">
+      <h3>never qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/neverQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/prevents">
       <h3>prevents<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1312,6 +2133,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/prevents</p>
+      <div class="comment">
+         <span class="markdown">[subj] causes the activity [obj] not to happen</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/prevents">https://w3id.org/linkflows/superpattern/latest/prevents</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1320,14 +2150,15 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/inhibits">inhibits</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/prevents">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1339,6 +2170,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/requires</p>
+      <div class="comment">
+         <span class="markdown">[subj] would not exist if [obj] did not exist</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/requires">https://w3id.org/linkflows/superpattern/latest/requires</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1347,15 +2187,66 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier">
+      <h3>sometimes not qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/requires">annotation property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/sometimesQualifier">
+      <h3>sometimes qualifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/sometimesQualifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>class</dd>
          </dl>
       </div>
    </div>
