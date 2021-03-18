@@ -12,16 +12,7 @@ fi
   cat head.htaccess
   echo
   echo
-  cat principles.htaccess
-  echo
-  echo
-  cat icc.htaccess
-  echo
-  echo
-  cat fip.htaccess
-  echo
-  echo
-  cat maturity_indicator.htaccess
+  cat sp.htaccess
 ) \
   > htaccess
 
