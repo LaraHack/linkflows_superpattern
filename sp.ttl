@@ -6,48 +6,23 @@
   <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1267-0234>, <https://orcid.org/0000-0002-7114-6459>;
   <http://purl.org/dc/terms/description> "This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.";
   <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/>;
-  <http://purl.org/dc/terms/title> "Linkflows SuperPattern (SP) Ontology";
+  <http://purl.org/dc/terms/title> "Linkflows SuperPattern Ontology";
   <http://purl.org/vocab/vann/preferredNamespacePrefix> "sp";
-  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/linkflows/sp/terms/";
+  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/linkflows/superpattern/terms/";
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/SP-Ontology>;
   <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl#Linkflows> .
 
-<https://w3id.org/linkflows/superpattern/terms/SP-Context-Class> a <http://www.w3.org/2002/07/owl#Class>;
-  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/SP-Context-Class>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "SP Context Class"@en;
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/linkflows/superpattern/terms/Super-Pattern-Class>;
-  <http://www.w3.org/2004/02/skos/core#definition> "A context class that contains all things of the class type"@en .
+<https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/SuperPatternInstance>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "SuperPattern Instance"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "the class of all instantiations of the super pattern"@en .
 
-<https://w3id.org/linkflows/superpattern/terms/SP-Subject-Class> a <http://www.w3.org/2002/07/owl#Class>;
-  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/SP-Subject-Class>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "SP Subject Class"@en;
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/linkflows/superpattern/terms/Super-Pattern-Class>;
-  <http://www.w3.org/2004/02/skos/core#definition> "A class that contains things of the type subject"@en .
-
-<https://w3id.org/linkflows/superpattern/terms/SP-Object-Class> a <http://www.w3.org/2002/07/owl#Class>;
-  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/SP-Object-Class>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "SP Object Class"@en;
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/linkflows/superpattern/terms/Super-Pattern-Class>;
-  <http://www.w3.org/2004/02/skos/core#definition> "A class that contains things of the type object"@en .
-
-<https://w3id.org/linkflows/superpattern/terms/SP-Quantifiable-Subject-Class> a <http://www.w3.org/2002/07/owl#Class>;
-  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/SP-Quantifiable-Subject-Class>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "SP Quantifiable Subject Class"@en;
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/linkflows/superpattern/terms/SP-Subject-Class>;
-  <http://www.w3.org/2004/02/skos/core#definition> "A class that contains things of the type subject that are quantifiable"@en .
-
-<https://w3id.org/linkflows/superpattern/terms/SP-Quantifiable-Object-Class> a <http://www.w3.org/2002/07/owl#Class>;
-  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/SP-Quantifiable-Object-Class>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "SP Quantifiable Object Class"@en;
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/linkflows/superpattern/terms/SP-Object-Class>;
-  <http://www.w3.org/2004/02/skos/core#definition> "A class that contains things of the type object that are quantifiable"@en .
-
-<https://w3id.org/linkflows/superpattern/terms/SP-Potential-Activity-Object-Class>
-  a <http://www.w3.org/2002/07/owl#Class>;
-  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/SP-Potential-Activity-Object-Class>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "SP Potential Activity Object Class"@en;
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/linkflows/superpattern/terms/SP-Object-Class>;
-  <http://www.w3.org/2004/02/skos/core#definition> "A class that contains things of the type object that represent potential activities"@en .
+<https://w3id.org/linkflows/superpattern/terms/hasContextClass> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/hasContextClass>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "has context class"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2004/02/skos/core#definition> "links a superpattern instance to its context class"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/is-same-as> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/SP-Subject-Class>;
@@ -178,10 +153,8 @@
   <http://www.w3.org/2004/02/skos/core#definition> "[subj] would not exist if [obj] did not exist"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/causes> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
-  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/SP-Subject-Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/causes>;
   <http://www.w3.org/2000/01/rdf-schema#label> "causes"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/SP-Object-Class>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/has-causal-relation-with>;
   <http://www.w3.org/2004/02/skos/core#definition> "[subj] creates the existence of [obj]"@en .
 

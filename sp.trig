@@ -1,5 +1,5 @@
-@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Ontology/RARwSintdqVNXFoUYXjLBZ06sY87MhejNVdPtZmrmOkaU> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Ontology/RARwSintdqVNXFoUYXjLBZ06sY87MhejNVdPtZmrmOkaU#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Ontology/RAaiSPjMmkw5iRqdl7SpIHuvVvjRb0UYSD-OyWiJUb6FY> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Ontology/RAaiSPjMmkw5iRqdl7SpIHuvVvjRb0UYSD-OyWiJUb6FY#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Ontology> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix linkflows: <https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl#> .
@@ -22,9 +22,9 @@ sub:assertion {
   sp:SP-Ontology dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:description "This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.";
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    dct:title "Linkflows SuperPattern (SP) Ontology";
+    dct:title "Linkflows SuperPattern Ontology";
     vann:preferredNamespacePrefix "sp";
-    vann:preferredNamespaceUri "https://w3id.org/linkflows/sp/terms/";
+    vann:preferredNamespaceUri "https://w3id.org/linkflows/superpattern/terms/";
     a owl:Ontology;
     rdfs:isDefinedBy latest:;
     rdfs:seeAlso linkflows:Linkflows .
@@ -35,13 +35,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Context-Class/RA4zqhHtfGGzP4j000i1rRk4G7u1PZLP7dqZsEScArcDI> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Context-Class/RA4zqhHtfGGzP4j000i1rRk4G7u1PZLP7dqZsEScArcDI#> .
-@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Context-Class> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/SuperPatternInstance/RAJbMWkkzF-yRek5_1gc86akGSj5BASMcq4GumkzMNe3k> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/SuperPatternInstance/RAJbMWkkzF-yRek5_1gc86akGSj5BASMcq4GumkzMNe3k#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SuperPatternInstance> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -59,11 +59,10 @@ sub:Head {
 }
 
 sub:assertion {
-  sp:SP-Context-Class a owl:Class;
+  sp:SuperPatternInstance a owl:Class;
     rdfs:isDefinedBy latest:;
-    rdfs:label "SP Context Class"@en;
-    rdfs:subClassOf sp:Super-Pattern-Class;
-    skos:definition "A context class that contains all things of the class type"@en .
+    rdfs:label "SuperPattern Instance"@en;
+    skos:definition "the class of all instantiations of the super pattern"@en .
 }
 
 sub:provenance {
@@ -71,21 +70,22 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Subject-Class/RAUDUYlZkwVMQ_HjqiCWKN4wT9QOKA3XEboRZLQz9pk8s> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Subject-Class/RAUDUYlZkwVMQ_HjqiCWKN4wT9QOKA3XEboRZLQz9pk8s#> .
-@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Subject-Class> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/hasContextClass/RAnb06RcDM1aUGclbm61hNsk8bBele7HtCGrUdZwTdGuI> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/hasContextClass/RAnb06RcDM1aUGclbm61hNsk8bBele7HtCGrUdZwTdGuI#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/hasContextClass> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix orcid: <https://orcid.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 sub:Head {
   this: np:hasAssertion sub:assertion;
@@ -95,11 +95,12 @@ sub:Head {
 }
 
 sub:assertion {
-  sp:SP-Subject-Class a owl:Class;
+  sp:hasContextClass a rdf:Property;
+    rdfs:domain sp:SuperPatternInstance;
     rdfs:isDefinedBy latest:;
-    rdfs:label "SP Subject Class"@en;
-    rdfs:subClassOf sp:Super-Pattern-Class;
-    skos:definition "A class that contains things of the type subject"@en .
+    rdfs:label "has context class"@en;
+    rdfs:range owl:Class;
+    skos:definition "links a superpattern instance to its context class"@en .
 }
 
 sub:provenance {
@@ -107,156 +108,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Object-Class/RAnBXhqxel2TYL_SGq2PK5nwe5fL1fpcSMkhoggFdvEFE> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Object-Class/RAnBXhqxel2TYL_SGq2PK5nwe5fL1fpcSMkhoggFdvEFE#> .
-@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Object-Class> .
-@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
-@prefix orcid: <https://orcid.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-
-sub:Head {
-  this: np:hasAssertion sub:assertion;
-    np:hasProvenance sub:provenance;
-    np:hasPublicationInfo sub:pubinfo;
-    a np:Nanopublication .
-}
-
-sub:assertion {
-  sp:SP-Object-Class a owl:Class;
-    rdfs:isDefinedBy latest:;
-    rdfs:label "SP Object Class"@en;
-    rdfs:subClassOf sp:Super-Pattern-Class;
-    skos:definition "A class that contains things of the type object"@en .
-}
-
-sub:provenance {
-  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
-}
-
-sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
-    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
-}
-@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Subject-Class/RAaIWdlu10eXHQ0TJ_VWOA9rYumF1lu0v2kIbsw2HFRqs> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Subject-Class/RAaIWdlu10eXHQ0TJ_VWOA9rYumF1lu0v2kIbsw2HFRqs#> .
-@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Quantifiable-Subject-Class> .
-@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
-@prefix orcid: <https://orcid.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-
-sub:Head {
-  this: np:hasAssertion sub:assertion;
-    np:hasProvenance sub:provenance;
-    np:hasPublicationInfo sub:pubinfo;
-    a np:Nanopublication .
-}
-
-sub:assertion {
-  sp:SP-Quantifiable-Subject-Class a owl:Class;
-    rdfs:isDefinedBy latest:;
-    rdfs:label "SP Quantifiable Subject Class"@en;
-    rdfs:subClassOf sp:SP-Subject-Class;
-    skos:definition "A class that contains things of the type subject that are quantifiable"@en .
-}
-
-sub:provenance {
-  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
-}
-
-sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
-    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
-}
-@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Object-Class/RAzFY3ggloky9LIzU-DollHSq9aDdlogKHx9KNrOB-K1o> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Object-Class/RAzFY3ggloky9LIzU-DollHSq9aDdlogKHx9KNrOB-K1o#> .
-@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Quantifiable-Object-Class> .
-@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
-@prefix orcid: <https://orcid.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-
-sub:Head {
-  this: np:hasAssertion sub:assertion;
-    np:hasProvenance sub:provenance;
-    np:hasPublicationInfo sub:pubinfo;
-    a np:Nanopublication .
-}
-
-sub:assertion {
-  sp:SP-Quantifiable-Object-Class a owl:Class;
-    rdfs:isDefinedBy latest:;
-    rdfs:label "SP Quantifiable Object Class"@en;
-    rdfs:subClassOf sp:SP-Object-Class;
-    skos:definition "A class that contains things of the type object that are quantifiable"@en .
-}
-
-sub:provenance {
-  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
-}
-
-sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
-    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
-}
-@prefix this: <https://w3id.org/linkflows/superpattern/np/SP-Potential-Activity-Object-Class/RAdMSoQU9EtfBP3o4penByWsbHwIu_8VOG-EMeP9R9Pm4> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/SP-Potential-Activity-Object-Class/RAdMSoQU9EtfBP3o4penByWsbHwIu_8VOG-EMeP9R9Pm4#> .
-@prefix latest: <https://w3id.org/linkflows/superpattern/latest/SP-Potential-Activity-Object-Class> .
-@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix np: <http://www.nanopub.org/nschema#> .
-@prefix orcid: <https://orcid.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-
-sub:Head {
-  this: np:hasAssertion sub:assertion;
-    np:hasProvenance sub:provenance;
-    np:hasPublicationInfo sub:pubinfo;
-    a np:Nanopublication .
-}
-
-sub:assertion {
-  sp:SP-Potential-Activity-Object-Class a owl:Class;
-    rdfs:isDefinedBy latest:;
-    rdfs:label "SP Potential Activity Object Class"@en;
-    rdfs:subClassOf sp:SP-Object-Class;
-    skos:definition "A class that contains things of the type object that represent potential activities"@en .
-}
-
-sub:provenance {
-  sub:assertion dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459 .
-}
-
-sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
-    dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
-}
-@prefix this: <https://w3id.org/linkflows/superpattern/np/is-same-as/RAJwJAAT1ggJ5lcBMP46qYjdbowBXHsXk513afWazCBOY> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-same-as/RAJwJAAT1ggJ5lcBMP46qYjdbowBXHsXk513afWazCBOY#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-same-as/RAE_wSp20N65cC8glNVIfiUn9venEXaBbqai2uuzYnC1w> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-same-as/RAE_wSp20N65cC8glNVIfiUn9venEXaBbqai2uuzYnC1w#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-same-as> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -290,12 +147,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/compares-to/RACpg7vHmdZNjo1r1U2tAUxv9aKfgSMfNxlQvT9pkxeOI> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/compares-to/RACpg7vHmdZNjo1r1U2tAUxv9aKfgSMfNxlQvT9pkxeOI#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/compares-to/RAKDs-j8R8tlM9YNs0K3qpGkpDbeWrKkn8UaYlDQnCf-g> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/compares-to/RAKDs-j8R8tlM9YNs0K3qpGkpDbeWrKkn8UaYlDQnCf-g#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/compares-to> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -329,12 +186,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/has-similar-value-as/RAlL2wsWnWBh27RILkga0OxJveHrsNvJiqJyrVboOoz2c> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-similar-value-as/RAlL2wsWnWBh27RILkga0OxJveHrsNvJiqJyrVboOoz2c#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-similar-value-as/RAbi46A13M1ZZ83jguQMtuV9UAwdHWalOiRx-oYa3xd-I> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-similar-value-as/RAbi46A13M1ZZ83jguQMtuV9UAwdHWalOiRx-oYa3xd-I#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-similar-value-as> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -367,12 +224,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/has-same-value-as/RAmOiuvrs186KotHw0mfKs4UurJlEpl3N5QP3m4DvzyOU> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-same-value-as/RAmOiuvrs186KotHw0mfKs4UurJlEpl3N5QP3m4DvzyOU#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-same-value-as/RAgSTtOLwN2MOH_Hj2wxOLKk9PayDT_wuf8Js5ZCaPzhw> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-same-value-as/RAgSTtOLwN2MOH_Hj2wxOLKk9PayDT_wuf8Js5ZCaPzhw#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-same-value-as> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -405,12 +262,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/has-different-value-from/RAm2qW2hrM6qKiX_7TYfnoMyzkWI-mxDAVjfj5WR5pQWg> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-different-value-from/RAm2qW2hrM6qKiX_7TYfnoMyzkWI-mxDAVjfj5WR5pQWg#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-different-value-from/RA1z34FRm5wQRGfiEx19bc4cOxasry2c3G6tFPHrEGJsc> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-different-value-from/RA1z34FRm5wQRGfiEx19bc4cOxasry2c3G6tFPHrEGJsc#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-different-value-from> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -443,12 +300,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/has-smaller-value-than/RAdGUnDLxp7DcjbKcZslOMCAIPMkK3zYg0_e-vJPJAaTc> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-smaller-value-than/RAdGUnDLxp7DcjbKcZslOMCAIPMkK3zYg0_e-vJPJAaTc#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-smaller-value-than/RATYBYjOzO-ET1-VR41nn4aoii3cstly-JpT5FZvz8Qqk> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-smaller-value-than/RATYBYjOzO-ET1-VR41nn4aoii3cstly-JpT5FZvz8Qqk#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-smaller-value-than> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -481,12 +338,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/has-larger-value-than/RAW6TiVN8lqj4BMzCmJOdznL85GCzJ3vcLsK26-3L6LkQ> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-larger-value-than/RAW6TiVN8lqj4BMzCmJOdznL85GCzJ3vcLsK26-3L6LkQ#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-larger-value-than/RAWm-Qt6TKdk3B8h8-jgQIyYPux2n8mAXxt2WPNLju5JA> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-larger-value-than/RAWm-Qt6TKdk3B8h8-jgQIyYPux2n8mAXxt2WPNLju5JA#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-larger-value-than> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -519,12 +376,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/has-causal-relation-with/RAyB0oNwGt3YAh7P5wECDKaRNgxJyHGOf-BsSKL4yc_OI> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-causal-relation-with/RAyB0oNwGt3YAh7P5wECDKaRNgxJyHGOf-BsSKL4yc_OI#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-causal-relation-with/RA7vIlBAQWRlJ0JAKF9D1JBEZw2NPNKJ_FSRxdpkz-6pc> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-causal-relation-with/RA7vIlBAQWRlJ0JAKF9D1JBEZw2NPNKJ_FSRxdpkz-6pc#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-causal-relation-with> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -558,12 +415,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/affects/RAJ01woGHsByw2EDkTkqJlVeNPn8nA8e6QP8Y-QI2HyJU> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/affects/RAJ01woGHsByw2EDkTkqJlVeNPn8nA8e6QP8Y-QI2HyJU#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/affects/RAhrpWnTZdxmcYikK90tSC7ifEIA8_WqKNercsWOORs2I> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/affects/RAhrpWnTZdxmcYikK90tSC7ifEIA8_WqKNercsWOORs2I#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/affects> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -597,12 +454,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/contributes-to/RATHhRWSjWdd_3ts1ayKozO-12zAJDFEjCPnxoeijDXyE> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/contributes-to/RATHhRWSjWdd_3ts1ayKozO-12zAJDFEjCPnxoeijDXyE#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/contributes-to/RAhe7NLwi4k8dVJjQSMD7ji_yNmJ71rVgtI13ttd_spmg> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/contributes-to/RAhe7NLwi4k8dVJjQSMD7ji_yNmJ71rVgtI13ttd_spmg#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/contributes-to> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -635,12 +492,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/enables/RAdBAarhGQYGLR3je-eY_KyITkJ5Gd6EMf5cX-cPD8mBQ> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/enables/RAdBAarhGQYGLR3je-eY_KyITkJ5Gd6EMf5cX-cPD8mBQ#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/enables/RA78qwYuDjN5uQMSHxwXQFuLhCS5qP_uB-TuWizafKCiM> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/enables/RA78qwYuDjN5uQMSHxwXQFuLhCS5qP_uB-TuWizafKCiM#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/enables> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -673,12 +530,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/inhibits/RA0aY9yMn9NZgxFpqQE_M463-s4JBPqyTPahVj-JqRhUI> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/inhibits/RA0aY9yMn9NZgxFpqQE_M463-s4JBPqyTPahVj-JqRhUI#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/inhibits/RAnFq_N1rfF3SNtWDd6i6AOVNeGGFvmC_AfwS6m3tJxCs> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/inhibits/RAnFq_N1rfF3SNtWDd6i6AOVNeGGFvmC_AfwS6m3tJxCs#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/inhibits> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -711,12 +568,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/prevents/RAMCtkwESKppSnKwqAxnzeZydi9LcD8IuYv2CrmNIp8u0> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/prevents/RAMCtkwESKppSnKwqAxnzeZydi9LcD8IuYv2CrmNIp8u0#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/prevents/RAfGnfm_OS1ksDlCkH7qcAO-zjY3hUGmZrDXV_o66wVJ4> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/prevents/RAfGnfm_OS1ksDlCkH7qcAO-zjY3hUGmZrDXV_o66wVJ4#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/prevents> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -749,12 +606,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/increases/RAxYNhZuDP_K2GNs4fXzwg-QW7yAE7rRwjhOJA2rfsOdY> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/increases/RAxYNhZuDP_K2GNs4fXzwg-QW7yAE7rRwjhOJA2rfsOdY#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/increases/RAhaljiYfQd8TWcEAC3XmZoLm_oBEjT8glm73M0846Lew> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/increases/RAhaljiYfQd8TWcEAC3XmZoLm_oBEjT8glm73M0846Lew#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/increases> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -787,12 +644,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/decreases/RAQe90Okqsnq_YqmQ7pIzfu52-HFagtrMHJUo0XKcBAEs> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/decreases/RAQe90Okqsnq_YqmQ7pIzfu52-HFagtrMHJUo0XKcBAEs#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/decreases/RAiQJ45c5mlz85i-hqf3_mdDoleVi_mKsjE_CiyoT3Nac> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/decreases/RAiQJ45c5mlz85i-hqf3_mdDoleVi_mKsjE_CiyoT3Nac#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/decreases> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -825,12 +682,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/requires/RAyKLdXn8sVbT2Rv8i6i4OOrLZt2OtO8KWi7LqlGLsImY> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/requires/RAyKLdXn8sVbT2Rv8i6i4OOrLZt2OtO8KWi7LqlGLsImY#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/requires/RALoQp6tzHzY-Mpy_K55Gdc1CACIE4OU8XSQqoYd508N4> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/requires/RALoQp6tzHzY-Mpy_K55Gdc1CACIE4OU8XSQqoYd508N4#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/requires> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -863,12 +720,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/causes/RAgW_aqjFLFRslt-LYmL8pnJvEqrTn7ePcE27QpEHerTw> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/causes/RAgW_aqjFLFRslt-LYmL8pnJvEqrTn7ePcE27QpEHerTw#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/causes/RA4kYdh4CmOYyvV-dG4JMbhdVBNgrbXBIaT_Dx_-rVxW8> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/causes/RA4kYdh4CmOYyvV-dG4JMbhdVBNgrbXBIaT_Dx_-rVxW8#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/causes> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -888,10 +745,8 @@ sub:Head {
 
 sub:assertion {
   sp:causes a rdf:Property;
-    rdfs:domain sp:SP-Subject-Class;
     rdfs:isDefinedBy latest:;
     rdfs:label "causes"@en;
-    rdfs:range sp:SP-Object-Class;
     rdfs:subPropertyOf sp:has-causal-relation-with;
     skos:definition "[subj] creates the existence of [obj]"@en .
 }
@@ -901,12 +756,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/is-necessary-and-sufficient-for/RAH7IHj4CXtw-zdnoSmPrnsZi0mBQkxiMM_mzFiNZhmn4> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-necessary-and-sufficient-for/RAH7IHj4CXtw-zdnoSmPrnsZi0mBQkxiMM_mzFiNZhmn4#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-necessary-and-sufficient-for/RAR_mDYIye5p1Kf0kVAY8yVFr20H4HxWm8x-iOteNmMGU> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-necessary-and-sufficient-for/RAR_mDYIye5p1Kf0kVAY8yVFr20H4HxWm8x-iOteNmMGU#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-necessary-and-sufficient-for> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -939,12 +794,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/is-caused-by/RAXELva1mUgsJW9U3wCxDPhOLPShHWsD-clc7ULPDy6Xs> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-caused-by/RAXELva1mUgsJW9U3wCxDPhOLPShHWsD-clc7ULPDy6Xs#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-caused-by/RAAI00lSa-_Qs4gVyNXDpY1G2IZ1wMyMi-A9Vmpe_qEO8> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-caused-by/RAAI00lSa-_Qs4gVyNXDpY1G2IZ1wMyMi-A9Vmpe_qEO8#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-caused-by> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -979,12 +834,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/has-spatiotemporal-relation-with/RA_qe5ucuWCqmtYHwGo4ZxTh3fg0E0D9bHzH5RCrafdp4> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-spatiotemporal-relation-with/RA_qe5ucuWCqmtYHwGo4ZxTh3fg0E0D9bHzH5RCrafdp4#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/has-spatiotemporal-relation-with/RAhQDv4k8WDEbe2JoYaMFSzumdS4sLm81D4mqPPSf4kVA> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/has-spatiotemporal-relation-with/RAhQDv4k8WDEbe2JoYaMFSzumdS4sLm81D4mqPPSf4kVA#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/has-spatiotemporal-relation-with> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1018,12 +873,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/includes/RA_F1xzm-DY8q5WVOh_sITvwOwqvO3lXMlp5oghDBBOAo> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/includes/RA_F1xzm-DY8q5WVOh_sITvwOwqvO3lXMlp5oghDBBOAo#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/includes/RAvGELgUFFkQRgwJ_c_W8VkuVFM0gPTRvo9GwyJQZVwA8> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/includes/RAvGELgUFFkQRgwJ_c_W8VkuVFM0gPTRvo9GwyJQZVwA8#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/includes> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1056,12 +911,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/is-included-in/RAz0WWZyUTG1Lk3dAkEffAiqp2ZOMHd8VrnBYGCBsMKpU> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-included-in/RAz0WWZyUTG1Lk3dAkEffAiqp2ZOMHd8VrnBYGCBsMKpU#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-included-in/RA1MFSHVEYL8za6HJVyNA0hBOCgiI0YJ3RQYWHdFFMLq4> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-included-in/RA1MFSHVEYL8za6HJVyNA0hBOCgiI0YJ3RQYWHdFFMLq4#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-included-in> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1094,12 +949,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/co-occurs-with/RAWqw7ETh1lKf_36fTVF3q9nAj0hIgT36cB1Nl5luaCF0> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/co-occurs-with/RAWqw7ETh1lKf_36fTVF3q9nAj0hIgT36cB1Nl5luaCF0#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/co-occurs-with/RA_AIzJfzq6FLUEKq8b18am9z6uOC6HJUaElJYh2PByvs> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/co-occurs-with/RA_AIzJfzq6FLUEKq8b18am9z6uOC6HJUaElJYh2PByvs#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/co-occurs-with> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1132,12 +987,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/is-followed-by/RA-AxDhI42Uq79XL5xFN7ijoVvFWkF3dn4nyPo-bL3Dew> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-followed-by/RA-AxDhI42Uq79XL5xFN7ijoVvFWkF3dn4nyPo-bL3Dew#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/is-followed-by/RAy0WeBKy7PIulP0B2jyPQyrgF1pINMqCeVBUvx_XaO4w> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/is-followed-by/RAy0WeBKy7PIulP0B2jyPQyrgF1pINMqCeVBUvx_XaO4w#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/is-followed-by> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1170,12 +1025,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
-@prefix this: <https://w3id.org/linkflows/superpattern/np/follows/RA6qadjCNEL1ZWFnk_bAb_hTMxjWGEIqIgb98WSUreyJI> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/follows/RA6qadjCNEL1ZWFnk_bAb_hTMxjWGEIqIgb98WSUreyJI#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/follows/RA2KPCfWqeW1zXUcyt1wJiH_SOBoCrS3bmaFf8J_1P9BA> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/follows/RA2KPCfWqeW1zXUcyt1wJiH_SOBoCrS3bmaFf8J_1P9BA#> .
 @prefix latest: <https://w3id.org/linkflows/superpattern/latest/follows> .
 @prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1208,7 +1063,7 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-03-18T14:43:46.530+02:00"^^xsd:dateTime;
+  this: dct:created "2021-03-18T15:17:22.595+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234, orcid:0000-0002-7114-6459;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }

@@ -1,5 +1,5 @@
-@prefix this: <https://w3id.org/linkflows/superpattern/np/index/RAMP0HcmL2o_mw3ifnf8iKoi2v-rhFMhJ0gqffShEo24s> .
-@prefix sub: <https://w3id.org/linkflows/superpattern/np/index/RAMP0HcmL2o_mw3ifnf8iKoi2v-rhFMhJ0gqffShEo24s#> .
+@prefix this: <https://w3id.org/linkflows/superpattern/np/index/RAJDRQsdDP6USs5M0UmkgS16C1SgvLIY_jLN7WWGk8-zo> .
+@prefix sub: <https://w3id.org/linkflows/superpattern/np/index/RAJDRQsdDP6USs5M0UmkgS16C1SgvLIY_jLN7WWGk8-zo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
@@ -14,38 +14,34 @@ sub:Head {
 }
 
 sub:assertion {
-  this: npx:includesElement <https://w3id.org/linkflows/superpattern/np/SP-Context-Class/RA4zqhHtfGGzP4j000i1rRk4G7u1PZLP7dqZsEScArcDI>,
-      <https://w3id.org/linkflows/superpattern/np/SP-Object-Class/RAnBXhqxel2TYL_SGq2PK5nwe5fL1fpcSMkhoggFdvEFE>,
-      <https://w3id.org/linkflows/superpattern/np/SP-Ontology/RARwSintdqVNXFoUYXjLBZ06sY87MhejNVdPtZmrmOkaU>,
-      <https://w3id.org/linkflows/superpattern/np/SP-Potential-Activity-Object-Class/RAdMSoQU9EtfBP3o4penByWsbHwIu_8VOG-EMeP9R9Pm4>,
-      <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Object-Class/RAzFY3ggloky9LIzU-DollHSq9aDdlogKHx9KNrOB-K1o>,
-      <https://w3id.org/linkflows/superpattern/np/SP-Quantifiable-Subject-Class/RAaIWdlu10eXHQ0TJ_VWOA9rYumF1lu0v2kIbsw2HFRqs>,
-      <https://w3id.org/linkflows/superpattern/np/SP-Subject-Class/RAUDUYlZkwVMQ_HjqiCWKN4wT9QOKA3XEboRZLQz9pk8s>,
-      <https://w3id.org/linkflows/superpattern/np/affects/RAJ01woGHsByw2EDkTkqJlVeNPn8nA8e6QP8Y-QI2HyJU>,
-      <https://w3id.org/linkflows/superpattern/np/causes/RAgW_aqjFLFRslt-LYmL8pnJvEqrTn7ePcE27QpEHerTw>,
-      <https://w3id.org/linkflows/superpattern/np/co-occurs-with/RAWqw7ETh1lKf_36fTVF3q9nAj0hIgT36cB1Nl5luaCF0>,
-      <https://w3id.org/linkflows/superpattern/np/compares-to/RACpg7vHmdZNjo1r1U2tAUxv9aKfgSMfNxlQvT9pkxeOI>,
-      <https://w3id.org/linkflows/superpattern/np/contributes-to/RATHhRWSjWdd_3ts1ayKozO-12zAJDFEjCPnxoeijDXyE>,
-      <https://w3id.org/linkflows/superpattern/np/decreases/RAQe90Okqsnq_YqmQ7pIzfu52-HFagtrMHJUo0XKcBAEs>,
-      <https://w3id.org/linkflows/superpattern/np/enables/RAdBAarhGQYGLR3je-eY_KyITkJ5Gd6EMf5cX-cPD8mBQ>,
-      <https://w3id.org/linkflows/superpattern/np/follows/RA6qadjCNEL1ZWFnk_bAb_hTMxjWGEIqIgb98WSUreyJI>,
-      <https://w3id.org/linkflows/superpattern/np/has-causal-relation-with/RAyB0oNwGt3YAh7P5wECDKaRNgxJyHGOf-BsSKL4yc_OI>,
-      <https://w3id.org/linkflows/superpattern/np/has-different-value-from/RAm2qW2hrM6qKiX_7TYfnoMyzkWI-mxDAVjfj5WR5pQWg>,
-      <https://w3id.org/linkflows/superpattern/np/has-larger-value-than/RAW6TiVN8lqj4BMzCmJOdznL85GCzJ3vcLsK26-3L6LkQ>,
-      <https://w3id.org/linkflows/superpattern/np/has-same-value-as/RAmOiuvrs186KotHw0mfKs4UurJlEpl3N5QP3m4DvzyOU>,
-      <https://w3id.org/linkflows/superpattern/np/has-similar-value-as/RAlL2wsWnWBh27RILkga0OxJveHrsNvJiqJyrVboOoz2c>,
-      <https://w3id.org/linkflows/superpattern/np/has-smaller-value-than/RAdGUnDLxp7DcjbKcZslOMCAIPMkK3zYg0_e-vJPJAaTc>,
-      <https://w3id.org/linkflows/superpattern/np/has-spatiotemporal-relation-with/RA_qe5ucuWCqmtYHwGo4ZxTh3fg0E0D9bHzH5RCrafdp4>,
-      <https://w3id.org/linkflows/superpattern/np/includes/RA_F1xzm-DY8q5WVOh_sITvwOwqvO3lXMlp5oghDBBOAo>,
-      <https://w3id.org/linkflows/superpattern/np/increases/RAxYNhZuDP_K2GNs4fXzwg-QW7yAE7rRwjhOJA2rfsOdY>,
-      <https://w3id.org/linkflows/superpattern/np/inhibits/RA0aY9yMn9NZgxFpqQE_M463-s4JBPqyTPahVj-JqRhUI>,
-      <https://w3id.org/linkflows/superpattern/np/is-caused-by/RAXELva1mUgsJW9U3wCxDPhOLPShHWsD-clc7ULPDy6Xs>,
-      <https://w3id.org/linkflows/superpattern/np/is-followed-by/RA-AxDhI42Uq79XL5xFN7ijoVvFWkF3dn4nyPo-bL3Dew>,
-      <https://w3id.org/linkflows/superpattern/np/is-included-in/RAz0WWZyUTG1Lk3dAkEffAiqp2ZOMHd8VrnBYGCBsMKpU>,
-      <https://w3id.org/linkflows/superpattern/np/is-necessary-and-sufficient-for/RAH7IHj4CXtw-zdnoSmPrnsZi0mBQkxiMM_mzFiNZhmn4>,
-      <https://w3id.org/linkflows/superpattern/np/is-same-as/RAJwJAAT1ggJ5lcBMP46qYjdbowBXHsXk513afWazCBOY>,
-      <https://w3id.org/linkflows/superpattern/np/prevents/RAMCtkwESKppSnKwqAxnzeZydi9LcD8IuYv2CrmNIp8u0>,
-      <https://w3id.org/linkflows/superpattern/np/requires/RAyKLdXn8sVbT2Rv8i6i4OOrLZt2OtO8KWi7LqlGLsImY> .
+  this: npx:includesElement <https://w3id.org/linkflows/superpattern/np/SP-Ontology/RAaiSPjMmkw5iRqdl7SpIHuvVvjRb0UYSD-OyWiJUb6FY>,
+      <https://w3id.org/linkflows/superpattern/np/SuperPatternInstance/RAJbMWkkzF-yRek5_1gc86akGSj5BASMcq4GumkzMNe3k>,
+      <https://w3id.org/linkflows/superpattern/np/affects/RAhrpWnTZdxmcYikK90tSC7ifEIA8_WqKNercsWOORs2I>,
+      <https://w3id.org/linkflows/superpattern/np/causes/RA4kYdh4CmOYyvV-dG4JMbhdVBNgrbXBIaT_Dx_-rVxW8>,
+      <https://w3id.org/linkflows/superpattern/np/co-occurs-with/RA_AIzJfzq6FLUEKq8b18am9z6uOC6HJUaElJYh2PByvs>,
+      <https://w3id.org/linkflows/superpattern/np/compares-to/RAKDs-j8R8tlM9YNs0K3qpGkpDbeWrKkn8UaYlDQnCf-g>,
+      <https://w3id.org/linkflows/superpattern/np/contributes-to/RAhe7NLwi4k8dVJjQSMD7ji_yNmJ71rVgtI13ttd_spmg>,
+      <https://w3id.org/linkflows/superpattern/np/decreases/RAiQJ45c5mlz85i-hqf3_mdDoleVi_mKsjE_CiyoT3Nac>,
+      <https://w3id.org/linkflows/superpattern/np/enables/RA78qwYuDjN5uQMSHxwXQFuLhCS5qP_uB-TuWizafKCiM>,
+      <https://w3id.org/linkflows/superpattern/np/follows/RA2KPCfWqeW1zXUcyt1wJiH_SOBoCrS3bmaFf8J_1P9BA>,
+      <https://w3id.org/linkflows/superpattern/np/has-causal-relation-with/RA7vIlBAQWRlJ0JAKF9D1JBEZw2NPNKJ_FSRxdpkz-6pc>,
+      <https://w3id.org/linkflows/superpattern/np/has-different-value-from/RA1z34FRm5wQRGfiEx19bc4cOxasry2c3G6tFPHrEGJsc>,
+      <https://w3id.org/linkflows/superpattern/np/has-larger-value-than/RAWm-Qt6TKdk3B8h8-jgQIyYPux2n8mAXxt2WPNLju5JA>,
+      <https://w3id.org/linkflows/superpattern/np/has-same-value-as/RAgSTtOLwN2MOH_Hj2wxOLKk9PayDT_wuf8Js5ZCaPzhw>,
+      <https://w3id.org/linkflows/superpattern/np/has-similar-value-as/RAbi46A13M1ZZ83jguQMtuV9UAwdHWalOiRx-oYa3xd-I>,
+      <https://w3id.org/linkflows/superpattern/np/has-smaller-value-than/RATYBYjOzO-ET1-VR41nn4aoii3cstly-JpT5FZvz8Qqk>,
+      <https://w3id.org/linkflows/superpattern/np/has-spatiotemporal-relation-with/RAhQDv4k8WDEbe2JoYaMFSzumdS4sLm81D4mqPPSf4kVA>,
+      <https://w3id.org/linkflows/superpattern/np/hasContextClass/RAnb06RcDM1aUGclbm61hNsk8bBele7HtCGrUdZwTdGuI>,
+      <https://w3id.org/linkflows/superpattern/np/includes/RAvGELgUFFkQRgwJ_c_W8VkuVFM0gPTRvo9GwyJQZVwA8>,
+      <https://w3id.org/linkflows/superpattern/np/increases/RAhaljiYfQd8TWcEAC3XmZoLm_oBEjT8glm73M0846Lew>,
+      <https://w3id.org/linkflows/superpattern/np/inhibits/RAnFq_N1rfF3SNtWDd6i6AOVNeGGFvmC_AfwS6m3tJxCs>,
+      <https://w3id.org/linkflows/superpattern/np/is-caused-by/RAAI00lSa-_Qs4gVyNXDpY1G2IZ1wMyMi-A9Vmpe_qEO8>,
+      <https://w3id.org/linkflows/superpattern/np/is-followed-by/RAy0WeBKy7PIulP0B2jyPQyrgF1pINMqCeVBUvx_XaO4w>,
+      <https://w3id.org/linkflows/superpattern/np/is-included-in/RA1MFSHVEYL8za6HJVyNA0hBOCgiI0YJ3RQYWHdFFMLq4>,
+      <https://w3id.org/linkflows/superpattern/np/is-necessary-and-sufficient-for/RAR_mDYIye5p1Kf0kVAY8yVFr20H4HxWm8x-iOteNmMGU>,
+      <https://w3id.org/linkflows/superpattern/np/is-same-as/RAE_wSp20N65cC8glNVIfiUn9venEXaBbqai2uuzYnC1w>,
+      <https://w3id.org/linkflows/superpattern/np/prevents/RAfGnfm_OS1ksDlCkH7qcAO-zjY3hUGmZrDXV_o66wVJ4>,
+      <https://w3id.org/linkflows/superpattern/np/requires/RALoQp6tzHzY-Mpy_K55Gdc1CACIE4OU8XSQqoYd508N4> .
 }
 
 sub:provenance {
@@ -54,7 +50,7 @@ sub:provenance {
 
 sub:pubinfo {
   this: dce:title "Nanopublications representing the SP Superpattern Ontology";
-    dct:created "2021-03-18T14:43:48.405+02:00"^^xsd:dateTime;
+    dct:created "2021-03-18T15:17:26.426+02:00"^^xsd:dateTime;
     dct:creator <https://orcid.org/0000-0002-1267-0234>, <https://orcid.org/0000-0002-7114-6459>;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     a npx:NanopubIndex .
