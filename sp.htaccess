@@ -1,3 +1,12 @@
+Header set Access-Control-Allow-Origin *
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^$ https://larahack.github.io/linkflows_superpattern/doc/sp/index-en.html [R=302,L]
+
+RewriteCond %{HTTP_ACCEPT} text/html
+RewriteRule ^superpattern/terms/([^/]+)$ https://larahack.github.io/linkflows_superpattern/doc/sp/index-en.html#https://w3id.org/linkflows/superpattern/terms/$1 [R=302,L,NE]
+
 RewriteRule ^sp/terms/(.+)$ https://w3id.org/fair/sp/latest/$1 [R=302,L]
 RewriteRule ^sp/np/.+/(RA[A-Za-z0-9_\-]{43})$ http://purl.org/np/$1 [R=302,L]
 
