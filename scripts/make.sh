@@ -8,6 +8,9 @@ if [ -z $1 ] || [ ! -z $2 ]; then
   echo "Usage: $USAGE"; exit 1
 fi
 
+# Download nanopub jar if needed:
+scripts/np help 2> /dev/null
+
 scripts/update-timestamp.sh $1
 scripts/make-trusty.sh $1
 
