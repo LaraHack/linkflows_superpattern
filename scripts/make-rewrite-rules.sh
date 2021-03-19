@@ -2,7 +2,7 @@
 
 set -e
 
-USAGE="$ scripts/make-rewrite-rules.sh principles"
+USAGE="$ scripts/make-rewrite-rules.sh sp"
 
 if [ -z $1 ] || [ ! -z $2 ]; then
   echo "Usage: $USAGE"; exit 1
@@ -13,11 +13,23 @@ if [ ! -f $1.trig ]; then
 fi
 
 (
+  echo "Header set Access-Control-Allow-Origin *";
+  echo "Options +FollowSymLinks";
+  echo "RewriteEngine on";
+  echo
+) \
+  > $1.htaccess
+
+if [ -f $1.head.htaccess ]; then
+  cat $1.head.htaccess >> $1.htaccess
+fi
+
+(
   echo "RewriteRule ^$1/terms/(.+)$ https://w3id.org/fair/$1/latest/\$1 [R=302,L]";
   echo "RewriteRule ^$1/np/.+/(RA[A-Za-z0-9_\\-]{43})$ http://purl.org/np/\$1 [R=302,L]";
   echo
 ) \
-  > $1.htaccess
+  >> $1.htaccess
 
 cat $1.trig \
   | grep '^@prefix this:' \

@@ -2,7 +2,7 @@
 
 set -e
 
-USAGE="$ scripts/make.sh principles"
+USAGE="$ scripts/make.sh sp"
 
 if [ -z $1 ] || [ ! -z $2 ]; then
   echo "Usage: $USAGE"; exit 1
@@ -27,7 +27,5 @@ if [ -f scripts/make-$1-index.sh ]; then
 fi
 
 scripts/make-rewrite-rules.sh $1
-
-scripts/make-large-htaccess.sh
 
 scripts/make-doc.sh $1

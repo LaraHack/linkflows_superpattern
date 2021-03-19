@@ -2,7 +2,7 @@
 
 set -e
 
-USAGE="$ scripts/make-doc.sh principles"
+USAGE="$ scripts/make-doc.sh sp"
 
 if [ -z $1 ] || [ ! -z $2 ]; then
   echo "Usage: $USAGE"; exit 1

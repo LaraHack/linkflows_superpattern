@@ -29,7 +29,7 @@ scripts/np mkindex \
   -u https://w3id.org/linkflows/superpattern/np/index/ \
   -c https://orcid.org/0000-0002-7114-6459 \
   -c https://orcid.org/0000-0002-1267-0234 \
-  -t "Nanopublications representing the SP Superpattern Ontology" \
+  -t "Nanopublications representing the Superpattern Ontology" \
   -l https://creativecommons.org/publicdomain/zero/1.0/ \
   $LASTINDEXARG \
   -o sp.index.trig \

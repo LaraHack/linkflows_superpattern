@@ -2,7 +2,7 @@
 
 set -e
 
-USAGE="$ scripts/update-timestamp.sh principles"
+USAGE="$ scripts/update-timestamp.sh sp"
 
 if [ -z $1 ] || [ ! -z $2 ]; then
   echo "Usage: $USAGE"; exit 1
