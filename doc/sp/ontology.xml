@@ -172,116 +172,6 @@
     
 
 
-    <!-- https://w3id.org/linkflows/superpattern/terms/alwaysQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/alwaysQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canNeverQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canNeverQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/linkflows/superpattern/terms/causes -->
 
 
@@ -380,36 +270,6 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/generallyQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/generallyQualifier">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     </owl:ObjectProperty>
@@ -667,36 +527,6 @@
     
 
 
-    <!-- https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/mostlyQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/mostlyQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/neverQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/neverQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/linkflows/superpattern/terms/prevents -->
 
 
@@ -721,26 +551,6 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/requires"/>
         <rdfs:label xml:lang="en">requires</rdfs:label>
         <skos:definition xml:lang="en">[subj] would not exist if [obj] did not exist</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/sometimesQualifier -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/sometimesQualifier">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     </owl:ObjectProperty>
     
 
@@ -782,80 +592,14 @@
     
 
 
-    <!-- https://w3id.org/linkflows/superpattern/terms/alwaysQualifier -->
+    <!-- https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier -->
 
 
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/alwaysQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canNeverQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canNeverQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier"/>
-    
-
-
-    <!-- https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier"/>
+    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/SuperPatternQualifier"/>
+        <rdfs:label xml:lang="en">SuperPattern qualifier</rdfs:label>
+        <skos:definition xml:lang="en">the class for qualifiers used in the super pattern</skos:definition>
+    </owl:Class>
     
 
 
@@ -866,59 +610,243 @@
     
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/alwaysQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/alwaysQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/alwaysQualifier"/>
+        <rdfs:label xml:lang="en">always qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] in all 100% cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canAlwaysQualifier"/>
+        <rdfs:label xml:lang="en">can always qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in all 100% cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canFrequentlyNotQualifier"/>
+        <rdfs:label xml:lang="en">can frequently not qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in at most 90% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canFrequentlyQualifier"/>
+        <rdfs:label xml:lang="en">can frequently qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in at least 10% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canGenerallyNotQualifier"/>
+        <rdfs:label xml:lang="en">can generally not qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in at most 10% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canGenerallyQualifier"/>
+        <rdfs:label xml:lang="en">can generally qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in at least 90% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canMostlyNotQualifier"/>
+        <rdfs:label xml:lang="en">can mostly not qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in at most 50% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canMostlyQualifier"/>
+        <rdfs:label xml:lang="en">can mostly qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in at least 50% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canNeverQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canNeverQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canNeverQualifier"/>
+        <rdfs:label xml:lang="en">can never qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in 0% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canSometimesNotQualifier"/>
+        <rdfs:label xml:lang="en">can sometimes not qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in at most 99.9% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canSometimesQualifier"/>
+        <rdfs:label xml:lang="en">can sometimes qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] can in at least 0.10% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier -->
 
 
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/frequentlyQualifier"/>
+        <rdfs:label xml:lang="en">frequently qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] in at least 10% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
     
 
 
     <!-- https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier -->
 
 
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/generallyNotQualifier"/>
+        <rdfs:label xml:lang="en">generally not qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] in at most 10% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
     
 
 
     <!-- https://w3id.org/linkflows/superpattern/terms/generallyQualifier -->
 
 
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/generallyQualifier"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/generallyQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/generallyQualifier"/>
+        <rdfs:label xml:lang="en">generally qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] in at least 90% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
     
 
 
     <!-- https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier -->
 
 
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/mostlyNotQualifier"/>
+        <rdfs:label xml:lang="en">mostly not qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] in at most 50% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
     
 
 
     <!-- https://w3id.org/linkflows/superpattern/terms/mostlyQualifier -->
 
 
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/mostlyQualifier"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/mostlyQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/mostlyQualifier"/>
+        <rdfs:label xml:lang="en">mostly qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] in at least 50% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
     
 
 
     <!-- https://w3id.org/linkflows/superpattern/terms/neverQualifier -->
 
 
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/neverQualifier"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/neverQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/neverQualifier"/>
+        <rdfs:label xml:lang="en">never qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] in 0% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
     
 
 
     <!-- https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier -->
 
 
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/sometimesNotQualifier"/>
+        <rdfs:label xml:lang="en">sometimes not qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] in at most 99.9% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
     
 
 
     <!-- https://w3id.org/linkflows/superpattern/terms/sometimesQualifier -->
 
 
-    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/sometimesQualifier"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/linkflows/superpattern/terms/sometimesQualifier">
+        <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/sometimesQualifier"/>
+        <rdfs:label xml:lang="en">sometimes qualifier</rdfs:label>
+        <skos:definition xml:lang="en">[subj] in at least 0.10% of cases [has relation] with [obj]</skos:definition>
+    </owl:NamedIndividual>
     
 
 
@@ -936,61 +864,6 @@
         <rdfs:label xml:lang="en">affects</rdfs:label>
         <skos:definition xml:lang="en">[subj] has an effect on the activity of [obj]</skos:definition>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/alwaysQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/alwaysQualifier"/>
-        <rdfs:label xml:lang="en">always qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in all 100% cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canAlwaysQualifier"/>
-        <rdfs:label xml:lang="en">can always qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in all 100% cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canFrequentlyNotQualifier"/>
-        <rdfs:label xml:lang="en">can frequently not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at most 90% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canFrequentlyQualifier"/>
-        <rdfs:label xml:lang="en">can frequently qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at least 10% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canGenerallyNotQualifier"/>
-        <rdfs:label xml:lang="en">can generally not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at most 10% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canGenerallyQualifier"/>
-        <rdfs:label xml:lang="en">can generally qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at least 90% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canMostlyNotQualifier"/>
-        <rdfs:label xml:lang="en">can mostly not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at most 50% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canMostlyQualifier"/>
-        <rdfs:label xml:lang="en">can mostly qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at least 50% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canNeverQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canNeverQualifier"/>
-        <rdfs:label xml:lang="en">can never qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in 0% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canSometimesNotQualifier"/>
-        <rdfs:label xml:lang="en">can sometimes not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at most 99.9% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canSometimesQualifier"/>
-        <rdfs:label xml:lang="en">can sometimes qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at least 0.10% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/comparesTo">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/comparesTo"/>
         <rdfs:label xml:lang="en">compares to</rdfs:label>
@@ -1000,21 +873,6 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/frequentlyNotQualifier"/>
         <rdfs:label xml:lang="en">frequently not qualifier</rdfs:label>
         <skos:definition xml:lang="en">[subj] in at most 90% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/frequentlyQualifier"/>
-        <rdfs:label xml:lang="en">frequently qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at least 10% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/generallyNotQualifier"/>
-        <rdfs:label xml:lang="en">generally not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at most 10% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/generallyQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/generallyQualifier"/>
-        <rdfs:label xml:lang="en">generally qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at least 90% of cases [has relation] with [obj]</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasCausalRelationWith"/>
@@ -1030,31 +888,6 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/isSameAs"/>
         <rdfs:label xml:lang="en">is same as</rdfs:label>
         <skos:definition xml:lang="en">[subj] and [obj] are the same individual</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/mostlyNotQualifier"/>
-        <rdfs:label xml:lang="en">mostly not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at most 50% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/mostlyQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/mostlyQualifier"/>
-        <rdfs:label xml:lang="en">mostly qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at least 50% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/neverQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/neverQualifier"/>
-        <rdfs:label xml:lang="en">never qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in 0% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/sometimesNotQualifier"/>
-        <rdfs:label xml:lang="en">sometimes not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at most 99.9% of cases [has relation] with [obj]</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/sometimesQualifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/sometimesQualifier"/>
-        <rdfs:label xml:lang="en">sometimes qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at least 0.10% of cases [has relation] with [obj]</skos:definition>
     </rdf:Description>
 </rdf:RDF>
 

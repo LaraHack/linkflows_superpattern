@@ -72,6 +72,20 @@
     "@value" : "the class of all instantiations of the super pattern"
   } ]
 }, {
+  "@id" : "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/linkflows/superpattern/latest/SuperPatternQualifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SuperPattern qualifier"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "the class for qualifiers used in the super pattern"
+  } ]
+}, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/affects",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -96,10 +110,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/alwaysQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/alwaysQualifier"
   } ],
@@ -107,19 +118,13 @@
     "@language" : "en",
     "@value" : "always qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] in all 100% cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canAlwaysQualifier"
   } ],
@@ -127,19 +132,13 @@
     "@language" : "en",
     "@value" : "can always qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] can in all 100% cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canFrequentlyNotQualifier"
   } ],
@@ -147,19 +146,13 @@
     "@language" : "en",
     "@value" : "can frequently not qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] can in at most 90% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canFrequentlyQualifier"
   } ],
@@ -167,19 +160,13 @@
     "@language" : "en",
     "@value" : "can frequently qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] can in at least 10% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canGenerallyNotQualifier"
   } ],
@@ -187,19 +174,13 @@
     "@language" : "en",
     "@value" : "can generally not qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] can in at most 10% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canGenerallyQualifier"
   } ],
@@ -207,19 +188,13 @@
     "@language" : "en",
     "@value" : "can generally qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] can in at least 90% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canMostlyNotQualifier"
   } ],
@@ -227,19 +202,13 @@
     "@language" : "en",
     "@value" : "can mostly not qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] can in at most 50% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canMostlyQualifier"
   } ],
@@ -247,19 +216,13 @@
     "@language" : "en",
     "@value" : "can mostly qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] can in at least 50% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canNeverQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canNeverQualifier"
   } ],
@@ -267,19 +230,13 @@
     "@language" : "en",
     "@value" : "can never qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] can in 0% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canSometimesNotQualifier"
   } ],
@@ -287,28 +244,19 @@
     "@language" : "en",
     "@value" : "can sometimes not qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] can in at most 99.9% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/canSometimesQualifier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "can sometimes qualifier"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -497,10 +445,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/frequentlyQualifier"
   } ],
@@ -508,19 +453,13 @@
     "@language" : "en",
     "@value" : "frequently qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] in at least 10% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/generallyNotQualifier"
   } ],
@@ -528,28 +467,19 @@
     "@language" : "en",
     "@value" : "generally not qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] in at most 10% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/generallyQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/generallyQualifier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "generally qualifier"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1002,10 +932,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/mostlyNotQualifier"
   } ],
@@ -1013,19 +940,13 @@
     "@language" : "en",
     "@value" : "mostly not qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] in at most 50% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/mostlyQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/mostlyQualifier"
   } ],
@@ -1033,28 +954,19 @@
     "@language" : "en",
     "@value" : "mostly qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] in at least 50% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/neverQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/neverQualifier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "never qualifier"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1108,10 +1020,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/sometimesNotQualifier"
   } ],
@@ -1119,28 +1028,19 @@
     "@language" : "en",
     "@value" : "sometimes not qualifier"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] in at most 99.9% of cases [has relation] with [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/sometimesQualifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/sometimesQualifier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "sometimes qualifier"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
