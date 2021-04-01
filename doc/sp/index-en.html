@@ -6,11 +6,11 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Mon Mar 22 15:39:17 EET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Thu Apr 01 14:29:00 CEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
-<script src="resources/jquery.js"></script>
-<script src="resources/marked.min.js"></script>
-    <script>
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,13 +40,13 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t);
+	  $("#toc").html(t); 
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };
-   </script>
-  </head>
+ }; 
+   </script> 
+  </head> 
 
 <body>
 <div class="container">
@@ -73,37 +73,12 @@ function loadTOC(){
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.</span>
 </div>
-<div id="toc"></div>
+<div id="toc"></div> 
 
-<!--INTRODUCTION SECTION-->
-    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
+<h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
 <p>In order to be able to express in a formal way the main claim(s) of a scientific article expressed as an AIDA sentence, we have developed a new ontology that encompasses a super-pattern. As the main claims cannot be expressed as simple statements that can be formalized using RDF technologies, developing a super-pattern was necessary. The main parts of this super-pattern are the context, subject and object classes. The subject and object need to be in the context of the context class, while the subject and the object are linked through a relation. This relation also includes a qualifier to make the relation between the subject and object more specific. An example of the instantiation of the super-pattern is shown in the diagram below. As such, in the context of all “persons”, things of type “obesity and metabolic abnormality” “generally” have a relation of type “co-occurs with” to things of type “knee osteoarthritis”:</p>
 <div style="text-align:center;"><img src="sections/sp-example-diagram.svg" alt="" width="50%" height="50%"></div>
-<div id="namespacedeclarations">
-<h3 id="ns" class="list">Namespace declarations</h3>
-<div id="ns" align="center">
-<table>
-<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
-<tbody>
-<tr><td><b>sp</b></td><td>&lt;https://w3id.org/linkflows/superpattern/terms/SP-Ontology&gt;</td></tr>
-<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
-<tr><td><b>linkflows-ttl</b></td><td>&lt;https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl&gt;</td></tr>
-<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
-<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
-<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-<tr><td><b>orcid-org</b></td><td>&lt;https://orcid.org&gt;</td></tr>
-<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
-<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
-<tr><td><b>terms1</b></td><td>&lt;https://w3id.org/linkflows/superpattern/terms&gt;</td></tr>
-<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
-<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1&gt;</td></tr>
-<tr><td><b>latest</b></td><td>&lt;https://w3id.org/linkflows/superpattern/latest&gt;</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
 
 
 <!--OVERVIEW SECTION-->
@@ -332,7 +307,7 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul>
 </div>
-
+  
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">Linkflows SuperPattern Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -340,7 +315,7 @@ This ontology has the following classes and properties.</span>
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
 </div>
-
+   
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Linkflows SuperPattern Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -2259,7 +2234,7 @@ This section provides details for each class and property defined by Linkflows S
 </div>
 </div>
 </div>
-
+    
 
 <!--REFERENCES SECTION-->
   <div id="references">
