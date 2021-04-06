@@ -1587,7 +1587,7 @@
     rdfs:subPropertyOf foaf:member ;
     rdfs:domain owl:Class ;
     rdfs:range sp:PotentialActivity ;
-    skos:definition "[subj] has an effect on the activity of [obj]"@en ;
+    skos:definition "[subj] affects the activity of [obj] in the sense of positively or negatively affecting its intensity or frequency"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -1630,7 +1630,7 @@
     rdfs:subPropertyOf sp:affects ;
     rdfs:domain owl:Class ;
     rdfs:range sp:PotentialActivity ;
-    skos:definition "[subj] supports the activity of [obj]"@en ;
+    skos:definition "[subj] contributes to the activity of [obj] in sense of positively affecting its intensity or frequency"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -1716,7 +1716,7 @@
     rdfs:subPropertyOf sp:affects ;
     rdfs:domain owl:Class ;
     rdfs:range sp:PotentialActivity ;
-    skos:definition "[subj] hinders the activity of [obj]"@en ;
+    skos:definition "[subj] inhibits the activity of [obj] in sense of negatively affecting its intensity or frequency"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -1933,7 +1933,7 @@
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
     rdfs:domain owl:Class ;
     rdfs:range owl:Class ;
-    skos:definition "[subj] creates the existence of [obj]"@en ;
+    skos:definition "[subj] causes the existence of [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -1976,7 +1976,7 @@
     rdfs:subPropertyOf sp:causes ;
     rdfs:domain owl:Class ;
     rdfs:range owl:Class ;
-    skos:definition "[subj] creates the existence of [obj], and [obj] would not exist if [subj] did not exist"@en ;
+    skos:definition "[subj] causes the existence of [obj], and [obj] would not exist if [subj] did not exist"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -2020,7 +2020,7 @@
     rdfs:domain owl:Class ;
     rdfs:range owl:Class ;
     owl:inverseOf sp:causes ;
-    skos:definition "inverse of causes"@en ;
+    skos:definition "the existence of [subj] is caused by [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
 
