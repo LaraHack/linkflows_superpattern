@@ -1020,7 +1020,6 @@
   sp:hasContextClass rdfs:label "has context class"@en ;
     a rdf:Property ;
     rdfs:domain sp:SuperPatternInstance;
-    rdfs:range owl:Class;
     skos:definition "links a superpattern instance to its context class"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1062,7 +1061,6 @@
   sp:hasSubjectClass rdfs:label "has subject class"@en ;
     a rdf:Property ;
     rdfs:domain sp:SuperPatternInstance;
-    rdfs:range owl:Class;
     skos:definition "links a superpattern instance to its subject class"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1104,7 +1102,6 @@
   sp:hasObjectClass rdfs:label "has object class"@en ;
     a rdf:Property ;
     rdfs:domain sp:SuperPatternInstance;
-    rdfs:range owl:Class;
     skos:definition "links a superpattern instance to its object class"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1145,8 +1142,7 @@
 :assertion {
   sp:hasQualifier rdfs:label "has qualifier"@en ;
     a rdf:Property ;
-    rdfs:domain owl:Class ;
-    # rdfs:range sp:Qualifier ;
+    rdfs:range sp:SuperPatternQualifier ;
     skos:definition "links a subject class from a superpattern instance to its qualifier class"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1277,8 +1273,6 @@
   sp:isSameAs rdfs:label "is same as"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf foaf:member ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[subj] and [obj] are the same individual"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1582,8 +1576,6 @@
   sp:hasCausalRelationWith rdfs:label "has causal relation with"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf foaf:member ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[subj] has causal relation with [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1625,7 +1617,6 @@
   sp:affects rdfs:label "affects"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf foaf:member ;
-    rdfs:domain owl:Class ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] affects the activity of [obj] in the sense of positively or negatively affecting its intensity or frequency"@en ;
     rdfs:isDefinedBy latest: .
@@ -1668,7 +1659,6 @@
   sp:contributesTo rdfs:label "contributes to"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:affects ;
-    rdfs:domain owl:Class ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] contributes to the activity of [obj] in sense of positively affecting its intensity or frequency"@en ;
     rdfs:isDefinedBy latest: .
@@ -1711,7 +1701,6 @@
   sp:enables rdfs:label "enables"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:contributesTo ;
-    rdfs:domain owl:Class ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] causes the activity to happen"@en ;
     rdfs:isDefinedBy latest: .
@@ -1754,7 +1743,6 @@
   sp:inhibits rdfs:label "inhibits"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:affects ;
-    rdfs:domain owl:Class ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] inhibits the activity of [obj] in sense of negatively affecting its intensity or frequency"@en ;
     rdfs:isDefinedBy latest: .
@@ -1797,7 +1785,6 @@
   sp:prevents rdfs:label "prevents"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:inhibits ;
-    rdfs:domain owl:Class ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] causes the activity [obj] not to happen"@en ;
     rdfs:isDefinedBy latest: .
@@ -1840,7 +1827,6 @@
   sp:increases rdfs:label "increases"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
-    rdfs:domain owl:Class ;
     rdfs:range sp:QuantifiableThing ;
     skos:definition "[subj] causes the value of [obj] to increase"@en ;
     rdfs:isDefinedBy latest: .
@@ -1884,7 +1870,6 @@
   sp:decreases rdfs:label "decreases"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
-    rdfs:domain owl:Class ;
     rdfs:range sp:QuantifiableThing ;
     skos:definition "[subj] causes the value of [obj] to decrease"@en ;
     rdfs:isDefinedBy latest: .
@@ -1928,8 +1913,6 @@
   sp:requires rdfs:label "requires"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[subj] would not exist if [obj] did not exist"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1971,8 +1954,6 @@
   sp:causes rdfs:label "causes"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[subj] causes the existence of [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -2014,8 +1995,6 @@
   sp:isNecessaryAndSufficientFor rdfs:label "is necessary and sufficient for"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:causes ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[subj] causes the existence of [obj], and [obj] would not exist if [subj] did not exist"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -2057,8 +2036,6 @@
   sp:isCausedBy rdfs:label "is caused by"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     owl:inverseOf sp:causes ;
     skos:definition "the existence of [subj] is caused by [obj]"@en ;
     rdfs:isDefinedBy latest: .
@@ -2101,8 +2078,6 @@
   sp:hasSpatiotemporalRelationWith rdfs:label "has spatio-temporal relation with"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf foaf:member ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[subj] has a spatial and/or temporal relation with [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -2144,8 +2119,6 @@
   sp:includes rdfs:label "includes"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[subj] spatiotemporally includes [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -2187,8 +2160,6 @@
   sp:isIncludedIn rdfs:label "is included in"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[obj] spatiotemporally includes [subj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -2230,8 +2201,6 @@
   sp:coOccursWith rdfs:label "co occurs with"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[subj] is close to [obj] in terms of space and time"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -2273,8 +2242,6 @@
   sp:isFollowedBy rdfs:label "is followed by"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[subj] comes into existence before [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -2316,8 +2283,6 @@
   sp:follows rdfs:label "follows"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[obj] comes into existence before [subj]"@en ;
     rdfs:isDefinedBy latest: .
 }
