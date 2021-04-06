@@ -9,14 +9,14 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:terms1="https://w3id.org/linkflows/superpattern/terms/">
+     xmlns:terms="https://w3id.org/linkflows/superpattern/terms/"
+     xmlns:terms1="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/linkflows/superpattern/terms/SP-Ontology">
-        <terms:creator rdf:resource="https://orcid.org/0000-0002-1267-0234"/>
-        <terms:creator rdf:resource="https://orcid.org/0000-0002-7114-6459"/>
-        <terms:description>This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <terms:title>Linkflows SuperPattern Ontology</terms:title>
+        <terms1:creator rdf:resource="https://orcid.org/0000-0002-1267-0234"/>
+        <terms1:creator rdf:resource="https://orcid.org/0000-0002-7114-6459"/>
+        <terms1:description>This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.</terms1:description>
+        <terms1:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms1:title>Linkflows SuperPattern Ontology</terms1:title>
         <vann:preferredNamespacePrefix>sp</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/linkflows/superpattern/terms/</vann:preferredNamespaceUri>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/SP-Ontology"/>
@@ -120,6 +120,15 @@
     
 
 
+    <!-- https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">
+        <rdfs:domain rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- https://w3id.org/linkflows/superpattern/terms/hasQualifier -->
 
 
@@ -128,6 +137,33 @@
         <rdfs:label xml:lang="en">has qualifier</rdfs:label>
         <skos:definition xml:lang="en">links a subject class from a superpattern instance to its qualifier class</skos:definition>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/hasSameValueAs -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">
+        <rdfs:domain rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">
+        <rdfs:domain rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">
+        <rdfs:domain rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
     </owl:AnnotationProperty>
     
 
@@ -167,7 +203,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/affects">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/PotentialActivity"/>
     </owl:ObjectProperty>
     
 
@@ -181,7 +217,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/causes"/>
         <rdfs:label xml:lang="en">causes</rdfs:label>
-        <skos:definition xml:lang="en">[subj] creates the existence of [obj]</skos:definition>
+        <skos:definition xml:lang="en">[subj] causes the existence of [obj]</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -204,8 +240,8 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/comparesTo">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:domain rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
     </owl:ObjectProperty>
     
 
@@ -216,10 +252,10 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/contributesTo">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/affects"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/PotentialActivity"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/contributesTo"/>
         <rdfs:label xml:lang="en">contributes to</rdfs:label>
-        <skos:definition xml:lang="en">[subj] supports the activity of [obj]</skos:definition>
+        <skos:definition xml:lang="en">[subj] contributes to the activity of [obj] in sense of positively affecting its intensity or frequency</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -230,7 +266,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/decreases">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/decreases"/>
         <rdfs:label xml:lang="en">decreases</rdfs:label>
         <skos:definition xml:lang="en">[subj] causes the value of [obj] to decrease</skos:definition>
@@ -244,7 +280,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/enables">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/contributesTo"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/PotentialActivity"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/enables"/>
         <rdfs:label xml:lang="en">enables</rdfs:label>
         <skos:definition xml:lang="en">[subj] causes the activity to happen</skos:definition>
@@ -304,8 +340,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/comparesTo"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:domain rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasDifferentValueFrom"/>
         <rdfs:label xml:lang="en">has different value from</rdfs:label>
         <skos:definition xml:lang="en">[quantifiable-subj] has a value that is different from [quantifiable-obj]</skos:definition>
@@ -318,11 +354,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasLargerValueThan"/>
-        <rdfs:label xml:lang="en">has a larger value than</rdfs:label>
-        <skos:definition xml:lang="en">[quantifiable-subj] has a larger value than [quantifiable-obj]</skos:definition>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
     </owl:ObjectProperty>
     
 
@@ -358,11 +390,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasSameValueAs"/>
-        <rdfs:label xml:lang="en">has same value as</rdfs:label>
-        <skos:definition xml:lang="en">[quantifiable-subj] has the same value as [quantifiable-obj]</skos:definition>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
     </owl:ObjectProperty>
     
 
@@ -372,11 +400,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/comparesTo"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasSimilarValueAs"/>
-        <rdfs:label xml:lang="en">has similar value as</rdfs:label>
-        <skos:definition xml:lang="en">[quantifiable-subj] has a value that is similar with [quantifiable-obj]</skos:definition>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
     </owl:ObjectProperty>
     
 
@@ -386,11 +410,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasSmallerValueThan"/>
-        <rdfs:label xml:lang="en">has a smaller value than</rdfs:label>
-        <skos:definition xml:lang="en">[quantifiable-subj] has a smaller value than [quantifiable-obj]</skos:definition>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
     </owl:ObjectProperty>
     
 
@@ -438,7 +458,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/increases">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/increases"/>
         <rdfs:label xml:lang="en">increases</rdfs:label>
         <skos:definition xml:lang="en">[subj] causes the value of [obj] to increase</skos:definition>
@@ -452,10 +472,10 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/inhibits">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/affects"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/PotentialActivity"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/inhibits"/>
         <rdfs:label xml:lang="en">inhibits</rdfs:label>
-        <skos:definition xml:lang="en">[subj] hinders the activity of [obj]</skos:definition>
+        <skos:definition xml:lang="en">[subj] inhibits the activity of [obj] in sense of negatively affecting its intensity or frequency</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -470,7 +490,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/isCausedBy"/>
         <rdfs:label xml:lang="en">is caused by</rdfs:label>
-        <skos:definition xml:lang="en">inverse of causes</skos:definition>
+        <skos:definition xml:lang="en">the existence of [subj] is caused by [obj]</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -512,7 +532,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/isNecessaryAndSufficientFor"/>
         <rdfs:label xml:lang="en">is necessary and sufficient for</rdfs:label>
-        <skos:definition xml:lang="en">[subj] creates the existence of [obj], and [obj] would not exist if [subj] did not exist</skos:definition>
+        <skos:definition xml:lang="en">[subj] causes the existence of [obj], and [obj] would not exist if [subj] did not exist</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -533,7 +553,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/prevents">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/inhibits"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:range rdf:resource="https://w3id.org/linkflows/superpattern/terms/PotentialActivity"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/prevents"/>
         <rdfs:label xml:lang="en">prevents</rdfs:label>
         <skos:definition xml:lang="en">[subj] causes the activity [obj] not to happen</skos:definition>
@@ -581,6 +601,20 @@
     
 
 
+    <!-- https://w3id.org/linkflows/superpattern/terms/PotentialActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/PotentialActivity"/>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/QuantifiableThing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"/>
+    
+
+
     <!-- https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance -->
 
 
@@ -619,6 +653,24 @@
      -->
 
 
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/PotentialActivity -->
+
+
+    <owl:Thing rdf:about="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- https://w3id.org/linkflows/superpattern/terms/QuantifiableThing -->
+
+
+    <owl:Thing rdf:about="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
     
 
 
@@ -859,10 +911,20 @@
      -->
 
 
+    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/PotentialActivity"/>
+        <rdfs:label xml:lang="en">Potential Activity</rdfs:label>
+        <skos:definition xml:lang="en">an activity that can happen or not</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/QuantifiableThing"/>
+        <rdfs:label xml:lang="en">Quantifiable Thing</rdfs:label>
+        <skos:definition xml:lang="en">a thing that can be quantified</skos:definition>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/affects">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/affects"/>
         <rdfs:label xml:lang="en">affects</rdfs:label>
-        <skos:definition xml:lang="en">[subj] has an effect on the activity of [obj]</skos:definition>
+        <skos:definition xml:lang="en">[subj] affects the activity of [obj] in the sense of positively or negatively affecting its intensity or frequency</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/comparesTo">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/comparesTo"/>
@@ -879,10 +941,35 @@
         <rdfs:label xml:lang="en">has causal relation with</rdfs:label>
         <skos:definition xml:lang="en">[subj] has causal relation with [obj]</skos:definition>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasLargerValueThan"/>
+        <rdfs:label xml:lang="en">has a larger value than</rdfs:label>
+        <skos:definition xml:lang="en">[quantifiable-subj] has a larger value than [quantifiable-obj]</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasSameValueAs"/>
+        <rdfs:label xml:lang="en">has same value as</rdfs:label>
+        <skos:definition xml:lang="en">[quantifiable-subj] has the same value as [quantifiable-obj]</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasSimilarValueAs"/>
+        <rdfs:label xml:lang="en">has similar value as</rdfs:label>
+        <skos:definition xml:lang="en">[quantifiable-subj] has a value that is similar with [quantifiable-obj]</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasSmallerValueThan"/>
+        <rdfs:label xml:lang="en">has a smaller value than</rdfs:label>
+        <skos:definition xml:lang="en">[quantifiable-subj] has a smaller value than [quantifiable-obj]</skos:definition>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/hasSpatiotemporalRelationWith"/>
         <rdfs:label xml:lang="en">has spatio-temporal relation with</rdfs:label>
         <skos:definition xml:lang="en">[subj] has a spatial and/or temporal relation with [obj]</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/isInContext">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/isInContext"/>
+        <rdfs:label xml:lang="en">is in context</rdfs:label>
+        <skos:definition xml:lang="en">links subject and object instances to context instances</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/isSameAs">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/isSameAs"/>

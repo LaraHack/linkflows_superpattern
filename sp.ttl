@@ -22,6 +22,16 @@
   <http://www.w3.org/2000/01/rdf-schema#label> "SuperPattern qualifier"@en;
   <http://www.w3.org/2004/02/skos/core#definition> "the class for qualifiers used in the super pattern"@en .
 
+<https://w3id.org/linkflows/superpattern/terms/PotentialActivity> a <http://www.w3.org/2002/07/owl#Thing>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/PotentialActivity>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Potential Activity"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "an activity that can happen or not"@en .
+
+<https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> a <http://www.w3.org/2002/07/owl#Thing>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/QuantifiableThing>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Quantifiable Thing"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "a thing that can be quantified"@en .
+
 <https://w3id.org/linkflows/superpattern/terms/alwaysQualifier> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
     <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/alwaysQualifier>;
@@ -177,6 +187,11 @@
   <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2004/02/skos/core#definition> "links a subject class to an object class in a superpattern instance"@en .
 
+<https://w3id.org/linkflows/superpattern/terms/isInContext> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/isInContext>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "is in context"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "links subject and object instances to context instances"@en .
+
 <https://w3id.org/linkflows/superpattern/terms/isSameAs> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/isSameAs>;
@@ -186,50 +201,50 @@
   <http://www.w3.org/2004/02/skos/core#definition> "[subj] and [obj] are the same individual"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/comparesTo> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
-  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/comparesTo>;
   <http://www.w3.org/2000/01/rdf-schema#label> "compares to"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/member>;
   <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] compares to the [quantifiable-obj]"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
-  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/hasSimilarValueAs>;
   <http://www.w3.org/2000/01/rdf-schema#label> "has similar value as"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/comparesTo>;
   <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] has a value that is similar with [quantifiable-obj]"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/hasSameValueAs> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
-  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/hasSameValueAs>;
   <http://www.w3.org/2000/01/rdf-schema#label> "has same value as"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs>;
   <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] has the same value as [quantifiable-obj]"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
-  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/hasDifferentValueFrom>;
   <http://www.w3.org/2000/01/rdf-schema#label> "has different value from"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/comparesTo>;
   <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] has a value that is different from [quantifiable-obj]"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
-  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/hasSmallerValueThan>;
   <http://www.w3.org/2000/01/rdf-schema#label> "has a smaller value than"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom>;
   <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] has a smaller value than [quantifiable-obj]"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
-  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/hasLargerValueThan>;
   <http://www.w3.org/2000/01/rdf-schema#label> "has a larger value than"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom>;
   <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] has a larger value than [quantifiable-obj]"@en .
 
@@ -245,23 +260,23 @@
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/affects>;
   <http://www.w3.org/2000/01/rdf-schema#label> "affects"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/PotentialActivity>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/member>;
-  <http://www.w3.org/2004/02/skos/core#definition> "[subj] has an effect on the activity of [obj]"@en .
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] affects the activity of [obj] in the sense of positively or negatively affecting its intensity or frequency"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/contributesTo> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/contributesTo>;
   <http://www.w3.org/2000/01/rdf-schema#label> "contributes to"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/PotentialActivity>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/affects>;
-  <http://www.w3.org/2004/02/skos/core#definition> "[subj] supports the activity of [obj]"@en .
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] contributes to the activity of [obj] in sense of positively affecting its intensity or frequency"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/enables> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/enables>;
   <http://www.w3.org/2000/01/rdf-schema#label> "enables"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/PotentialActivity>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/contributesTo>;
   <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the activity to happen"@en .
 
@@ -269,15 +284,15 @@
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/inhibits>;
   <http://www.w3.org/2000/01/rdf-schema#label> "inhibits"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/PotentialActivity>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/affects>;
-  <http://www.w3.org/2004/02/skos/core#definition> "[subj] hinders the activity of [obj]"@en .
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] inhibits the activity of [obj] in sense of negatively affecting its intensity or frequency"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/prevents> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/prevents>;
   <http://www.w3.org/2000/01/rdf-schema#label> "prevents"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/PotentialActivity>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/inhibits>;
   <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the activity [obj] not to happen"@en .
 
@@ -285,7 +300,7 @@
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/increases>;
   <http://www.w3.org/2000/01/rdf-schema#label> "increases"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith>;
   <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the value of [obj] to increase"@en .
 
@@ -293,7 +308,7 @@
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/decreases>;
   <http://www.w3.org/2000/01/rdf-schema#label> "decreases"@en;
-  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith>;
   <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the value of [obj] to decrease"@en .
 
@@ -311,7 +326,7 @@
   <http://www.w3.org/2000/01/rdf-schema#label> "causes"@en;
   <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith>;
-  <http://www.w3.org/2004/02/skos/core#definition> "[subj] creates the existence of [obj]"@en .
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the existence of [obj]"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
@@ -319,7 +334,7 @@
   <http://www.w3.org/2000/01/rdf-schema#label> "is necessary and sufficient for"@en;
   <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/causes>;
-  <http://www.w3.org/2004/02/skos/core#definition> "[subj] creates the existence of [obj], and [obj] would not exist if [subj] did not exist"@en .
+  <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the existence of [obj], and [obj] would not exist if [subj] did not exist"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/isCausedBy> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
@@ -328,7 +343,7 @@
   <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith>;
   <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/linkflows/superpattern/terms/causes>;
-  <http://www.w3.org/2004/02/skos/core#definition> "inverse of causes"@en .
+  <http://www.w3.org/2004/02/skos/core#definition> "the existence of [subj] is caused by [obj]"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;

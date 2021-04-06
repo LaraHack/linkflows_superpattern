@@ -29,6 +29,34 @@
   "@id" : "http://xmlns.com/foaf/0.1/member",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://w3id.org/linkflows/superpattern/terms/PotentialActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/linkflows/superpattern/latest/PotentialActivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Potential Activity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "an activity that can happen or not"
+  } ]
+}, {
+  "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/linkflows/superpattern/latest/QuantifiableThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Quantifiable Thing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "a thing that can be quantified"
+  } ]
+}, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/SP-Ontology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
@@ -99,14 +127,14 @@
     "@value" : "affects"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/member"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] has an effect on the activity of [obj]"
+    "@value" : "[subj] affects the activity of [obj] in the sense of positively or negatively affecting its intensity or frequency"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/alwaysQualifier",
@@ -283,7 +311,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] creates the existence of [obj]"
+    "@value" : "[subj] causes the existence of [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/coOccursWith",
@@ -312,7 +340,7 @@
   "@id" : "https://w3id.org/linkflows/superpattern/terms/comparesTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/comparesTo"
@@ -322,7 +350,7 @@
     "@value" : "compares to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/member"
@@ -345,14 +373,14 @@
     "@value" : "contributes to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/affects"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] supports the activity of [obj]"
+    "@value" : "[subj] contributes to the activity of [obj] in sense of positively affecting its intensity or frequency"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/decreases",
@@ -368,7 +396,7 @@
     "@value" : "decreases"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
@@ -391,7 +419,7 @@
     "@value" : "enables"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/contributesTo"
@@ -532,7 +560,7 @@
   "@id" : "https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/hasDifferentValueFrom"
@@ -542,7 +570,7 @@
     "@value" : "has different value from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/comparesTo"
@@ -553,9 +581,9 @@
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/hasLargerValueThan"
@@ -565,7 +593,7 @@
     "@value" : "has a larger value than"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"
@@ -633,9 +661,9 @@
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/hasSameValueAs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/hasSameValueAs"
@@ -645,7 +673,7 @@
     "@value" : "has same value as"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs"
@@ -656,9 +684,9 @@
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/hasSimilarValueAs"
@@ -668,7 +696,7 @@
     "@value" : "has similar value as"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/comparesTo"
@@ -679,9 +707,9 @@
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/latest/hasSmallerValueThan"
@@ -691,7 +719,7 @@
     "@value" : "has a smaller value than"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"
@@ -780,7 +808,7 @@
     "@value" : "increases"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
@@ -803,14 +831,14 @@
     "@value" : "inhibits"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/affects"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] hinders the activity of [obj]"
+    "@value" : "[subj] inhibits the activity of [obj] in sense of negatively affecting its intensity or frequency"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/isCausedBy",
@@ -836,7 +864,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "inverse of causes"
+    "@value" : "the existence of [subj] is caused by [obj]"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/isFollowedBy",
@@ -860,6 +888,19 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "[subj] comes into existence before [obj]"
+  } ]
+}, {
+  "@id" : "https://w3id.org/linkflows/superpattern/terms/isInContext",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/linkflows/superpattern/latest/isInContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is in context"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "links subject and object instances to context instances"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/isIncludedIn",
@@ -905,7 +946,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] creates the existence of [obj], and [obj] would not exist if [subj] did not exist"
+    "@value" : "[subj] causes the existence of [obj], and [obj] would not exist if [subj] did not exist"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/isSameAs",
@@ -986,7 +1027,7 @@
     "@value" : "prevents"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
+    "@id" : "https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/inhibits"
