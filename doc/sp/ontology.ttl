@@ -58,14 +58,57 @@
                                                         rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/member> .
 
 
+###  https://w3id.org/linkflows/superpattern/terms/causes
+<https://w3id.org/linkflows/superpattern/terms/causes> rdf:type owl:AnnotationProperty ;
+                                                       rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/coOccursWith
+<https://w3id.org/linkflows/superpattern/terms/coOccursWith> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/coOccursWith> ;
+                                                             rdfs:label "co occurs with"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "[subj] is close to [obj] in terms of space and time"@en ;
+                                                             rdf:type owl:AnnotationProperty ;
+                                                             rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> .
+
+
 ###  https://w3id.org/linkflows/superpattern/terms/comparesTo
 <https://w3id.org/linkflows/superpattern/terms/comparesTo> rdf:type owl:AnnotationProperty ;
-                                                           rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/member> .
+                                                           rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/member> ;
+                                                           rdfs:domain <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/decreases
+<https://w3id.org/linkflows/superpattern/terms/decreases> rdf:type owl:AnnotationProperty ;
+                                                          rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/follows
+<https://w3id.org/linkflows/superpattern/terms/follows> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/follows> ;
+                                                        rdfs:label "follows"@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> "[obj] comes into existence before [subj]"@en ;
+                                                        rdf:type owl:AnnotationProperty ;
+                                                        rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith
-<https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> rdf:type owl:AnnotationProperty ;
+<https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasCausalRelationWith> ;
+                                                                      rdfs:label "has causal relation with"@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "[subj] has causal relation with [obj]"@en ;
+                                                                      rdf:type owl:AnnotationProperty ;
                                                                       rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/member> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/hasContextClass
+<https://w3id.org/linkflows/superpattern/terms/hasContextClass> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasContextClass> ;
+                                                                rdfs:label "has context class"@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "links a superpattern instance to its context class"@en ;
+                                                                rdf:type owl:AnnotationProperty ;
+                                                                rdfs:domain <https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom
+<https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom> rdf:type owl:AnnotationProperty ;
+                                                                      rdfs:domain <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan
@@ -73,12 +116,12 @@
                                                                    rdfs:domain <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> .
 
 
-###  https://w3id.org/linkflows/superpattern/terms/hasQualifier
-<https://w3id.org/linkflows/superpattern/terms/hasQualifier> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasQualifier> ;
-                                                             rdfs:label "has qualifier"@en ;
-                                                             <http://www.w3.org/2004/02/skos/core#definition> "links a subject class from a superpattern instance to its qualifier class"@en ;
-                                                             rdf:type owl:AnnotationProperty ;
-                                                             rdfs:domain owl:Class .
+###  https://w3id.org/linkflows/superpattern/terms/hasObjectClass
+<https://w3id.org/linkflows/superpattern/terms/hasObjectClass> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasObjectClass> ;
+                                                               rdfs:label "has object class"@en ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "links a superpattern instance to its object class"@en ;
+                                                               rdf:type owl:AnnotationProperty ;
+                                                               rdfs:domain <https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance> .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/hasSameValueAs
@@ -97,13 +140,69 @@
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith
-<https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> rdf:type owl:AnnotationProperty ;
+<https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasSpatiotemporalRelationWith> ;
+                                                                              rdfs:label "has spatio-temporal relation with"@en ;
+                                                                              <http://www.w3.org/2004/02/skos/core#definition> "[subj] has a spatial and/or temporal relation with [obj]"@en ;
+                                                                              rdf:type owl:AnnotationProperty ;
                                                                               rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/member> .
 
 
+###  https://w3id.org/linkflows/superpattern/terms/hasSubjectClass
+<https://w3id.org/linkflows/superpattern/terms/hasSubjectClass> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasSubjectClass> ;
+                                                                rdfs:label "has subject class"@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "links a superpattern instance to its subject class"@en ;
+                                                                rdf:type owl:AnnotationProperty ;
+                                                                rdfs:domain <https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/includes
+<https://w3id.org/linkflows/superpattern/terms/includes> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/includes> ;
+                                                         rdfs:label "includes"@en ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] spatiotemporally includes [obj]"@en ;
+                                                         rdf:type owl:AnnotationProperty ;
+                                                         rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/increases
+<https://w3id.org/linkflows/superpattern/terms/increases> rdf:type owl:AnnotationProperty ;
+                                                          rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/isCausedBy
+<https://w3id.org/linkflows/superpattern/terms/isCausedBy> rdf:type owl:AnnotationProperty ;
+                                                           rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/isFollowedBy
+<https://w3id.org/linkflows/superpattern/terms/isFollowedBy> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isFollowedBy> ;
+                                                             rdfs:label "is followed by"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "[subj] comes into existence before [obj]"@en ;
+                                                             rdf:type owl:AnnotationProperty ;
+                                                             rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/isIncludedIn
+<https://w3id.org/linkflows/superpattern/terms/isIncludedIn> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isIncludedIn> ;
+                                                             rdfs:label "is included in"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "[obj] spatiotemporally includes [subj]"@en ;
+                                                             rdf:type owl:AnnotationProperty ;
+                                                             rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> .
+
+
 ###  https://w3id.org/linkflows/superpattern/terms/isSameAs
-<https://w3id.org/linkflows/superpattern/terms/isSameAs> rdf:type owl:AnnotationProperty ;
+<https://w3id.org/linkflows/superpattern/terms/isSameAs> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isSameAs> ;
+                                                         rdfs:label "is same as"@en ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] and [obj] are the same individual"@en ;
+                                                         rdf:type owl:AnnotationProperty ;
                                                          rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/member> .
+
+
+###  https://w3id.org/linkflows/superpattern/terms/requires
+<https://w3id.org/linkflows/superpattern/terms/requires> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/requires> ;
+                                                         rdfs:label "requires"@en ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] would not exist if [obj] did not exist"@en ;
+                                                         rdf:type owl:AnnotationProperty ;
+                                                         rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> .
 
 
 #################################################################
@@ -112,40 +211,21 @@
 
 ###  https://w3id.org/linkflows/superpattern/terms/affects
 <https://w3id.org/linkflows/superpattern/terms/affects> rdf:type owl:ObjectProperty ;
-                                                        rdfs:domain owl:Class ;
                                                         rdfs:range <https://w3id.org/linkflows/superpattern/terms/PotentialActivity> .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/causes
-<https://w3id.org/linkflows/superpattern/terms/causes> rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> ;
-                                                       rdfs:domain owl:Class ;
-                                                       rdfs:range owl:Class ;
-                                                       rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/causes> ;
-                                                       rdfs:label "causes"@en ;
-                                                       <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the existence of [obj]"@en .
-
-
-###  https://w3id.org/linkflows/superpattern/terms/coOccursWith
-<https://w3id.org/linkflows/superpattern/terms/coOccursWith> rdf:type owl:ObjectProperty ;
-                                                             rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> ;
-                                                             rdfs:domain owl:Class ;
-                                                             rdfs:range owl:Class ;
-                                                             rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/coOccursWith> ;
-                                                             rdfs:label "co occurs with"@en ;
-                                                             <http://www.w3.org/2004/02/skos/core#definition> "[subj] is close to [obj] in terms of space and time"@en .
+<https://w3id.org/linkflows/superpattern/terms/causes> rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/comparesTo
 <https://w3id.org/linkflows/superpattern/terms/comparesTo> rdf:type owl:ObjectProperty ;
-                                                           rdfs:domain <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> ;
                                                            rdfs:range <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/contributesTo
 <https://w3id.org/linkflows/superpattern/terms/contributesTo> rdf:type owl:ObjectProperty ;
                                                               rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/affects> ;
-                                                              rdfs:domain owl:Class ;
                                                               rdfs:range <https://w3id.org/linkflows/superpattern/terms/PotentialActivity> ;
                                                               rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/contributesTo> ;
                                                               rdfs:label "contributes to"@en ;
@@ -154,32 +234,16 @@
 
 ###  https://w3id.org/linkflows/superpattern/terms/decreases
 <https://w3id.org/linkflows/superpattern/terms/decreases> rdf:type owl:ObjectProperty ;
-                                                          rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> ;
-                                                          rdfs:domain owl:Class ;
-                                                          rdfs:range <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> ;
-                                                          rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/decreases> ;
-                                                          rdfs:label "decreases"@en ;
-                                                          <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the value of [obj] to decrease"@en .
+                                                          rdfs:range <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/enables
 <https://w3id.org/linkflows/superpattern/terms/enables> rdf:type owl:ObjectProperty ;
                                                         rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/contributesTo> ;
-                                                        rdfs:domain owl:Class ;
                                                         rdfs:range <https://w3id.org/linkflows/superpattern/terms/PotentialActivity> ;
                                                         rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/enables> ;
                                                         rdfs:label "enables"@en ;
                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the activity to happen"@en .
-
-
-###  https://w3id.org/linkflows/superpattern/terms/follows
-<https://w3id.org/linkflows/superpattern/terms/follows> rdf:type owl:ObjectProperty ;
-                                                        rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> ;
-                                                        rdfs:domain owl:Class ;
-                                                        rdfs:range owl:Class ;
-                                                        rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/follows> ;
-                                                        rdfs:label "follows"@en ;
-                                                        <http://www.w3.org/2004/02/skos/core#definition> "[obj] comes into existence before [subj]"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier
@@ -188,29 +252,10 @@
                                                                        rdfs:range rdf:Property .
 
 
-###  https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith
-<https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> rdf:type owl:ObjectProperty ;
-                                                                      rdfs:domain owl:Class ;
-                                                                      rdfs:range owl:Class .
-
-
-###  https://w3id.org/linkflows/superpattern/terms/hasContextClass
-<https://w3id.org/linkflows/superpattern/terms/hasContextClass> rdf:type owl:ObjectProperty ;
-                                                                rdfs:domain <https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance> ;
-                                                                rdfs:range owl:Class ;
-                                                                rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasContextClass> ;
-                                                                rdfs:label "has context class"@en ;
-                                                                <http://www.w3.org/2004/02/skos/core#definition> "links a superpattern instance to its context class"@en .
-
-
 ###  https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom
 <https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom> rdf:type owl:ObjectProperty ;
                                                                       rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/comparesTo> ;
-                                                                      rdfs:domain <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> ;
-                                                                      rdfs:range <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> ;
-                                                                      rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasDifferentValueFrom> ;
-                                                                      rdfs:label "has different value from"@en ;
-                                                                      <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] has a value that is different from [quantifiable-obj]"@en .
+                                                                      rdfs:range <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan
@@ -219,13 +264,12 @@
                                                                    rdfs:range <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> .
 
 
-###  https://w3id.org/linkflows/superpattern/terms/hasObjectClass
-<https://w3id.org/linkflows/superpattern/terms/hasObjectClass> rdf:type owl:ObjectProperty ;
-                                                               rdfs:domain <https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance> ;
-                                                               rdfs:range owl:Class ;
-                                                               rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasObjectClass> ;
-                                                               rdfs:label "has object class"@en ;
-                                                               <http://www.w3.org/2004/02/skos/core#definition> "links a superpattern instance to its object class"@en .
+###  https://w3id.org/linkflows/superpattern/terms/hasQualifier
+<https://w3id.org/linkflows/superpattern/terms/hasQualifier> rdf:type owl:ObjectProperty ;
+                                                             rdfs:range <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
+                                                             rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasQualifier> ;
+                                                             rdfs:label "has qualifier"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "links a subject class from a superpattern instance to its qualifier class"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/hasRelation
@@ -255,45 +299,14 @@
                                                                     rdfs:range <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> .
 
 
-###  https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith
-<https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> rdf:type owl:ObjectProperty ;
-                                                                              rdfs:domain owl:Class ;
-                                                                              rdfs:range owl:Class .
-
-
-###  https://w3id.org/linkflows/superpattern/terms/hasSubjectClass
-<https://w3id.org/linkflows/superpattern/terms/hasSubjectClass> rdf:type owl:ObjectProperty ;
-                                                                rdfs:domain <https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance> ;
-                                                                rdfs:range owl:Class ;
-                                                                rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasSubjectClass> ;
-                                                                rdfs:label "has subject class"@en ;
-                                                                <http://www.w3.org/2004/02/skos/core#definition> "links a superpattern instance to its subject class"@en .
-
-
-###  https://w3id.org/linkflows/superpattern/terms/includes
-<https://w3id.org/linkflows/superpattern/terms/includes> rdf:type owl:ObjectProperty ;
-                                                         rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> ;
-                                                         rdfs:domain owl:Class ;
-                                                         rdfs:range owl:Class ;
-                                                         rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/includes> ;
-                                                         rdfs:label "includes"@en ;
-                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] spatiotemporally includes [obj]"@en .
-
-
 ###  https://w3id.org/linkflows/superpattern/terms/increases
 <https://w3id.org/linkflows/superpattern/terms/increases> rdf:type owl:ObjectProperty ;
-                                                          rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> ;
-                                                          rdfs:domain owl:Class ;
-                                                          rdfs:range <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> ;
-                                                          rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/increases> ;
-                                                          rdfs:label "increases"@en ;
-                                                          <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the value of [obj] to increase"@en .
+                                                          rdfs:range <https://w3id.org/linkflows/superpattern/terms/QuantifiableThing> .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/inhibits
 <https://w3id.org/linkflows/superpattern/terms/inhibits> rdf:type owl:ObjectProperty ;
                                                          rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/affects> ;
-                                                         rdfs:domain owl:Class ;
                                                          rdfs:range <https://w3id.org/linkflows/superpattern/terms/PotentialActivity> ;
                                                          rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/inhibits> ;
                                                          rdfs:label "inhibits"@en ;
@@ -302,69 +315,24 @@
 
 ###  https://w3id.org/linkflows/superpattern/terms/isCausedBy
 <https://w3id.org/linkflows/superpattern/terms/isCausedBy> rdf:type owl:ObjectProperty ;
-                                                           rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> ;
-                                                           owl:inverseOf <https://w3id.org/linkflows/superpattern/terms/causes> ;
-                                                           rdfs:domain owl:Class ;
-                                                           rdfs:range owl:Class ;
-                                                           rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isCausedBy> ;
-                                                           rdfs:label "is caused by"@en ;
-                                                           <http://www.w3.org/2004/02/skos/core#definition> "the existence of [subj] is caused by [obj]"@en .
-
-
-###  https://w3id.org/linkflows/superpattern/terms/isFollowedBy
-<https://w3id.org/linkflows/superpattern/terms/isFollowedBy> rdf:type owl:ObjectProperty ;
-                                                             rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> ;
-                                                             rdfs:domain owl:Class ;
-                                                             rdfs:range owl:Class ;
-                                                             rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isFollowedBy> ;
-                                                             rdfs:label "is followed by"@en ;
-                                                             <http://www.w3.org/2004/02/skos/core#definition> "[subj] comes into existence before [obj]"@en .
-
-
-###  https://w3id.org/linkflows/superpattern/terms/isIncludedIn
-<https://w3id.org/linkflows/superpattern/terms/isIncludedIn> rdf:type owl:ObjectProperty ;
-                                                             rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> ;
-                                                             rdfs:domain owl:Class ;
-                                                             rdfs:range owl:Class ;
-                                                             rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isIncludedIn> ;
-                                                             rdfs:label "is included in"@en ;
-                                                             <http://www.w3.org/2004/02/skos/core#definition> "[obj] spatiotemporally includes [subj]"@en .
+                                                           owl:inverseOf <https://w3id.org/linkflows/superpattern/terms/causes> .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor
 <https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor> rdf:type owl:ObjectProperty ;
                                                                             rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/causes> ;
-                                                                            rdfs:domain owl:Class ;
-                                                                            rdfs:range owl:Class ;
                                                                             rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isNecessaryAndSufficientFor> ;
                                                                             rdfs:label "is necessary and sufficient for"@en ;
                                                                             <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the existence of [obj], and [obj] would not exist if [subj] did not exist"@en .
 
 
-###  https://w3id.org/linkflows/superpattern/terms/isSameAs
-<https://w3id.org/linkflows/superpattern/terms/isSameAs> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain owl:Class ;
-                                                         rdfs:range owl:Class .
-
-
 ###  https://w3id.org/linkflows/superpattern/terms/prevents
 <https://w3id.org/linkflows/superpattern/terms/prevents> rdf:type owl:ObjectProperty ;
                                                          rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/inhibits> ;
-                                                         rdfs:domain owl:Class ;
                                                          rdfs:range <https://w3id.org/linkflows/superpattern/terms/PotentialActivity> ;
                                                          rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/prevents> ;
                                                          rdfs:label "prevents"@en ;
                                                          <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the activity [obj] not to happen"@en .
-
-
-###  https://w3id.org/linkflows/superpattern/terms/requires
-<https://w3id.org/linkflows/superpattern/terms/requires> rdf:type owl:ObjectProperty ;
-                                                         rdfs:subPropertyOf <https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> ;
-                                                         rdfs:domain owl:Class ;
-                                                         rdfs:range owl:Class ;
-                                                         rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/requires> ;
-                                                         rdfs:label "requires"@en ;
-                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] would not exist if [obj] did not exist"@en .
 
 
 #################################################################
@@ -590,9 +558,19 @@ owl:Class rdf:type owl:Class .
                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] affects the activity of [obj] in the sense of positively or negatively affecting its intensity or frequency"@en .
 
 
+<https://w3id.org/linkflows/superpattern/terms/causes> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/causes> ;
+                                                       rdfs:label "causes"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the existence of [obj]"@en .
+
+
 <https://w3id.org/linkflows/superpattern/terms/comparesTo> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/comparesTo> ;
                                                            rdfs:label "compares to"@en ;
                                                            <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] compares to the [quantifiable-obj]"@en .
+
+
+<https://w3id.org/linkflows/superpattern/terms/decreases> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/decreases> ;
+                                                          rdfs:label "decreases"@en ;
+                                                          <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the value of [obj] to decrease"@en .
 
 
 <https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/frequentlyNotQualifier> ;
@@ -600,9 +578,9 @@ owl:Class rdf:type owl:Class .
                                                                        <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at most 90% of cases [has relation] with [obj]"@en .
 
 
-<https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasCausalRelationWith> ;
-                                                                      rdfs:label "has causal relation with"@en ;
-                                                                      <http://www.w3.org/2004/02/skos/core#definition> "[subj] has causal relation with [obj]"@en .
+<https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasDifferentValueFrom> ;
+                                                                      rdfs:label "has different value from"@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] has a value that is different from [quantifiable-obj]"@en .
 
 
 <https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasLargerValueThan> ;
@@ -625,19 +603,19 @@ owl:Class rdf:type owl:Class .
                                                                     <http://www.w3.org/2004/02/skos/core#definition> "[quantifiable-subj] has a smaller value than [quantifiable-obj]"@en .
 
 
-<https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/hasSpatiotemporalRelationWith> ;
-                                                                              rdfs:label "has spatio-temporal relation with"@en ;
-                                                                              <http://www.w3.org/2004/02/skos/core#definition> "[subj] has a spatial and/or temporal relation with [obj]"@en .
+<https://w3id.org/linkflows/superpattern/terms/increases> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/increases> ;
+                                                          rdfs:label "increases"@en ;
+                                                          <http://www.w3.org/2004/02/skos/core#definition> "[subj] causes the value of [obj] to increase"@en .
+
+
+<https://w3id.org/linkflows/superpattern/terms/isCausedBy> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isCausedBy> ;
+                                                           rdfs:label "is caused by"@en ;
+                                                           <http://www.w3.org/2004/02/skos/core#definition> "the existence of [subj] is caused by [obj]"@en .
 
 
 <https://w3id.org/linkflows/superpattern/terms/isInContext> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isInContext> ;
                                                             rdfs:label "is in context"@en ;
                                                             <http://www.w3.org/2004/02/skos/core#definition> "links subject and object instances to context instances"@en .
-
-
-<https://w3id.org/linkflows/superpattern/terms/isSameAs> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isSameAs> ;
-                                                         rdfs:label "is same as"@en ;
-                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] and [obj] are the same individual"@en .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
