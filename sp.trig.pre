@@ -127,6 +127,84 @@
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
 
+@prefix : <https://w3id.org/linkflows/superpattern/np/PotentialActivity/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/PotentialActivity> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:PotentialActivity rdfs:label "Potential Activity"@en ;
+    a owl:Thing ;
+    skos:definition "an activity that can happen or not"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-04-06T15:39:13.507+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/linkflows/superpattern/np/QuantifiableThing/> .
+@prefix latest: <https://w3id.org/linkflows/superpattern/latest/QuantifiableThing> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  sp:QuantifiableThing rdfs:label "Quantifiable Thing"@en ;
+    a owl:Thing ;
+    skos:definition "a thing that can be quantified"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-04-06T15:39:13.507+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
 
 # Qualifier classes definitions:
 
@@ -1203,11 +1281,9 @@
   sp:comparesTo rdfs:label "compares to"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf foaf:member ;
-    # rdfs:domain sp:SP-Quantifiable-Subject-Class;
-    # rdfs:range sp:SP-Quantifiable-Object-Class;
+    rdfs:domain sp:QuantifiableThing ;
+    rdfs:range sp:QuantifiableThing ;
     # owl:Restriction -> owl:cardinality -> owl:onClass
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
     skos:definition "[quantifiable-subj] compares to the [quantifiable-obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1250,10 +1326,8 @@
   sp:hasSimilarValueAs rdfs:label "has similar value as"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:comparesTo ;
-    # rdfs:domain sp:SP-Quantifiable-Subject-Class;
-    # rdfs:range sp:SP-Quantifiable-Object-Class;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
+    rdfs:domain sp:QuantifiableThing ;
+    rdfs:range sp:QuantifiableThing ;
     skos:definition "[quantifiable-subj] has a value that is similar with [quantifiable-obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1295,10 +1369,8 @@
   sp:hasSameValueAs rdfs:label "has same value as"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasSimilarValueAs;
-    # rdfs:domain sp:SP-Quantifiable-Subject-Class;
-    # rdfs:range sp:SP-Quantifiable-Object-Class;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
+    rdfs:domain sp:QuantifiableThing ;
+    rdfs:range sp:QuantifiableThing ;
     skos:definition "[quantifiable-subj] has the same value as [quantifiable-obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1340,10 +1412,8 @@
   sp:hasDifferentValueFrom rdfs:label "has different value from"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:comparesTo ;
-    # rdfs:domain sp:SP-Quantifiable-Subject-Class;
-    # rdfs:range sp:SP-Quantifiable-Object-Class;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
+    rdfs:domain sp:QuantifiableThing ;
+    rdfs:range sp:QuantifiableThing ;
     skos:definition "[quantifiable-subj] has a value that is different from [quantifiable-obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1386,10 +1456,8 @@
   sp:hasSmallerValueThan rdfs:label "has a smaller value than"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasDifferentValueFrom;
-    # rdfs:domain sp:SP-Quantifiable-Subject-Class;
-    # rdfs:range sp:SP-Quantifiable-Object-Class;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
+    rdfs:domain sp:QuantifiableThing ;
+    rdfs:range sp:QuantifiableThing ;
     skos:definition "[quantifiable-subj] has a smaller value than [quantifiable-obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1431,10 +1499,8 @@
   sp:hasLargerValueThan rdfs:label "has a larger value than"@en ;
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasDifferentValueFrom ;
-    # rdfs:domain sp:SP-Quantifiable-Subject-Class;
-    # rdfs:range sp:SP-Quantifiable-Object-Class;
-    rdfs:domain owl:Class ;
-    rdfs:range owl:Class ;
+    rdfs:domain sp:QuantifiableThing ;
+    rdfs:range sp:QuantifiableThing ;
     skos:definition "[quantifiable-subj] has a larger value than [quantifiable-obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1520,8 +1586,7 @@
     a rdf:Property ;
     rdfs:subPropertyOf foaf:member ;
     rdfs:domain owl:Class ;
-    # rdfs:range sp:SP-Potential-Activity-Object-Class ;
-    rdfs:range owl:Class ;
+    rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] has an effect on the activity of [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1564,8 +1629,7 @@
     a rdf:Property ;
     rdfs:subPropertyOf sp:affects ;
     rdfs:domain owl:Class ;
-    # rdfs:range sp:SP-Potential-Activity-Object-Class ;
-    rdfs:range owl:Class ;
+    rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] supports the activity of [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1608,8 +1672,7 @@
     a rdf:Property ;
     rdfs:subPropertyOf sp:contributesTo ;
     rdfs:domain owl:Class ;
-    # rdfs:range sp:SP-Potential-Activity-Object-Class;
-    rdfs:range owl:Class ;
+    rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] causes the activity to happen"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1652,8 +1715,7 @@
     a rdf:Property ;
     rdfs:subPropertyOf sp:affects ;
     rdfs:domain owl:Class ;
-    # rdfs:range sp:SP-Potential-Activity-Object-Class;
-    rdfs:range owl:Class ;
+    rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] hinders the activity of [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1696,8 +1758,7 @@
     a rdf:Property ;
     rdfs:subPropertyOf sp:inhibits ;
     rdfs:domain owl:Class ;
-    # rdfs:range sp:SP-Potential-Activity-Object-Class;
-    rdfs:range owl:Class ;
+    rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] causes the activity [obj] not to happen"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1740,8 +1801,7 @@
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
     rdfs:domain owl:Class ;
-    # rdfs:range sp:SP-Potential-Activity-Object-Class;
-    rdfs:range owl:Class ;
+    rdfs:range sp:QuantifiableThing ;
     skos:definition "[subj] causes the value of [obj] to increase"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1785,8 +1845,7 @@
     a rdf:Property ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
     rdfs:domain owl:Class ;
-    # rdfs:range sp:SP-Potential-Activity-Object-Class;
-    rdfs:range owl:Class ;
+    rdfs:range sp:QuantifiableThing ;
     skos:definition "[subj] causes the value of [obj] to decrease"@en ;
     rdfs:isDefinedBy latest: .
 }
