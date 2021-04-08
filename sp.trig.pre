@@ -1018,7 +1018,7 @@
 
 :assertion {
   sp:hasContextClass rdfs:label "has context class"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:domain sp:SuperPatternInstance;
     skos:definition "links a superpattern instance to its context class"@en ;
     rdfs:isDefinedBy latest: .
@@ -1059,7 +1059,7 @@
 
 :assertion {
   sp:hasSubjectClass rdfs:label "has subject class"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:domain sp:SuperPatternInstance;
     skos:definition "links a superpattern instance to its subject class"@en ;
     rdfs:isDefinedBy latest: .
@@ -1100,7 +1100,7 @@
 
 :assertion {
   sp:hasObjectClass rdfs:label "has object class"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:domain sp:SuperPatternInstance;
     skos:definition "links a superpattern instance to its object class"@en ;
     rdfs:isDefinedBy latest: .
