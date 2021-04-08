@@ -41,7 +41,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -83,7 +83,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -122,7 +122,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -151,7 +151,7 @@
 
 :assertion {
   sp:PotentialActivity rdfs:label "Potential Activity"@en ;
-    a owl:Thing ;
+    a owl:Class ;
     skos:definition "an activity that can happen or not"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -161,7 +161,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -190,7 +190,7 @@
 
 :assertion {
   sp:QuantifiableThing rdfs:label "Quantifiable Thing"@en ;
-    a owl:Thing ;
+    a owl:Class ;
     skos:definition "a thing that can be quantified"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -200,7 +200,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -242,7 +242,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -281,7 +281,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -320,7 +320,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -359,7 +359,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -398,7 +398,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -437,7 +437,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -476,7 +476,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -515,7 +515,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -554,7 +554,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -593,7 +593,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -632,7 +632,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -671,7 +671,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -710,7 +710,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -751,7 +751,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -790,7 +790,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -829,7 +829,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -868,7 +868,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -907,7 +907,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -946,7 +946,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -985,7 +985,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1020,6 +1020,7 @@
   sp:hasContextClass rdfs:label "has context class"@en ;
     a owl:ObjectProperty ;
     rdfs:domain sp:SuperPatternInstance;
+    rdfs:range owl:Class ;
     skos:definition "links a superpattern instance to its context class"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1029,7 +1030,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1061,6 +1062,7 @@
   sp:hasSubjectClass rdfs:label "has subject class"@en ;
     a owl:ObjectProperty ;
     rdfs:domain sp:SuperPatternInstance;
+    rdfs:range owl:Class ;
     skos:definition "links a superpattern instance to its subject class"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1070,7 +1072,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1102,6 +1104,7 @@
   sp:hasObjectClass rdfs:label "has object class"@en ;
     a owl:ObjectProperty ;
     rdfs:domain sp:SuperPatternInstance;
+    rdfs:range owl:Class ;
     skos:definition "links a superpattern instance to its object class"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1111,7 +1114,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1141,7 +1144,8 @@
 
 :assertion {
   sp:hasQualifier rdfs:label "has qualifier"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
+    rdfs:domain sp:SuperPatternInstance ;
     rdfs:range sp:SuperPatternQualifier ;
     skos:definition "links a subject class from a superpattern instance to its qualifier class"@en ;
     rdfs:isDefinedBy latest: .
@@ -1152,7 +1156,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1182,9 +1186,9 @@
 
 :assertion {
   sp:hasRelation rdfs:label "has relation"@en ;
-    a rdf:Property ;
-    rdfs:domain owl:Class ;
-    rdfs:range rdf:Property ;
+    a owl:ObjectProperty ;
+    rdfs:domain sp:SuperPatternInstance ;
+    rdfs:range owl:ObjectProperty ;
     skos:definition "links a subject class to an object class in a superpattern instance"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1194,7 +1198,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1224,7 +1228,7 @@
 
 :assertion {
   sp:isInContext rdfs:label "is in context"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     skos:definition "links subject and object instances to context instances"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1234,7 +1238,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1271,8 +1275,7 @@
 
 :assertion {
   sp:isSameAs rdfs:label "is same as"@en ;
-    a rdf:Property ;
-    rdfs:subPropertyOf foaf:member ;
+    a owl:ObjectProperty ;
     skos:definition "[subj] and [obj] are the same individual"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1282,7 +1285,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1313,8 +1316,7 @@
 
 :assertion {
   sp:comparesTo rdfs:label "compares to"@en ;
-    a rdf:Property ;
-    rdfs:subPropertyOf foaf:member ;
+    a owl:ObjectProperty ;
     rdfs:domain sp:QuantifiableThing ;
     rdfs:range sp:QuantifiableThing ;
     # owl:Restriction -> owl:cardinality -> owl:onClass
@@ -1327,7 +1329,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1358,7 +1360,7 @@
 
 :assertion {
   sp:hasSimilarValueAs rdfs:label "has similar value as"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:comparesTo ;
     rdfs:domain sp:QuantifiableThing ;
     rdfs:range sp:QuantifiableThing ;
@@ -1371,7 +1373,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1401,7 +1403,7 @@
 
 :assertion {
   sp:hasSameValueAs rdfs:label "has same value as"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasSimilarValueAs;
     rdfs:domain sp:QuantifiableThing ;
     rdfs:range sp:QuantifiableThing ;
@@ -1414,7 +1416,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1444,7 +1446,7 @@
 
 :assertion {
   sp:hasDifferentValueFrom rdfs:label "has different value from"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:comparesTo ;
     rdfs:domain sp:QuantifiableThing ;
     rdfs:range sp:QuantifiableThing ;
@@ -1457,7 +1459,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1488,7 +1490,7 @@
 
 :assertion {
   sp:hasSmallerValueThan rdfs:label "has a smaller value than"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasDifferentValueFrom;
     rdfs:domain sp:QuantifiableThing ;
     rdfs:range sp:QuantifiableThing ;
@@ -1501,7 +1503,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1531,7 +1533,7 @@
 
 :assertion {
   sp:hasLargerValueThan rdfs:label "has a larger value than"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasDifferentValueFrom ;
     rdfs:domain sp:QuantifiableThing ;
     rdfs:range sp:QuantifiableThing ;
@@ -1544,7 +1546,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1574,8 +1576,7 @@
 
 :assertion {
   sp:hasCausalRelationWith rdfs:label "has causal relation with"@en ;
-    a rdf:Property ;
-    rdfs:subPropertyOf foaf:member ;
+    a owl:ObjectProperty ;
     skos:definition "[subj] has causal relation with [obj]"@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1585,7 +1586,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1615,8 +1616,8 @@
 
 :assertion {
   sp:affects rdfs:label "affects"@en ;
-    a rdf:Property ;
-    rdfs:subPropertyOf foaf:member ;
+    a owl:ObjectProperty ;
+    rdf:subPropertyOf sp:hasCausalRelationWith ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] affects the activity of [obj] in the sense of positively or negatively affecting its intensity or frequency"@en ;
     rdfs:isDefinedBy latest: .
@@ -1627,7 +1628,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1657,7 +1658,7 @@
 
 :assertion {
   sp:contributesTo rdfs:label "contributes to"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:affects ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] contributes to the activity of [obj] in sense of positively affecting its intensity or frequency"@en ;
@@ -1669,7 +1670,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1699,7 +1700,7 @@
 
 :assertion {
   sp:enables rdfs:label "enables"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:contributesTo ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] causes the activity to happen"@en ;
@@ -1711,7 +1712,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1741,7 +1742,7 @@
 
 :assertion {
   sp:inhibits rdfs:label "inhibits"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:affects ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] inhibits the activity of [obj] in sense of negatively affecting its intensity or frequency"@en ;
@@ -1753,7 +1754,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1783,7 +1784,7 @@
 
 :assertion {
   sp:prevents rdfs:label "prevents"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:inhibits ;
     rdfs:range sp:PotentialActivity ;
     skos:definition "[subj] causes the activity [obj] not to happen"@en ;
@@ -1795,7 +1796,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1825,7 +1826,7 @@
 
 :assertion {
   sp:increases rdfs:label "increases"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
     rdfs:range sp:QuantifiableThing ;
     skos:definition "[subj] causes the value of [obj] to increase"@en ;
@@ -1837,7 +1838,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1868,7 +1869,7 @@
 
 :assertion {
   sp:decreases rdfs:label "decreases"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
     rdfs:range sp:QuantifiableThing ;
     skos:definition "[subj] causes the value of [obj] to decrease"@en ;
@@ -1880,7 +1881,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1911,7 +1912,7 @@
 
 :assertion {
   sp:requires rdfs:label "requires"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
     skos:definition "[subj] would not exist if [obj] did not exist"@en ;
     rdfs:isDefinedBy latest: .
@@ -1922,7 +1923,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1952,7 +1953,7 @@
 
 :assertion {
   sp:causes rdfs:label "causes"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
     skos:definition "[subj] causes the existence of [obj]"@en ;
     rdfs:isDefinedBy latest: .
@@ -1963,7 +1964,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -1993,7 +1994,7 @@
 
 :assertion {
   sp:isNecessaryAndSufficientFor rdfs:label "is necessary and sufficient for"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:causes ;
     skos:definition "[subj] causes the existence of [obj], and [obj] would not exist if [subj] did not exist"@en ;
     rdfs:isDefinedBy latest: .
@@ -2004,7 +2005,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -2034,7 +2035,7 @@
 
 :assertion {
   sp:isCausedBy rdfs:label "is caused by"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasCausalRelationWith ;
     owl:inverseOf sp:causes ;
     skos:definition "the existence of [subj] is caused by [obj]"@en ;
@@ -2046,7 +2047,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -2076,7 +2077,7 @@
 
 :assertion {
   sp:hasSpatiotemporalRelationWith rdfs:label "has spatio-temporal relation with"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf foaf:member ;
     skos:definition "[subj] has a spatial and/or temporal relation with [obj]"@en ;
     rdfs:isDefinedBy latest: .
@@ -2087,7 +2088,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -2117,7 +2118,7 @@
 
 :assertion {
   sp:includes rdfs:label "includes"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
     skos:definition "[subj] spatiotemporally includes [obj]"@en ;
     rdfs:isDefinedBy latest: .
@@ -2128,7 +2129,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -2158,7 +2159,7 @@
 
 :assertion {
   sp:isIncludedIn rdfs:label "is included in"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
     skos:definition "[obj] spatiotemporally includes [subj]"@en ;
     rdfs:isDefinedBy latest: .
@@ -2169,7 +2170,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -2199,7 +2200,7 @@
 
 :assertion {
   sp:coOccursWith rdfs:label "co occurs with"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
     skos:definition "[subj] is close to [obj] in terms of space and time"@en ;
     rdfs:isDefinedBy latest: .
@@ -2210,7 +2211,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -2240,7 +2241,7 @@
 
 :assertion {
   sp:isFollowedBy rdfs:label "is followed by"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
     skos:definition "[subj] comes into existence before [obj]"@en ;
     rdfs:isDefinedBy latest: .
@@ -2251,7 +2252,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -2281,7 +2282,7 @@
 
 :assertion {
   sp:follows rdfs:label "follows"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:subPropertyOf sp:hasSpatiotemporalRelationWith ;
     skos:definition "[obj] comes into existence before [subj]"@en ;
     rdfs:isDefinedBy latest: .
@@ -2292,7 +2293,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-04-08T14:52:53.821+03:00"^^xsd:dateTime ;
+  : dct:created "2021-04-08T15:21:20.536+03:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }

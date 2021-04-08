@@ -6,11 +6,11 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Thu Apr 08 14:53:19 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Thu Apr 08 15:21:32 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
-<script src="resources/jquery.js"></script>
-<script src="resources/marked.min.js"></script>
-    <script>
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,13 +40,13 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t);
+	  $("#toc").html(t); 
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };
-   </script>
-  </head>
+ }; 
+   </script> 
+  </head> 
 
 <body>
 <div class="container">
@@ -73,7 +73,7 @@ function loadTOC(){
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.</span>
 </div>
-<div id="toc"></div>
+<div id="toc"></div> 
 
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
@@ -85,21 +85,21 @@ This is an ontology of the Linkflows SuperPattern with which the main claims of 
 |___<b>is same as</b>: "[subj] and [obj] are the same individual" <br>
 |___<b>compares to</b>: "[quantifiable-subj] compares to the [quantifiable-obj]" <br>
 |&emsp;&emsp;|___<b>has similar value as</b>: "[quantifiable-subj] has a value that is similar with [quantifiable-obj]" <br>
-|&emsp;&emsp;&emsp;&emsp;|___<b>has same value as</b>: "[quantifiable-subj] has the same value as [quantifiable-obj]" <br>
+|&emsp;&emsp;|&emsp;&emsp;|___<b>has same value as</b>: "[quantifiable-subj] has the same value as [quantifiable-obj]" <br>
 |&emsp;&emsp;|___<b>has different value from</b>: "[quantifiable-subj] has a value that is different from [quantifiable-obj]" <br>
 |&emsp;&emsp;&emsp;|___<b>has smaller value than</b>: "[quantifiable-subj] has a smaller value than [quantifiable-obj]" <br>
 |&emsp;&emsp;&emsp;|___<b>has larger value than</b>: "[quantifiable-subj] has a larger value than [quantifiable-obj] <br>
 |___<b>has causal relationship with</b>: "[subj] has causal relation with [obj]" <br>
 |&emsp;&emsp;|___<b>affects</b>: "[subj] affects the activity of [obj] in the sense of positively or negatively affecting its intensity or frequency" <br>
-|&emsp;&emsp;&emsp;&emsp;|___<b>contributes to</b>: "[subj] contributes to the activity of [obj] in sense of positively affecting its intensity or frequency" <br>
-|&emsp;&emsp;&emsp;&emsp;|___<b>enables</b>: "[subj] causes the activity of [obj] to happen" <br>
-|&emsp;&emsp;&emsp;&emsp;|___<b>inhibits</b>: "[subj] inhibits the activity of [obj] in sense of negatively affecting its intensity or frequency" <br>
-|&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|___<b>prevents</b>: "[subj] causes the activity of [obj] not to happen" <br>
-|&emsp;&emsp;&emsp;&emsp;|___<b>increases</b>: "[subj] causes the value of [obj] to increase" <br>
-|&emsp;&emsp;&emsp;&emsp;|___<b>decreases</b>: "[subj] causes the value of [obj] to decrease" <br>
-|&emsp;&emsp;&emsp;&emsp;|___<b>requires</b>: "[subj] would not exist if [obj] did not exist" <br>
-|&emsp;&emsp;&emsp;&emsp;|___<b>causes</b>: "[subj] causes the existence of [obj]" <br>
-|&emsp;&emsp;&emsp;&emsp;|___<b>is caused by</b>: "the existence of [subj] is caused by [obj]" <br>
+|&emsp;&emsp;|&emsp;&emsp;|___<b>contributes to</b>: "[subj] contributes to the activity of [obj] in sense of positively affecting its intensity or frequency" <br>
+|&emsp;&emsp;|&emsp;&emsp;|___<b>enables</b>: "[subj] causes the activity of [obj] to happen" <br>
+|&emsp;&emsp;|&emsp;&emsp;|___<b>inhibits</b>: "[subj] inhibits the activity of [obj] in sense of negatively affecting its intensity or frequency" <br>
+|&emsp;&emsp;|&emsp;&emsp;&emsp;&emsp;|___<b>prevents</b>: "[subj] causes the activity of [obj] not to happen" <br>
+|&emsp;&emsp;|___<b>increases</b>: "[subj] causes the value of [obj] to increase" <br>
+|&emsp;&emsp;|___<b>decreases</b>: "[subj] causes the value of [obj] to decrease" <br>
+|&emsp;&emsp;|___<b>requires</b>: "[subj] would not exist if [obj] did not exist" <br>
+|&emsp;&emsp;|___<b>causes</b>: "[subj] causes the existence of [obj]" <br>
+|&emsp;&emsp;|___<b>is caused by</b>: "the existence of [subj] is caused by [obj]" <br>
 |___<b>has spation-temporal relationship with</b>: "[subj] has a spatial and/or temporal relation with [obj]" <br>
 &emsp;&emsp;|___<b>includes</b>: "[subj] spatiotemporally includes [obj]" <br>
 &emsp;&emsp;|___<b>is included in</b>: "[obj] spatiotemporally includes [subj]" <br>
@@ -108,12 +108,22 @@ This is an ontology of the Linkflows SuperPattern with which the main claims of 
 &emsp;&emsp;|___<b>follows</b>: "[obj] comes into existence before [subj]" <br>
 </p>
 
+
+
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">Linkflows SuperPattern Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul class="hlist">
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
+         title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+         title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
+   </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance"
          title="https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance">SuperPattern Instance</a>
@@ -125,15 +135,19 @@ This ontology has the following classes and properties.</span>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/affects"
-         title="https://w3id.org/linkflows/superpattern/terms/affects">
-         <span>affects</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/affects">affects</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/causes"
+         title="https://w3id.org/linkflows/superpattern/terms/causes">causes</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/coOccursWith"
+         title="https://w3id.org/linkflows/superpattern/terms/coOccursWith">co occurs with</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/comparesTo"
-         title="https://w3id.org/linkflows/superpattern/terms/comparesTo">
-         <span>compares to</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/comparesTo">compares to</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/contributesTo"
@@ -141,13 +155,15 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/decreases"
-         title="https://w3id.org/linkflows/superpattern/terms/decreases">
-         <span>decreases</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/decreases">decreases</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/enables"
          title="https://w3id.org/linkflows/superpattern/terms/enables">enables</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/follows"
+         title="https://w3id.org/linkflows/superpattern/terms/follows">follows</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier"
@@ -157,21 +173,27 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan"
-         title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">
-         <span>has a larger value than</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">has a larger value than</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan"
-         title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">
-         <span>has a smaller value than</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">has a smaller value than</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
+         title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/hasContextClass"
+         title="https://w3id.org/linkflows/superpattern/terms/hasContextClass">has context class</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"
-         title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">
-         <span>has different value from</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/hasObjectClass"
+         title="https://w3id.org/linkflows/superpattern/terms/hasObjectClass">has object class</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasQualifier"
@@ -183,21 +205,27 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasSameValueAs"
-         title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">
-         <span>has same value as</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">has same value as</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs"
-         title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">
-         <span>has similar value as</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"
+         title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/hasSubjectClass"
+         title="https://w3id.org/linkflows/superpattern/terms/hasSubjectClass">has subject class</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/includes"
+         title="https://w3id.org/linkflows/superpattern/terms/includes">includes</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/increases"
-         title="https://w3id.org/linkflows/superpattern/terms/increases">
-         <span>increases</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/increases">increases</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/inhibits"
@@ -205,17 +233,35 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/isCausedBy"
-         title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">
-         <span>is caused by</span>
-      </a>
+         title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">is caused by</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/isFollowedBy"
+         title="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">is followed by</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/isInContext"
+         title="https://w3id.org/linkflows/superpattern/terms/isInContext">is in context</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/isIncludedIn"
+         title="https://w3id.org/linkflows/superpattern/terms/isIncludedIn">is included in</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor"
          title="https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor">is necessary and sufficient for</a>
    </li>
    <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/isSameAs"
+         title="https://w3id.org/linkflows/superpattern/terms/isSameAs">is same as</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/prevents"
          title="https://w3id.org/linkflows/superpattern/terms/prevents">prevents</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/requires"
+         title="https://w3id.org/linkflows/superpattern/terms/requires">requires</a>
    </li>
 </ul><h4>Named Individuals</h4><ul class="hlist">
    <li>
@@ -296,7 +342,7 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul>
 </div>
-
+  
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">Linkflows SuperPattern Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -304,7 +350,7 @@ This ontology has the following classes and properties.</span>
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
 </div>
-
+   
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Linkflows SuperPattern Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -312,6 +358,14 @@ This section provides details for each class and property defined by Linkflows S
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
+            title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+            title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
+      </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance"
             title="https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance">SuperPattern Instance</a>
@@ -321,6 +375,94 @@ This section provides details for each class and property defined by Linkflows S
             title="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier">SuperPattern qualifier</a>
       </li>
    </ul>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">
+      <h3>Potential Activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/PotentialActivity</p>
+      <div class="comment">
+         <span class="markdown">an activity that can happen or not</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/PotentialActivity">https://w3id.org/linkflows/superpattern/latest/PotentialActivity</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/linkflows/superpattern/terms/affects"
+               title="https://w3id.org/linkflows/superpattern/terms/affects">affects</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/contributesTo"
+               title="https://w3id.org/linkflows/superpattern/terms/contributesTo">contributes to</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/enables"
+               title="https://w3id.org/linkflows/superpattern/terms/enables">enables</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/inhibits"
+               title="https://w3id.org/linkflows/superpattern/terms/inhibits">inhibits</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/prevents"
+               title="https://w3id.org/linkflows/superpattern/terms/prevents">prevents</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">
+      <h3>Quantifiable Thing<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/QuantifiableThing</p>
+      <div class="comment">
+         <span class="markdown">a thing that can be quantified</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/QuantifiableThing">https://w3id.org/linkflows/superpattern/latest/QuantifiableThing</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/linkflows/superpattern/terms/comparesTo"
+               title="https://w3id.org/linkflows/superpattern/terms/comparesTo">compares to</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan"
+               title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">has a larger value than</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan"
+               title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">has a smaller value than</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"
+               title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasSameValueAs"
+               title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">has same value as</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs"
+               title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/linkflows/superpattern/terms/comparesTo"
+               title="https://w3id.org/linkflows/superpattern/terms/comparesTo">compares to</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/decreases"
+               title="https://w3id.org/linkflows/superpattern/terms/decreases">decreases</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan"
+               title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">has a larger value than</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan"
+               title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">has a smaller value than</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"
+               title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasSameValueAs"
+               title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">has same value as</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs"
+               title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/increases"
+               title="https://w3id.org/linkflows/superpattern/terms/increases">increases</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance">
       <h3>SuperPattern Instance<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -340,10 +482,17 @@ This section provides details for each class and property defined by Linkflows S
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/linkflows/superpattern/terms/hasContextClass">has context class</span>, <span class="dotted"
-                  title="https://w3id.org/linkflows/superpattern/terms/hasObjectClass">has object class</span>, <span class="dotted"
-                  title="https://w3id.org/linkflows/superpattern/terms/hasSubjectClass">has subject class</span>
+            <a href="#https://w3id.org/linkflows/superpattern/terms/hasContextClass"
+               title="https://w3id.org/linkflows/superpattern/terms/hasContextClass">has context class</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasObjectClass"
+               title="https://w3id.org/linkflows/superpattern/terms/hasObjectClass">has object class</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasQualifier"
+               title="https://w3id.org/linkflows/superpattern/terms/hasQualifier">has qualifier</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasRelation"
+               title="https://w3id.org/linkflows/superpattern/terms/hasRelation">has relation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/hasSubjectClass"
+               title="https://w3id.org/linkflows/superpattern/terms/hasSubjectClass">has subject class</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -419,15 +568,19 @@ This section provides details for each class and property defined by Linkflows S
    <ul class="hlist">
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/affects"
-            title="https://w3id.org/linkflows/superpattern/terms/affects">
-            <span>affects</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/affects">affects</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/causes"
+            title="https://w3id.org/linkflows/superpattern/terms/causes">causes</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/coOccursWith"
+            title="https://w3id.org/linkflows/superpattern/terms/coOccursWith">co occurs with</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/comparesTo"
-            title="https://w3id.org/linkflows/superpattern/terms/comparesTo">
-            <span>compares to</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/comparesTo">compares to</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/contributesTo"
@@ -435,13 +588,15 @@ This section provides details for each class and property defined by Linkflows S
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/decreases"
-            title="https://w3id.org/linkflows/superpattern/terms/decreases">
-            <span>decreases</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/decreases">decreases</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/enables"
             title="https://w3id.org/linkflows/superpattern/terms/enables">enables</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/follows"
+            title="https://w3id.org/linkflows/superpattern/terms/follows">follows</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier"
@@ -451,21 +606,27 @@ This section provides details for each class and property defined by Linkflows S
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan"
-            title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">
-            <span>has a larger value than</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">has a larger value than</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan"
-            title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">
-            <span>has a smaller value than</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">has a smaller value than</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
+            title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/hasContextClass"
+            title="https://w3id.org/linkflows/superpattern/terms/hasContextClass">has context class</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom"
-            title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">
-            <span>has different value from</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/hasObjectClass"
+            title="https://w3id.org/linkflows/superpattern/terms/hasObjectClass">has object class</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasQualifier"
@@ -477,21 +638,27 @@ This section provides details for each class and property defined by Linkflows S
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasSameValueAs"
-            title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">
-            <span>has same value as</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">has same value as</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs"
-            title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">
-            <span>has similar value as</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"
+            title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/hasSubjectClass"
+            title="https://w3id.org/linkflows/superpattern/terms/hasSubjectClass">has subject class</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/includes"
+            title="https://w3id.org/linkflows/superpattern/terms/includes">includes</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/increases"
-            title="https://w3id.org/linkflows/superpattern/terms/increases">
-            <span>increases</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/increases">increases</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/inhibits"
@@ -499,17 +666,35 @@ This section provides details for each class and property defined by Linkflows S
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/isCausedBy"
-            title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">
-            <span>is caused by</span>
-         </a>
+            title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">is caused by</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/isFollowedBy"
+            title="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">is followed by</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/isInContext"
+            title="https://w3id.org/linkflows/superpattern/terms/isInContext">is in context</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/isIncludedIn"
+            title="https://w3id.org/linkflows/superpattern/terms/isIncludedIn">is included in</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor"
             title="https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor">is necessary and sufficient for</a>
       </li>
       <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/isSameAs"
+            title="https://w3id.org/linkflows/superpattern/terms/isSameAs">is same as</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/prevents"
             title="https://w3id.org/linkflows/superpattern/terms/prevents">prevents</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/requires"
+            title="https://w3id.org/linkflows/superpattern/terms/requires">requires</a>
       </li>
    </ul>
    <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/affects">
@@ -519,6 +704,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/affects</p>
+      <div class="comment">
+         <span class="markdown">[subj] affects the activity of [obj] in the sense of positively or negatively affecting its intensity or frequency</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/affects">https://w3id.org/linkflows/superpattern/latest/affects</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -531,13 +725,75 @@ This section provides details for each class and property defined by Linkflows S
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
+                  title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/causes">
+      <h3>causes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/causes</p>
+      <div class="comment">
+         <span class="markdown">[subj] causes the existence of [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/causes">https://w3id.org/linkflows/superpattern/latest/causes</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/affects">annotation property</a>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor"
+                  title="https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor">is necessary and sufficient for</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/isCausedBy"
+                  title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">is caused by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/coOccursWith">
+      <h3>co occurs with<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/coOccursWith</p>
+      <div class="comment">
+         <span class="markdown">[subj] is close to [obj] in terms of space and time</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/coOccursWith">https://w3id.org/linkflows/superpattern/latest/coOccursWith</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -549,6 +805,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/comparesTo</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] compares to the [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/comparesTo">https://w3id.org/linkflows/superpattern/latest/comparesTo</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -559,15 +824,17 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/comparesTo">annotation property</a>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -604,8 +871,8 @@ This section provides details for each class and property defined by Linkflows S
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
+                  title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -618,17 +885,28 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/decreases</p>
+      <div class="comment">
+         <span class="markdown">[subj] causes the value of [obj] to decrease</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/decreases">https://w3id.org/linkflows/superpattern/latest/decreases</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/decreases">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -659,9 +937,36 @@ This section provides details for each class and property defined by Linkflows S
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
+                  title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/follows">
+      <h3>follows<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/follows</p>
+      <div class="comment">
+         <span class="markdown">[obj] comes into existence before [subj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/follows">https://w3id.org/linkflows/superpattern/latest/follows</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -698,6 +1003,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has a larger value than [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasLargerValueThan">https://w3id.org/linkflows/superpattern/latest/hasLargerValueThan</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -706,15 +1020,17 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan">annotation property</a>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -726,6 +1042,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has a smaller value than [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasSmallerValueThan">https://w3id.org/linkflows/superpattern/latest/hasSmallerValueThan</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -734,15 +1059,84 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">has different value from</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">annotation property</a>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">
+      <h3>has causal relation with<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith</p>
+      <div class="comment">
+         <span class="markdown">[subj] has causal relation with [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasCausalRelationWith">https://w3id.org/linkflows/superpattern/latest/hasCausalRelationWith</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/causes"
+                  title="https://w3id.org/linkflows/superpattern/terms/causes">causes</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/decreases"
+                  title="https://w3id.org/linkflows/superpattern/terms/decreases">decreases</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/increases"
+                  title="https://w3id.org/linkflows/superpattern/terms/increases">increases</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/isCausedBy"
+                  title="https://w3id.org/linkflows/superpattern/terms/isCausedBy">is caused by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/requires"
+                  title="https://w3id.org/linkflows/superpattern/terms/requires">requires</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/hasContextClass">
+      <h3>has context class<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasContextClass</p>
+      <div class="comment">
+         <span class="markdown">links a superpattern instance to its context class</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasContextClass">https://w3id.org/linkflows/superpattern/latest/hasContextClass</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance"
+                  title="https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance">SuperPattern Instance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -754,6 +1148,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has a value that is different from [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasDifferentValueFrom">https://w3id.org/linkflows/superpattern/latest/hasDifferentValueFrom</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -770,15 +1173,49 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan">has a smaller value than</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom">annotation property</a>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/hasObjectClass">
+      <h3>has object class<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasObjectClass</p>
+      <div class="comment">
+         <span class="markdown">links a superpattern instance to its object class</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasObjectClass">https://w3id.org/linkflows/superpattern/latest/hasObjectClass</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance"
+                  title="https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance">SuperPattern Instance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -801,6 +1238,12 @@ This section provides details for each class and property defined by Linkflows S
       </dl>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance"
+                  title="https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance">SuperPattern Instance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"
@@ -830,13 +1273,13 @@ This section provides details for each class and property defined by Linkflows S
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance"
+                  title="https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance">SuperPattern Instance</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#ObjectProperty">object property</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -849,6 +1292,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasSameValueAs</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has the same value as [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasSameValueAs">https://w3id.org/linkflows/superpattern/latest/hasSameValueAs</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -857,15 +1309,17 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">has similar value as</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">annotation property</a>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -877,6 +1331,15 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs</p>
+      <div class="comment">
+         <span class="markdown">[quantifiable-subj] has a value that is similar with [quantifiable-obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasSimilarValueAs">https://w3id.org/linkflows/superpattern/latest/hasSimilarValueAs</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -891,15 +1354,116 @@ This section provides details for each class and property defined by Linkflows S
                   title="https://w3id.org/linkflows/superpattern/terms/hasSameValueAs">has same value as</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has range</dt>
+            <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs">annotation property</a>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">
+      <h3>has spatio-temporal relation with<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith</p>
+      <div class="comment">
+         <span class="markdown">[subj] has a spatial and/or temporal relation with [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasSpatiotemporalRelationWith">https://w3id.org/linkflows/superpattern/latest/hasSpatiotemporalRelationWith</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://xmlns.com/foaf/0.1/member">member</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/coOccursWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/coOccursWith">co occurs with</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/follows"
+                  title="https://w3id.org/linkflows/superpattern/terms/follows">follows</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/includes"
+                  title="https://w3id.org/linkflows/superpattern/terms/includes">includes</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/isFollowedBy"
+                  title="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">is followed by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/linkflows/superpattern/terms/isIncludedIn"
+                  title="https://w3id.org/linkflows/superpattern/terms/isIncludedIn">is included in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/hasSubjectClass">
+      <h3>has subject class<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/hasSubjectClass</p>
+      <div class="comment">
+         <span class="markdown">links a superpattern instance to its subject class</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/hasSubjectClass">https://w3id.org/linkflows/superpattern/latest/hasSubjectClass</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance"
+                  title="https://w3id.org/linkflows/superpattern/terms/SuperPatternInstance">SuperPattern Instance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/includes">
+      <h3>includes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/includes</p>
+      <div class="comment">
+         <span class="markdown">[subj] spatiotemporally includes [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/includes">https://w3id.org/linkflows/superpattern/latest/includes</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -911,17 +1475,28 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/increases</p>
+      <div class="comment">
+         <span class="markdown">[subj] causes the value of [obj] to increase</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/increases">https://w3id.org/linkflows/superpattern/latest/increases</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/QuantifiableThing"
+                  title="https://w3id.org/linkflows/superpattern/terms/QuantifiableThing">Quantifiable Thing</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/increases">annotation property</a>
             </dd>
          </dl>
       </div>
@@ -958,8 +1533,8 @@ This section provides details for each class and property defined by Linkflows S
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
+                  title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -972,17 +1547,99 @@ This section provides details for each class and property defined by Linkflows S
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isCausedBy</p>
+      <div class="comment">
+         <span class="markdown">the existence of [subj] is caused by [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isCausedBy">https://w3id.org/linkflows/superpattern/latest/isCausedBy</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
-            <dt>is inverse of</dt>
+            <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/causes">causes</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
+            <dt>is inverse of</dt>
             <dd>
-               <a href="#https://w3id.org/linkflows/superpattern/terms/isCausedBy">annotation property</a>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/causes"
+                  title="https://w3id.org/linkflows/superpattern/terms/causes">causes</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">
+      <h3>is followed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isFollowedBy</p>
+      <div class="comment">
+         <span class="markdown">[subj] comes into existence before [obj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isFollowedBy">https://w3id.org/linkflows/superpattern/latest/isFollowedBy</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/isInContext">
+      <h3>is in context<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isInContext</p>
+      <div class="comment">
+         <span class="markdown">links subject and object instances to context instances</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isInContext">https://w3id.org/linkflows/superpattern/latest/isInContext</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/isIncludedIn">
+      <h3>is included in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isIncludedIn</p>
+      <div class="comment">
+         <span class="markdown">[obj] spatiotemporally includes [subj]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isIncludedIn">https://w3id.org/linkflows/superpattern/latest/isIncludedIn</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith">has spatio-temporal relation with</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1007,12 +1664,29 @@ This section provides details for each class and property defined by Linkflows S
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/causes">causes</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/causes"
+                  title="https://w3id.org/linkflows/superpattern/terms/causes">causes</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/isSameAs">
+      <h3>is same as<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isSameAs</p>
+      <div class="comment">
+         <span class="markdown">[subj] and [obj] are the same individual</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isSameAs">https://w3id.org/linkflows/superpattern/latest/isSameAs</a>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/prevents">
       <h3>prevents<sup class="type-op" title="object property">op</sup>
@@ -1040,9 +1714,36 @@ This section provides details for each class and property defined by Linkflows S
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</span>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/PotentialActivity"
+                  title="https://w3id.org/linkflows/superpattern/terms/PotentialActivity">Potential Activity</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/requires">
+      <h3>requires<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/requires</p>
+      <div class="comment">
+         <span class="markdown">[subj] would not exist if [obj] did not exist</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/linkflows/superpattern/latest/requires">https://w3id.org/linkflows/superpattern/latest/requires</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith"
+                  title="https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith">has causal relation with</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1612,7 +2313,7 @@ This section provides details for each class and property defined by Linkflows S
 </div>
 </div>
 </div>
-
+    
 
 <!--REFERENCES SECTION-->
   <div id="references">
