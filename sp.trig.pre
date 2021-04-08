@@ -272,7 +272,7 @@
 :assertion {
   sp:generallyQualifier rdfs:label "generally qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] in at least 90% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something is true in at least 90% of the cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -311,7 +311,7 @@
 :assertion {
   sp:mostlyQualifier rdfs:label "mostly qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] in at least 50% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something is true in  at least 50% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -350,7 +350,7 @@
 :assertion {
   sp:frequentlyQualifier rdfs:label "frequently qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] in at least 10% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something is true in at least 10% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -389,7 +389,7 @@
 :assertion {
   sp:sometimesQualifier rdfs:label "sometimes qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] in at least 0.10% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something is true in at least 0.10% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -428,7 +428,7 @@
 :assertion {
   sp:canAlwaysQualifier rdfs:label "can always qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in all 100% cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in all 100% cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -467,7 +467,7 @@
 :assertion {
   sp:canGenerallyQualifier rdfs:label "can generally qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in at least 90% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 90% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -506,7 +506,7 @@
 :assertion {
   sp:canMostlyQualifier rdfs:label "can mostly qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in at least 50% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 50% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -545,7 +545,7 @@
 :assertion {
   sp:canFrequentlyQualifier rdfs:label "can frequently qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in at least 10% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 10% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -584,7 +584,7 @@
 :assertion {
   sp:canSometimesQualifier rdfs:label "can sometimes qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in at least 0.10% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 0.1% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -623,7 +623,7 @@
 :assertion {
   sp:neverQualifier rdfs:label "never qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] in 0% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something is true in 0% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -662,7 +662,7 @@
 :assertion {
   sp:generallyNotQualifier rdfs:label "generally not qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] in at most 10% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something is true in at most 10% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -701,7 +701,7 @@
 :assertion {
   sp:mostlyNotQualifier rdfs:label "mostly not qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] in at most 50% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something is true in at most 50% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -742,7 +742,7 @@
     a owl:Class ;
     rdfs:domain owl:Class ;
     rdfs:range rdf:Property ;
-    skos:definition "[subj] in at most 90% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something is true in at most 90% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -781,7 +781,7 @@
 :assertion {
   sp:sometimesNotQualifier rdfs:label "sometimes not qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] in at most 99.9% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something is true in at most 99.9% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -820,7 +820,7 @@
 :assertion {
   sp:canNeverQualifier rdfs:label "can never qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in 0% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in  0% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -859,7 +859,7 @@
 :assertion {
   sp:canGenerallyNotQualifier rdfs:label "can generally not qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in at most 10% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 10% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -898,7 +898,7 @@
 :assertion {
   sp:canMostlyNotQualifier rdfs:label "can mostly not qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in at most 50% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 50% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -937,7 +937,7 @@
 :assertion {
   sp:canFrequentlyNotQualifier rdfs:label "can frequently not qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in at most 90% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 90% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 
@@ -976,7 +976,7 @@
 :assertion {
   sp:canSometimesNotQualifier rdfs:label "can sometimes not qualifier"@en ;
     a owl:NamedIndividual , sp:SuperPatternQualifier ;
-    skos:definition "[subj] can in at most 99.9% of cases [has relation] with [obj]"@en ;
+    skos:definition "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 99.9% of cases"@en ;
     rdfs:isDefinedBy latest: .
 }
 

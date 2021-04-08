@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Thu Apr 08 15:21:32 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Thu Apr 08 16:07:53 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -77,12 +77,15 @@ This is an ontology of the Linkflows SuperPattern with which the main claims of 
 
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<p>In order to be able to express in a formal way the main claim(s) of a scientific article expressed as an AIDA sentence, we have developed a new ontology that encompasses a super-pattern. As the main claims cannot be expressed as simple statements that can be formalized using RDF technologies, developing a super-pattern was necessary. The main parts of this super-pattern are the context, subject and object classes. The subject and object need to be in the context of the context class, while the subject and the object are linked through a relation. This relation also includes a qualifier to make the relation between the subject and object more specific. An example of the instantiation of the super-pattern is shown in the diagram below. As such, in the context of all “persons”, things of type “obesity and metabolic abnormality” “generally” have a relation of type “co-occurs with” to things of type “knee osteoarthritis”:</p>
+<p>In order to be able to express in a formal way the main claim(s) of a scientific article, we have developed a new ontology that encompasses a super-pattern. As the main claims cannot be expressed as simple statements that can be formalized using RDF technologies, developing a super-pattern was necessary. Instances of this super-pattern consist of a context class, a subject class, a qualifier, a relation and an object class. Below we show an example where the context class is "person", the subject class is “obesity and metabolic abnormality”, the qualifier is “generally”, the relation is “co-occurs with” and the object class is “knee osteoarthritis”:</p>
 <div style="text-align:center;"><img src="sections/sp-example-diagram.svg" alt="" width="50%" height="50%"></div>
+
+<p>This super-pattern instance is stating that in the context of all persons, things of type obesity together with metabolic abnormality generally (in at least 90% of the cases) have a relation of type "co-occurs with" to things of type knee osteoarthritis. So, in other words, people with obesity and metabolic abnormality tend to also suffer from knee osteoarthritis.
+</p>
 
 <h3 id="intro" class="list">Relations</h3>
 <p>
-|___<b>is same as</b>: "[subj] and [obj] are the same individual" <br>
+&nbsp;___<b>is same as</b>: "[subj] and [obj] are the same individual" <br>
 |___<b>compares to</b>: "[quantifiable-subj] compares to the [quantifiable-obj]" <br>
 |&emsp;&emsp;|___<b>has similar value as</b>: "[quantifiable-subj] has a value that is similar with [quantifiable-obj]" <br>
 |&emsp;&emsp;|&emsp;&emsp;|___<b>has same value as</b>: "[quantifiable-subj] has the same value as [quantifiable-obj]" <br>
