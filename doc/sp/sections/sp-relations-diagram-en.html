@@ -33,10 +33,27 @@ var treeData =
     "name": "Top Level",
     "children": [
       {
-        "name": "Level 2: A",
+        "name": "isSameAs: [subj] and [obj] are the same individual",
         "children": [
-          { "name": "Son of A" },
-          { "name": "Daughter of A" }
+          { "name": "comparesTo: \n [quantifiable-subj] compares to the [quantifiable-obj]",
+            "children": [
+              { "name": "hasSimilarValueAs: \n [quantifiable-subj] has a value that is similar with [quantifiable-obj]",
+                "children": [
+                  { "name": "hasSameValueAs: \n [quantifiable-subj] has the same value as [quantifiable-obj]"}
+                ],
+                "name": "hasDifferentValueFrom: \n [quantifiable-subj] has a value that is different from [quantifiable-obj]",
+                "children": [
+                  { "name": "hasSmallerValueThan: \n [quantifiable-subj] has a smaller value than [quantifiable-obj]"},
+                  { "name": "hasLargerValueThan: \n [quantifiable-subj] has a larger value than [quantifiable-obj]"}
+                ]
+              }
+            ]
+          },
+          { "name": "hasCausalRelationWith: [subj] has causal relation with [obj]",
+            "children": [
+
+            ]
+          }
         ]
       },
       { "name": "Level 2: B" }
