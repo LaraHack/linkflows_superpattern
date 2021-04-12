@@ -388,7 +388,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                          <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                 rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/alwaysQualifier> ;
                                                                 rdfs:label "always qualifier"@en ;
-                                                                <http://www.w3.org/2004/02/skos/core#definition> "[subj] in all 100% cases [has relation] with [obj]"@en .
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in 100% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier
@@ -396,7 +396,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                             <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                    rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canAlwaysQualifier> ;
                                                                    rdfs:label "can always qualifier"@en ;
-                                                                   <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in all 100% cases [has relation] with [obj]"@en .
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in all 100% cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier
@@ -404,7 +404,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                                    <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                           rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canFrequentlyNotQualifier> ;
                                                                           rdfs:label "can frequently not qualifier"@en ;
-                                                                          <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at most 90% of cases [has relation] with [obj]"@en .
+                                                                          <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 90% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier
@@ -412,7 +412,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                                 <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                        rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canFrequentlyQualifier> ;
                                                                        rdfs:label "can frequently qualifier"@en ;
-                                                                       <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at least 10% of cases [has relation] with [obj]"@en .
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 10% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier
@@ -420,7 +420,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                                   <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                          rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canGenerallyNotQualifier> ;
                                                                          rdfs:label "can generally not qualifier"@en ;
-                                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at most 10% of cases [has relation] with [obj]"@en .
+                                                                         <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 10% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier
@@ -428,7 +428,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                                <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                       rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canGenerallyQualifier> ;
                                                                       rdfs:label "can generally qualifier"@en ;
-                                                                      <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at least 90% of cases [has relation] with [obj]"@en .
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 90% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier
@@ -436,7 +436,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                                <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                       rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canMostlyNotQualifier> ;
                                                                       rdfs:label "can mostly not qualifier"@en ;
-                                                                      <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at most 50% of cases [has relation] with [obj]"@en .
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 50% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier
@@ -444,7 +444,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                             <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                    rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canMostlyQualifier> ;
                                                                    rdfs:label "can mostly qualifier"@en ;
-                                                                   <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at least 50% of cases [has relation] with [obj]"@en .
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 50% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canNeverQualifier
@@ -452,7 +452,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                            <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                   rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canNeverQualifier> ;
                                                                   rdfs:label "can never qualifier"@en ;
-                                                                  <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in 0% of cases [has relation] with [obj]"@en .
+                                                                  <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in  0% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier
@@ -460,7 +460,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                                   <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                          rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canSometimesNotQualifier> ;
                                                                          rdfs:label "can sometimes not qualifier"@en ;
-                                                                         <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at most 99.9% of cases [has relation] with [obj]"@en .
+                                                                         <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 99.9% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier
@@ -468,7 +468,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                                <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                       rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/canSometimesQualifier> ;
                                                                       rdfs:label "can sometimes qualifier"@en ;
-                                                                      <http://www.w3.org/2004/02/skos/core#definition> "[subj] can in at least 0.10% of cases [has relation] with [obj]"@en .
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 0.1% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier
@@ -476,7 +476,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                              <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                     rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/frequentlyQualifier> ;
                                                                     rdfs:label "frequently qualifier"@en ;
-                                                                    <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at least 10% of cases [has relation] with [obj]"@en .
+                                                                    <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at least 10% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier
@@ -484,7 +484,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                                <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                       rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/generallyNotQualifier> ;
                                                                       rdfs:label "generally not qualifier"@en ;
-                                                                      <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at most 10% of cases [has relation] with [obj]"@en .
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at most 10% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/generallyQualifier
@@ -492,7 +492,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                             <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                    rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/generallyQualifier> ;
                                                                    rdfs:label "generally qualifier"@en ;
-                                                                   <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at least 90% of cases [has relation] with [obj]"@en .
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at least 90% of the cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier
@@ -500,7 +500,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                             <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                    rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/mostlyNotQualifier> ;
                                                                    rdfs:label "mostly not qualifier"@en ;
-                                                                   <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at most 50% of cases [has relation] with [obj]"@en .
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at most 50% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/mostlyQualifier
@@ -508,7 +508,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                          <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                 rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/mostlyQualifier> ;
                                                                 rdfs:label "mostly qualifier"@en ;
-                                                                <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at least 50% of cases [has relation] with [obj]"@en .
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in  at least 50% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/neverQualifier
@@ -516,7 +516,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                         <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/neverQualifier> ;
                                                                rdfs:label "never qualifier"@en ;
-                                                               <http://www.w3.org/2004/02/skos/core#definition> "[subj] in 0% of cases [has relation] with [obj]"@en .
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in 0% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier
@@ -524,7 +524,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                                <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                       rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/sometimesNotQualifier> ;
                                                                       rdfs:label "sometimes not qualifier"@en ;
-                                                                      <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at most 99.9% of cases [has relation] with [obj]"@en .
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at most 99.9% of cases"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/sometimesQualifier
@@ -532,7 +532,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                             <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                    rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/sometimesQualifier> ;
                                                                    rdfs:label "sometimes qualifier"@en ;
-                                                                   <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at least 0.10% of cases [has relation] with [obj]"@en .
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at least 0.10% of cases"@en .
 
 
 #################################################################
@@ -541,7 +541,7 @@ owl:ObjectProperty rdf:type owl:Class .
 
 <https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier> rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/frequentlyNotQualifier> ;
                                                                        rdfs:label "frequently not qualifier"@en ;
-                                                                       <http://www.w3.org/2004/02/skos/core#definition> "[subj] in at most 90% of cases [has relation] with [obj]"@en .
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at most 90% of cases"@en .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

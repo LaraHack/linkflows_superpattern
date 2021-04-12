@@ -608,7 +608,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/alwaysQualifier"/>
         <rdfs:label xml:lang="en">always qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in all 100% cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in 100% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -620,7 +620,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canAlwaysQualifier"/>
         <rdfs:label xml:lang="en">can always qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in all 100% cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in all 100% cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -632,7 +632,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canFrequentlyNotQualifier"/>
         <rdfs:label xml:lang="en">can frequently not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at most 90% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 90% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -644,7 +644,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canFrequentlyQualifier"/>
         <rdfs:label xml:lang="en">can frequently qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at least 10% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 10% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -656,7 +656,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canGenerallyNotQualifier"/>
         <rdfs:label xml:lang="en">can generally not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at most 10% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 10% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -668,7 +668,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canGenerallyQualifier"/>
         <rdfs:label xml:lang="en">can generally qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at least 90% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 90% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -680,7 +680,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canMostlyNotQualifier"/>
         <rdfs:label xml:lang="en">can mostly not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at most 50% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 50% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -692,7 +692,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canMostlyQualifier"/>
         <rdfs:label xml:lang="en">can mostly qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at least 50% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 50% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -704,7 +704,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canNeverQualifier"/>
         <rdfs:label xml:lang="en">can never qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in 0% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in  0% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -716,7 +716,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canSometimesNotQualifier"/>
         <rdfs:label xml:lang="en">can sometimes not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at most 99.9% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 99.9% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -728,7 +728,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/canSometimesQualifier"/>
         <rdfs:label xml:lang="en">can sometimes qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] can in at least 0.10% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 0.1% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -740,7 +740,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/frequentlyQualifier"/>
         <rdfs:label xml:lang="en">frequently qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at least 10% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in at least 10% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -752,7 +752,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/generallyNotQualifier"/>
         <rdfs:label xml:lang="en">generally not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at most 10% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in at most 10% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -764,7 +764,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/generallyQualifier"/>
         <rdfs:label xml:lang="en">generally qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at least 90% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in at least 90% of the cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -776,7 +776,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/mostlyNotQualifier"/>
         <rdfs:label xml:lang="en">mostly not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at most 50% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in at most 50% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -788,7 +788,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/mostlyQualifier"/>
         <rdfs:label xml:lang="en">mostly qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at least 50% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in  at least 50% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -800,7 +800,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/neverQualifier"/>
         <rdfs:label xml:lang="en">never qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in 0% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in 0% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -812,7 +812,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/sometimesNotQualifier"/>
         <rdfs:label xml:lang="en">sometimes not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at most 99.9% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in at most 99.9% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -824,7 +824,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/sometimesQualifier"/>
         <rdfs:label xml:lang="en">sometimes qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at least 0.10% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in at least 0.10% of cases</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -841,7 +841,7 @@
     <rdf:Description rdf:about="https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/frequentlyNotQualifier"/>
         <rdfs:label xml:lang="en">frequently not qualifier</rdfs:label>
-        <skos:definition xml:lang="en">[subj] in at most 90% of cases [has relation] with [obj]</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in at most 90% of cases</skos:definition>
     </rdf:Description>
 </rdf:RDF>
 

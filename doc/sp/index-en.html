@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Thu Apr 08 16:07:53 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Mon Apr 12 10:33:05 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -111,6 +111,30 @@ This is an ontology of the Linkflows SuperPattern with which the main claims of 
 &emsp;&emsp;|___<b>follows</b>: "[obj] comes into existence before [subj]" <br>
 </p>
 
+<h3 id="intro" class="list">Qualifiers</h3>
+<p>
+&nbsp;___<b>always</b>: "this qualifier states that something is true in 100% of cases" <br>
+|___<b>generally</b>: "this qualifier states that something is true in at least 90% of the cases" <br>
+|___<b>mostly</b>: "this qualifier states that something is true in  at least 50% of cases" <br>
+|___<b>frequently</b>: "this qualifier states that something is true in at least 10% of cases" <br>
+|___<b>sometimes</b>: "this qualifier states that something is true in at least 0.10% of cases" <br>
+|___<b>can always</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in all 100% cases" <br>
+|___<b>can generally</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 90% of cases" <br>
+|___<b>can mostly</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 50% of cases" <br>
+|___<b>can frequently</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 10% of cases" <br>
+|___<b>can sometimes</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 0.1% of cases" <br>
+|___<b>never</b>: "this qualifier states that something is true in 0% of cases" <br>
+|___<b>generally not</b>: "this qualifier states that something is true in at most 10% of cases" <br>
+|___<b>mostly not</b>: "this qualifier states that something is true in at most 50% of cases" <br>
+|___<b>frequently not</b>: "this qualifier states that something is true in at most 90% of cases" <br>
+|___<b>sometimes not</b>: "this qualifier states that something is true in at most 99.9% of cases" <br>
+|___<b>can never</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in  0% of cases" <br>
+|___<b>can generally not</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 10% of cases" <br>
+|___<b>can mostly not</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 50% of cases" <br>
+|___<b>can frequently not</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 90% of cases" <br>
+|___<b>can sometimes not</b>: "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 99.9% of cases" <br>
+
+</p>
 
 
 <!--OVERVIEW SECTION-->
@@ -1839,7 +1863,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/alwaysQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] in all 100% cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something is true in 100% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1864,7 +1888,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in all 100% cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in all 100% cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1889,7 +1913,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in at most 90% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 90% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1914,7 +1938,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in at least 10% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 10% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1939,7 +1963,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in at most 10% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 10% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1964,7 +1988,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in at least 90% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 90% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1989,7 +2013,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in at most 50% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 50% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2014,7 +2038,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in at least 50% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 50% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2039,7 +2063,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canNeverQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in 0% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in  0% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2064,7 +2088,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in at most 99.9% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 99.9% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2089,7 +2113,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] can in at least 0.10% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 0.1% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2114,7 +2138,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] in at least 10% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something is true in at least 10% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2139,7 +2163,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] in at most 10% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something is true in at most 10% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2164,7 +2188,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/generallyQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] in at least 90% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something is true in at least 90% of the cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2189,7 +2213,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/mostlyNotQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] in at most 50% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something is true in at most 50% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2214,7 +2238,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/mostlyQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] in at least 50% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something is true in  at least 50% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2239,7 +2263,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/neverQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] in 0% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something is true in 0% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2264,7 +2288,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/sometimesNotQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] in at most 99.9% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something is true in at most 99.9% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2289,7 +2313,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/sometimesQualifier</p>
       <div class="comment">
-         <span class="markdown">[subj] in at least 0.10% of cases [has relation] with [obj]</span>
+         <span class="markdown">this qualifier states that something is true in at least 0.10% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>

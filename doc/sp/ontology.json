@@ -145,7 +145,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in all 100% cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in 100% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canAlwaysQualifier",
@@ -159,7 +159,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in all 100% cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in all 100% cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canFrequentlyNotQualifier",
@@ -173,7 +173,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in at most 90% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 90% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canFrequentlyQualifier",
@@ -187,7 +187,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in at least 10% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 10% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canGenerallyNotQualifier",
@@ -201,7 +201,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in at most 10% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 10% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canGenerallyQualifier",
@@ -215,7 +215,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in at least 90% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 90% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canMostlyNotQualifier",
@@ -229,7 +229,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in at most 50% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 50% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canMostlyQualifier",
@@ -243,7 +243,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in at least 50% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 50% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canNeverQualifier",
@@ -257,7 +257,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in 0% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in  0% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canSometimesNotQualifier",
@@ -271,7 +271,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in at most 99.9% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at most 99.9% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/canSometimesQualifier",
@@ -285,7 +285,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] can in at least 0.10% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something can be made true (in the modal logic sense of having at least one possible world) in at least 0.1% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/causes",
@@ -436,7 +436,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in at most 90% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in at most 90% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/frequentlyQualifier",
@@ -450,7 +450,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in at least 10% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in at least 10% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/generallyNotQualifier",
@@ -464,7 +464,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in at most 10% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in at most 10% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/generallyQualifier",
@@ -478,7 +478,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in at least 90% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in at least 90% of the cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/hasCausalRelationWith",
@@ -894,7 +894,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in at most 50% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in at most 50% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/mostlyQualifier",
@@ -908,7 +908,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in at least 50% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in  at least 50% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/neverQualifier",
@@ -922,7 +922,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in 0% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in 0% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/prevents",
@@ -973,7 +973,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in at most 99.9% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in at most 99.9% of cases"
   } ]
 }, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/sometimesQualifier",
@@ -987,6 +987,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "[subj] in at least 0.10% of cases [has relation] with [obj]"
+    "@value" : "this qualifier states that something is true in at least 0.10% of cases"
   } ]
 } ]
