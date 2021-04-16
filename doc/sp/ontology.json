@@ -117,6 +117,20 @@
     "@value" : "the class for qualifiers used in the super pattern"
   } ]
 }, {
+  "@id" : "https://w3id.org/linkflows/superpattern/terms/UniversalContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/linkflows/superpattern/latest/UniversalContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Universal Context"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "the class of contexts where everything is included"
+  } ]
+}, {
   "@id" : "https://w3id.org/linkflows/superpattern/terms/affects",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {

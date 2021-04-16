@@ -582,6 +582,17 @@
     
 
 
+    <!-- https://w3id.org/linkflows/superpattern/terms/UniversalContext -->
+
+
+    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/UniversalContext">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/UniversalContext"/>
+        <rdfs:label xml:lang="en">Universal Context</rdfs:label>
+        <skos:definition xml:lang="en">the class of contexts where everything is included</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier -->
 
 

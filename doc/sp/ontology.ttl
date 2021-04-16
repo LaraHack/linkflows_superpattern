@@ -375,6 +375,13 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                       <http://www.w3.org/2004/02/skos/core#definition> "the class for qualifiers used in the super pattern"@en .
 
 
+###  https://w3id.org/linkflows/superpattern/terms/UniversalContext
+<https://w3id.org/linkflows/superpattern/terms/UniversalContext> rdf:type owl:Class ;
+                                                                 rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/UniversalContext> ;
+                                                                 rdfs:label "Universal Context"@en ;
+                                                                 <http://www.w3.org/2004/02/skos/core#definition> "the class of contexts where everything is included"@en .
+
+
 ###  https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier
 <https://w3id.org/linkflows/superpattern/terms/frequentlyNotQualifier> rdf:type owl:Class .
 
