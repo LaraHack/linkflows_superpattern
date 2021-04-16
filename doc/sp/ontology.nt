@@ -254,11 +254,11 @@
 <https://w3id.org/linkflows/superpattern/terms/isFollowedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is followed by"@en .
 <https://w3id.org/linkflows/superpattern/terms/isFollowedBy> <http://www.w3.org/2004/02/skos/core#definition> "[subj] comes into existence before [obj]"@en .
 # 
-# https://w3id.org/linkflows/superpattern/terms/isInContext
-<https://w3id.org/linkflows/superpattern/terms/isInContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/linkflows/superpattern/terms/isInContext> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/isInContext> .
-<https://w3id.org/linkflows/superpattern/terms/isInContext> <http://www.w3.org/2000/01/rdf-schema#label> "is in context"@en .
-<https://w3id.org/linkflows/superpattern/terms/isInContext> <http://www.w3.org/2004/02/skos/core#definition> "links subject and object instances to context instances"@en .
+# https://w3id.org/linkflows/superpattern/terms/isInContextOf
+<https://w3id.org/linkflows/superpattern/terms/isInContextOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/linkflows/superpattern/terms/isInContextOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/isInContextOf> .
+<https://w3id.org/linkflows/superpattern/terms/isInContextOf> <http://www.w3.org/2000/01/rdf-schema#label> "is in context of"@en .
+<https://w3id.org/linkflows/superpattern/terms/isInContextOf> <http://www.w3.org/2004/02/skos/core#definition> "links subject and object instances to context instances"@en .
 # 
 # https://w3id.org/linkflows/superpattern/terms/isIncludedIn
 <https://w3id.org/linkflows/superpattern/terms/isIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

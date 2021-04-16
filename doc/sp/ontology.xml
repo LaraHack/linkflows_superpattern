@@ -434,12 +434,12 @@
     
 
 
-    <!-- https://w3id.org/linkflows/superpattern/terms/isInContext -->
+    <!-- https://w3id.org/linkflows/superpattern/terms/isInContextOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/isInContext">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/isInContext"/>
-        <rdfs:label xml:lang="en">is in context</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/isInContextOf">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/isInContextOf"/>
+        <rdfs:label xml:lang="en">is in context of</rdfs:label>
         <skos:definition xml:lang="en">links subject and object instances to context instances</skos:definition>
     </owl:ObjectProperty>
     

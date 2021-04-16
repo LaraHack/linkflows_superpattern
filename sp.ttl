@@ -193,9 +193,9 @@
   <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2004/02/skos/core#definition> "links a subject class to an object class in a superpattern instance"@en .
 
-<https://w3id.org/linkflows/superpattern/terms/isInContext> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
-  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/isInContext>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "is in context"@en;
+<https://w3id.org/linkflows/superpattern/terms/isInContextOf> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/isInContextOf>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "is in context of"@en;
   <http://www.w3.org/2004/02/skos/core#definition> "links subject and object instances to context instances"@en .
 
 <https://w3id.org/linkflows/superpattern/terms/isSameAs> a <http://www.w3.org/2002/07/owl#ObjectProperty>;

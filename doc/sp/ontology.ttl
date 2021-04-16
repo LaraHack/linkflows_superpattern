@@ -284,11 +284,11 @@
                                                              <http://www.w3.org/2004/02/skos/core#definition> "[subj] comes into existence before [obj]"@en .
 
 
-###  https://w3id.org/linkflows/superpattern/terms/isInContext
-<https://w3id.org/linkflows/superpattern/terms/isInContext> rdf:type owl:ObjectProperty ;
-                                                            rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isInContext> ;
-                                                            rdfs:label "is in context"@en ;
-                                                            <http://www.w3.org/2004/02/skos/core#definition> "links subject and object instances to context instances"@en .
+###  https://w3id.org/linkflows/superpattern/terms/isInContextOf
+<https://w3id.org/linkflows/superpattern/terms/isInContextOf> rdf:type owl:ObjectProperty ;
+                                                              rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/isInContextOf> ;
+                                                              rdfs:label "is in context of"@en ;
+                                                              <http://www.w3.org/2004/02/skos/core#definition> "links subject and object instances to context instances"@en .
 
 
 ###  https://w3id.org/linkflows/superpattern/terms/isIncludedIn

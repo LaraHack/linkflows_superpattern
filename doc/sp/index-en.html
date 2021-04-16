@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Fri Apr 16 10:49:41 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Fri Apr 16 11:44:31 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -77,7 +77,7 @@ This is an ontology of the Linkflows SuperPattern with which the main claims of 
 
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<p>In order to be able to express in a formal way the main claim(s) of a scientific article, we have developed a new ontology that encompasses a super-pattern. As the main claims cannot be expressed as simple statements that can be formalized using RDF technologies, developing a super-pattern was necessary. Instances of this super-pattern consist of a context class, a subject class, a qualifier, a relation and an object class. The "is in context of" property links the instances of the subject and object classes to instances in the context class. The context class is optional and where it is not specified the default value is then the "Universal context", a class of contexts where everything is included. Below we show an example where the context class is "person", the subject class is “obesity and metabolic abnormality”, the qualifier is “generally”, the relation is “co-occurs with” and the object class is “knee osteoarthritis”:</p>
+<p>In order to be able to express in a formal way the main claim(s) of a scientific article, we have developed a new ontology that encompasses a super-pattern. As the main claims cannot be expressed as simple statements that can be formalized using RDF technologies, developing a super-pattern was necessary. Instances of this super-pattern consist of a context class, a subject class, a qualifier, a relation and an object class. The "is in context of" property links the instances of the subject and object classes to instances in the context class. The context class is optional and where it is not specified, the default value is then the "Universal context", a class of things that have everything in the context. This is an auxiliary class to be used when there is no specific context for a super-pattern instance. Below we show an example where the context class is "person", the subject class is “obesity and metabolic abnormality”, the qualifier is “generally”, the relation is “co-occurs with” and the object class is “knee osteoarthritis”:</p>
 <div style="text-align:center;"><img src="sections/sp-example-diagram.svg" alt="" width="50%" height="50%"></div>
 
 <p>This super-pattern instance is stating that in the context of all persons, things of type obesity together with metabolic abnormality generally (in at least 90% of the cases) have a relation of type "co-occurs with" to things of type knee osteoarthritis. So, in other words, people with obesity and metabolic abnormality tend to also suffer from knee osteoarthritis.
@@ -271,8 +271,8 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">is followed by</a>
    </li>
    <li>
-      <a href="#https://w3id.org/linkflows/superpattern/terms/isInContext"
-         title="https://w3id.org/linkflows/superpattern/terms/isInContext">is in context</a>
+      <a href="#https://w3id.org/linkflows/superpattern/terms/isInContextOf"
+         title="https://w3id.org/linkflows/superpattern/terms/isInContextOf">is in context of</a>
    </li>
    <li>
       <a href="#https://w3id.org/linkflows/superpattern/terms/isIncludedIn"
@@ -725,8 +725,8 @@ This section provides details for each class and property defined by Linkflows S
             title="https://w3id.org/linkflows/superpattern/terms/isFollowedBy">is followed by</a>
       </li>
       <li>
-         <a href="#https://w3id.org/linkflows/superpattern/terms/isInContext"
-            title="https://w3id.org/linkflows/superpattern/terms/isInContext">is in context</a>
+         <a href="#https://w3id.org/linkflows/superpattern/terms/isInContextOf"
+            title="https://w3id.org/linkflows/superpattern/terms/isInContextOf">is in context of</a>
       </li>
       <li>
          <a href="#https://w3id.org/linkflows/superpattern/terms/isIncludedIn"
@@ -1652,20 +1652,20 @@ This section provides details for each class and property defined by Linkflows S
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/isInContext">
-      <h3>is in context<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="https://w3id.org/linkflows/superpattern/terms/isInContextOf">
+      <h3>is in context of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isInContext</p>
+         <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/isInContextOf</p>
       <div class="comment">
          <span class="markdown">links subject and object instances to context instances</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
-            <a href="https://w3id.org/linkflows/superpattern/latest/isInContext">https://w3id.org/linkflows/superpattern/latest/isInContext</a>
+            <a href="https://w3id.org/linkflows/superpattern/latest/isInContextOf">https://w3id.org/linkflows/superpattern/latest/isInContextOf</a>
          </dd>
       </dl>
    </div>

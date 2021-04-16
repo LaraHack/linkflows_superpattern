@@ -835,14 +835,14 @@
     "@value" : "[subj] comes into existence before [obj]"
   } ]
 }, {
-  "@id" : "https://w3id.org/linkflows/superpattern/terms/isInContext",
+  "@id" : "https://w3id.org/linkflows/superpattern/terms/isInContextOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/linkflows/superpattern/latest/isInContext"
+    "@id" : "https://w3id.org/linkflows/superpattern/latest/isInContextOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "is in context"
+    "@value" : "is in context of"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
