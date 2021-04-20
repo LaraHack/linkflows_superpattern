@@ -349,7 +349,7 @@
 
 <https://w3id.org/linkflows/superpattern/terms/coOccursWith> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/coOccursWith>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "co occurs with"@en;
+  <http://www.w3.org/2000/01/rdf-schema#label> "co-occurs with"@en;
   <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith>;
   <http://www.w3.org/2004/02/skos/core#definition> "[subj] is close to [obj] in terms of space and time"@en .
 

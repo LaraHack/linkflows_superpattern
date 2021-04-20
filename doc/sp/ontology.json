@@ -326,7 +326,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "co occurs with"
+    "@value" : "co-occurs with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"

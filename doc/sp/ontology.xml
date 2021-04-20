@@ -133,7 +133,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/linkflows/superpattern/terms/coOccursWith">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/linkflows/superpattern/terms/hasSpatiotemporalRelationWith"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/coOccursWith"/>
-        <rdfs:label xml:lang="en">co occurs with</rdfs:label>
+        <rdfs:label xml:lang="en">co-occurs with</rdfs:label>
         <skos:definition xml:lang="en">[subj] is close to [obj] in terms of space and time</skos:definition>
     </owl:ObjectProperty>
     
