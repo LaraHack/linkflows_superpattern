@@ -483,7 +483,7 @@
 <https://w3id.org/linkflows/superpattern/terms/sometimesQualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> .
 <https://w3id.org/linkflows/superpattern/terms/sometimesQualifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/sometimesQualifier> .
 <https://w3id.org/linkflows/superpattern/terms/sometimesQualifier> <http://www.w3.org/2000/01/rdf-schema#label> "sometimes qualifier"@en .
-<https://w3id.org/linkflows/superpattern/terms/sometimesQualifier> <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at least 0.10% of cases"@en .
+<https://w3id.org/linkflows/superpattern/terms/sometimesQualifier> <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at least 0.1% of cases"@en .
 # 
 # 
 # 

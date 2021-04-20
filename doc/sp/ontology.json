@@ -1001,6 +1001,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "this qualifier states that something is true in at least 0.10% of cases"
+    "@value" : "this qualifier states that something is true in at least 0.1% of cases"
   } ]
 } ]

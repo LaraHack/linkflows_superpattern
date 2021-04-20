@@ -835,7 +835,7 @@
         <rdf:type rdf:resource="https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/sometimesQualifier"/>
         <rdfs:label xml:lang="en">sometimes qualifier</rdfs:label>
-        <skos:definition xml:lang="en">this qualifier states that something is true in at least 0.10% of cases</skos:definition>
+        <skos:definition xml:lang="en">this qualifier states that something is true in at least 0.1% of cases</skos:definition>
     </owl:NamedIndividual>
     
 

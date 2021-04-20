@@ -539,7 +539,7 @@ owl:ObjectProperty rdf:type owl:Class .
                                                                             <https://w3id.org/linkflows/superpattern/terms/SuperPatternQualifier> ;
                                                                    rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/sometimesQualifier> ;
                                                                    rdfs:label "sometimes qualifier"@en ;
-                                                                   <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at least 0.10% of cases"@en .
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "this qualifier states that something is true in at least 0.1% of cases"@en .
 
 
 #################################################################
