@@ -28,8 +28,8 @@
   sp:SP-Ontology a owl:Ontology ;
     vann:preferredNamespaceUri "https://w3id.org/linkflows/superpattern/terms/" ;
     vann:preferredNamespacePrefix "sp" ;
-    dct:title "Linkflows SuperPattern Ontology" ;
-    dct:description "This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed." ;
+    dct:title "SuperPattern Ontology" ;
+    dct:description "This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed." ;
     rdfs:seeAlso linkflows:Linkflows ;
     dct:creator orcid:0000-0002-7114-6459 , orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
