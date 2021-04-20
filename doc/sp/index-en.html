@@ -6,11 +6,11 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Fri Apr 16 11:44:31 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"Linkflows SuperPattern Ontology", "headline":"This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Tue Apr 20 13:52:27 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
-<script src="resources/jquery.js"></script>
-<script src="resources/marked.min.js"></script>
-    <script>
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,19 +40,19 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t);
+	  $("#toc").html(t); 
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };
-   </script>
-  </head>
+ }; 
+   </script> 
+  </head> 
 
 <body>
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
-<h1>SuperPattern Ontology</h1>
+<h1>Linkflows SuperPattern Ontology</h1>
 
 
 <dl>
@@ -61,7 +61,7 @@ function loadTOC(){
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/publicdomain/zero/1.0/-blue.svg" alt="https://creativecommons.org/publicdomain/zero/1.0/" /></a>
 </dd><dt>Cite as:</dt>
-<dd>https://orcid.org/0000-0002-1267-0234,https://orcid.org/0000-0002-7114-6459. SuperPattern Ontology.</dd>
+<dd>https://orcid.org/0000-0002-1267-0234,https://orcid.org/0000-0002-7114-6459. Linkflows SuperPattern Ontology.</dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
@@ -71,9 +71,9 @@ function loadTOC(){
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed.</span>
+This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed.</span>
 </div>
-<div id="toc"></div>
+<div id="toc"></div> 
 
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
@@ -113,35 +113,32 @@ This is an ontology of the SuperPattern with which the main claims of the scient
 
 <h3 id="intro" class="list">Qualifiers</h3>
 <p>
-  &nbsp;___positive qualifiers <br>
-  |&emsp;&emsp;|___<b>always</b>: "true in 100% of cases" <br>
-  |&emsp;&emsp;|___<b>generally</b>: "true in at least 90% of the cases" <br>
-  |&emsp;&emsp;|___<b>mostly</b>: "true in at least 50% of cases" <br>
-  |&emsp;&emsp;|___<b>frequently</b>: "true in at least 10% of cases" <br>
-  |&emsp;&emsp;|___<b>sometimes</b>: "true in at least 0.1% of cases" <br>
-  |___modal logic positive qualifiers <br>
-  |&emsp;&emsp;|___<b>can always</b>: "can be made true in all 100% cases" <br>
-  |&emsp;&emsp;|___<b>can generally</b>: "can be made true in at least 90% of cases" <br>
-  |&emsp;&emsp;|___<b>can mostly</b>: "can be made true in at least 50% of cases" <br>
-  |&emsp;&emsp;|___<b>can frequently</b>: "can be made true in at least 10% of cases" <br>
-  |&emsp;&emsp;|___<b>can sometimes</b>: "can be made true in at least 0.1% of cases" <br>
-  |___negative qualifiers <br>
-  |&emsp;&emsp;|___<b>never</b>: "true in 0% of cases" <br>
-  |&emsp;&emsp;|___<b>generally not</b>: "true in at most 10% of cases" <br>
-  |&emsp;&emsp;|___<b>mostly not</b>: "true in at most 50% of cases" <br>
-  |&emsp;&emsp;|___<b>frequently not</b>: "true in at most 90% of cases" <br>
-  |&emsp;&emsp;|___<b>sometimes not</b>: "true in at most 99.9% of cases" <br>
-  |___modal logic negative qualifiers <br>
-  &emsp;&emsp;|___<b>can never</b>: "can be made true in 0% of cases" <br>
-  &emsp;&emsp;|___<b>can generally not</b>: "can be made true in at most 10% of cases" <br>
-  &emsp;&emsp;|___<b>can mostly not</b>: "can be made true in at most 50% of cases" <br>
-  &emsp;&emsp;|___<b>can frequently not</b>: "can be made true in at most 90% of cases" <br>
-  &emsp;&emsp;|___<b>can sometimes not</b>: "can be made true in at most 99.9% of cases" <br>
+  &nbsp;___<b>always</b>: "true in 100% of cases" <br>
+  |___<b>generally</b>: "true in at least 90% of the cases" <br>
+  |___<b>mostly</b>: "true in at least 50% of cases" <br>
+  |___<b>frequently</b>: "true in at least 10% of cases" <br>
+  |___<b>sometimes</b>: "true in at least 0.1% of cases" <br>
+  |___<b>can always</b>: "can be made true in all 100% cases" <br>
+  |___<b>can generally</b>: "can be made true in at least 90% of cases" <br>
+  |___<b>can mostly</b>: "can be made true in at least 50% of cases" <br>
+  |___<b>can frequently</b>: "can be made true in at least 10% of cases" <br>
+  |___<b>can sometimes</b>: "can be made true in at least 0.1% of cases" <br>
+  |___<b>never</b>: "true in 0% of cases" <br>
+  |___<b>generally not</b>: "true in at most 10% of cases" <br>
+  |___<b>mostly not</b>: "true in at most 50% of cases" <br>
+  |___<b>frequently not</b>: "true in at most 90% of cases" <br>
+  |___<b>sometimes not</b>: "true in at most 99.9% of cases" <br>
+  |___<b>can never</b>: "can be made true in 0% of cases" <br>
+  |___<b>can generally not</b>: "can be made true in at most 10% of cases" <br>
+  |___<b>can mostly not</b>: "can be made true in at most 50% of cases" <br>
+  |___<b>can frequently not</b>: "can be made true in at most 90% of cases" <br>
+  |___<b>can sometimes not</b>: "can be made true in at most 99.9% of cases" <br>
+
 </p>
 
 
 <!--OVERVIEW SECTION-->
-    <div id="overview"><h2 id="overv" class="list">SuperPattern Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <div id="overview"><h2 id="overv" class="list">Linkflows SuperPattern Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
@@ -376,7 +373,7 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul>
 </div>
-
+  
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">Linkflows SuperPattern Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -384,7 +381,7 @@ This ontology has the following classes and properties.</span>
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
 </div>
-
+   
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Linkflows SuperPattern Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -2341,7 +2338,7 @@ This section provides details for each class and property defined by Linkflows S
       <p>
          <strong>IRI:</strong> https://w3id.org/linkflows/superpattern/terms/sometimesQualifier</p>
       <div class="comment">
-         <span class="markdown">this qualifier states that something is true in at least 0.1% of cases</span>
+         <span class="markdown">this qualifier states that something is true in at least 0.10% of cases</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2368,7 +2365,7 @@ This section provides details for each class and property defined by Linkflows S
 </div>
 </div>
 </div>
-
+    
 
 <!--REFERENCES SECTION-->
   <div id="references">
