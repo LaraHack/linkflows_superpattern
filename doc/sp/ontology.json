@@ -68,13 +68,13 @@
     "@id" : "https://orcid.org/0000-0002-7114-6459"
   } ],
   "http://purl.org/dc/terms/description" : [ {
-    "@value" : "This is an ontology of the Linkflows SuperPattern with which the main claims of the scientific articles can be expressed."
+    "@value" : "This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed."
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/publicdomain/zero/1.0/"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@value" : "Linkflows SuperPattern Ontology"
+    "@value" : "SuperPattern Ontology"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "sp"
