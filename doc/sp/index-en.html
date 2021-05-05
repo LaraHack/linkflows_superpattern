@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"SuperPattern Ontology", "headline":"This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Wed May 05 12:00:57 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"SuperPattern Ontology", "headline":"This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Wed May 05 13:14:03 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
 <script src="resources/jquery.js"></script>
 <script src="resources/marked.min.js"></script>
@@ -77,7 +77,7 @@ This is an ontology of the SuperPattern with which the main claims of the scient
 
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<p>Generally, the scientifc claims expressed in scientific articles are semantically complex and cannot be expressed using simple RDF structures. So, in order to be able to express in a formal way the main claim(s) of a scientific article, we have developed a new ontology that encompasses a super-pattern, a formal structure in which the semantic claims can be represented. An instance of this super-pattern consists of a context class, a subject class, a qualifier, a relation and an object class. 
+<p>Generally, the scientifc claims expressed in scientific articles are semantically complex and cannot be expressed using simple RDF structures. So, in order to be able to express in a formal way the main claim(s) of a scientific article, we have developed a new ontology that encompasses a super-pattern, a formal structure in which the semantic claims can be represented.An instance of this super-pattern consists of a context class, a subject class, a qualifier, a relation and an object class.
 </p>
 
 <h3 id="intro" class="list">Relations</h3>
@@ -378,19 +378,13 @@ This ontology has the following classes and properties.</span>
 </div>
 
 
-<!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">SuperPattern Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-  Instances of a super-pattern consist of a context class, a subject class, a qualifier, a relation and an object class. The "is in context of" property links the instances of the subject and object classes to instances in the context class. The context class is optional and where it is not specified, the default value is then the "Universal context", a class of things that have everything in the context. This is an auxiliary class to be used when there is no specific context for a super-pattern instance. Below we show an example where the context class is "person", the subject class is “obesity and metabolic abnormality”, the qualifier is “generally”, the relation is “co-occurs with” and the object class is “knee osteoarthritis”:</p>
-  <div style="text-align:center;"><img src="sections/sp-example-diagram.svg" alt="" width="50%" height="50%"></div>
+<h3 id="intro" class="list">Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
 
-  <p>This super-pattern instance is stating that in the context of all persons, things of type obesity together with metabolic abnormality generally (in at least 90% of the cases) have a relation of type "co-occurs with" to things of type knee osteoarthritis. So, in other words, people with obesity and metabolic abnormality tend to also suffer from knee osteoarthritis.
-  </p>
+Instances of a super-pattern consist of a context class, a subject class, a qualifier, a relation and an object class. The "is in context of" property links the instances of the subject and object classes to instances in the context class. The context class is optional and where it is not specified, the default value is then the "Universal context", a class of things that have everything in the context. This is an auxiliary class to be used when there is no specific context for a super-pattern instance. Below we show an example where the context class is "person", the subject class is “obesity and metabolic abnormality”, the qualifier is “generally”, the relation is “co-occurs with” and the object class is “knee osteoarthritis”:</p>
+<div style="text-align:center;"><img src="sections/sp-example-diagram.svg" alt="" width="50%" height="50%"></div>
 
-</span>
-
-</div>
-
+<p>This super-pattern instance is stating that in the context of all persons, things of type obesity together with metabolic abnormality generally (in at least 90% of the cases) have a relation of type "co-occurs with" to things of type knee osteoarthritis. So, in other words, people with obesity and metabolic abnormality tend to also suffer from knee osteoarthritis.
+</p>
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross reference for SuperPattern Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
