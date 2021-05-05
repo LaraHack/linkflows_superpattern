@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"SuperPattern Ontology", "headline":"This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Tue Apr 20 14:03:11 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"SuperPattern Ontology", "headline":"This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Wed May 05 12:00:57 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -113,25 +113,28 @@ This is an ontology of the SuperPattern with which the main claims of the scient
 
 <h3 id="intro" class="list">Qualifiers</h3>
 <p>
-  &nbsp;___positive qualifiers <br>
-  |&emsp;&emsp;|___<b>always</b>: "true in 100% of cases" <br>
-  |&emsp;&emsp;|___<b>generally</b>: "true in at least 90% of the cases" <br>
-  |&emsp;&emsp;|___<b>mostly</b>: "true in at least 50% of cases" <br>
-  |&emsp;&emsp;|___<b>frequently</b>: "true in at least 10% of cases" <br>
-  |&emsp;&emsp;|___<b>sometimes</b>: "true in at least 0.1% of cases" <br>
-  |___modal logic positive qualifiers <br>
-  |&emsp;&emsp;|___<b>can always</b>: "can be made true in all 100% cases" <br>
-  |&emsp;&emsp;|___<b>can generally</b>: "can be made true in at least 90% of cases" <br>
-  |&emsp;&emsp;|___<b>can mostly</b>: "can be made true in at least 50% of cases" <br>
-  |&emsp;&emsp;|___<b>can frequently</b>: "can be made true in at least 10% of cases" <br>
-  |&emsp;&emsp;|___<b>can sometimes</b>: "can be made true in at least 0.1% of cases" <br>
-  |___negative qualifiers <br>
-  |&emsp;&emsp;|___<b>never</b>: "true in 0% of cases" <br>
-  |&emsp;&emsp;|___<b>generally not</b>: "true in at most 10% of cases" <br>
-  |&emsp;&emsp;|___<b>mostly not</b>: "true in at most 50% of cases" <br>
-  |&emsp;&emsp;|___<b>frequently not</b>: "true in at most 90% of cases" <br>
-  |&emsp;&emsp;|___<b>sometimes not</b>: "true in at most 99.9% of cases" <br>
-  |___modal logic negative qualifiers <br>
+  There are five basic qualifiers that can be used: <br>
+  &emsp;&emsp;&nbsp;___<b>always</b>: "true in 100% of cases" <br>
+  &emsp;&emsp;|___<b>generally</b>: "true in at least 90% of the cases" <br>
+  &emsp;&emsp;|___<b>mostly</b>: "true in at least 50% of cases" <br>
+  &emsp;&emsp;|___<b>frequently</b>: "true in at least 10% of cases" <br>
+  &emsp;&emsp;|___<b>sometimes</b>: "true in at least 0.1% of cases" <br>
+</p>
+<p>
+  These basic qualifiers also come with their negative counterparts: <br>
+  &emsp;&emsp;&nbsp;___<b>never</b>: "true in 0% of cases" <br>
+  &emsp;&emsp;|___<b>generally not</b>: "true in at most 10% of cases" <br>
+  &emsp;&emsp;|___<b>mostly not</b>: "true in at most 50% of cases" <br>
+  &emsp;&emsp;|___<b>frequently not</b>: "true in at most 90% of cases" <br>
+  &emsp;&emsp;|___<b>sometimes not</b>: "true in at most 99.9% of cases" <br>
+</p>
+<p>
+  On top of that, these qualifiers can also be modified with "can" and are interpreted according to modal logic semantics of possible worlds. “Can” therefore means “there is at least one accessible possible world where the given statement is true” or “it is possible to make it become true”. These qualifiers are oftern used in fields like medicine and computer science. <br>
+  &emsp;&emsp;&nbsp;___<b>can always</b>: "can be made true in all 100% cases" <br>
+  &emsp;&emsp;|___<b>can generally</b>: "can be made true in at least 90% of cases" <br>
+  &emsp;&emsp;|___<b>can mostly</b>: "can be made true in at least 50% of cases" <br>
+  &emsp;&emsp;|___<b>can frequently</b>: "can be made true in at least 10% of cases" <br>
+  &emsp;&emsp;|___<b>can sometimes</b>: "can be made true in at least 0.1% of cases" <br>
   &emsp;&emsp;|___<b>can never</b>: "can be made true in 0% of cases" <br>
   &emsp;&emsp;|___<b>can generally not</b>: "can be made true in at most 10% of cases" <br>
   &emsp;&emsp;|___<b>can mostly not</b>: "can be made true in at most 50% of cases" <br>
