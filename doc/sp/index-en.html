@@ -8,9 +8,9 @@
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"SuperPattern Ontology", "headline":"This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Fri May 07 11:40:47 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
+<script src="resources/jquery.js"></script>
+<script src="resources/marked.min.js"></script>
+    <script>
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,13 +40,13 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
-  </head> 
+ };
+   </script>
+  </head>
 
 <body>
 <div class="container">
@@ -73,7 +73,7 @@ function loadTOC(){
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed.</span>
 </div>
-<div id="toc"></div> 
+<div id="toc"></div>
 
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
@@ -126,7 +126,7 @@ This is an ontology of the SuperPattern with which the main claims of the scient
   &emsp;&emsp;|___<b>sometimes not</b>: "true in at most 99.9% of cases" <br>
 </p>
 <p>
-  On top of that, these qualifiers can also be modified with "can" and are interpreted according to modal logic semantics of possible worlds. “Can” therefore means “there is at least one accessible possible world where the given statement is true” or “it is possible to make it become true”. These qualifiers are oftern used in fields like medicine and computer science. <br>
+  On top of that, these qualifiers can also be modified with "can" and are interpreted according to modal logic semantics of possible worlds. “Can” therefore means “there is at least one accessible possible world where the given statement is true” or “it is possible to make it become true”. <br>
   &emsp;&emsp;&nbsp;___<b>can always</b>: "can be made true in all 100% cases" <br>
   &emsp;&emsp;|___<b>can generally</b>: "can be made true in at least 90% of cases" <br>
   &emsp;&emsp;|___<b>can mostly</b>: "can be made true in at least 50% of cases" <br>
@@ -376,7 +376,7 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul>
 </div>
-  
+
 
 <h3 id="intro" class="list">Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
 
@@ -2368,7 +2368,7 @@ This section provides details for each class and property defined by SuperPatter
 </div>
 </div>
 </div>
-    
+
 
 <!--REFERENCES SECTION-->
   <div id="references">
