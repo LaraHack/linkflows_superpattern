@@ -310,6 +310,12 @@
 # 
 # http://www.w3.org/2002/07/owl#ObjectProperty
 # 
+# https://w3id.org/linkflows/superpattern/terms/FormalizationActivity
+<https://w3id.org/linkflows/superpattern/terms/FormalizationActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/linkflows/superpattern/terms/FormalizationActivity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/FormalizationActivity> .
+<https://w3id.org/linkflows/superpattern/terms/FormalizationActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Formalization Activity"@en .
+<https://w3id.org/linkflows/superpattern/terms/FormalizationActivity> <http://www.w3.org/2004/02/skos/core#definition> "an activity where a formalization is created"@en .
+# 
 # https://w3id.org/linkflows/superpattern/terms/PotentialActivity
 <https://w3id.org/linkflows/superpattern/terms/PotentialActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/linkflows/superpattern/terms/PotentialActivity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/linkflows/superpattern/latest/PotentialActivity> .

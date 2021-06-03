@@ -347,6 +347,13 @@ owl:Class rdf:type owl:Class .
 owl:ObjectProperty rdf:type owl:Class .
 
 
+###  https://w3id.org/linkflows/superpattern/terms/FormalizationActivity
+<https://w3id.org/linkflows/superpattern/terms/FormalizationActivity> rdf:type owl:Class ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/FormalizationActivity> ;
+                                                                      rdfs:label "Formalization Activity"@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "an activity where a formalization is created"@en .
+
+
 ###  https://w3id.org/linkflows/superpattern/terms/PotentialActivity
 <https://w3id.org/linkflows/superpattern/terms/PotentialActivity> rdf:type owl:Class ;
                                                                   rdfs:isDefinedBy <https://w3id.org/linkflows/superpattern/latest/PotentialActivity> ;

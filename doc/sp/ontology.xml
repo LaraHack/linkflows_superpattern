@@ -538,6 +538,17 @@
     
 
 
+    <!-- https://w3id.org/linkflows/superpattern/terms/FormalizationActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/linkflows/superpattern/terms/FormalizationActivity">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/linkflows/superpattern/latest/FormalizationActivity"/>
+        <rdfs:label xml:lang="en">Formalization Activity</rdfs:label>
+        <skos:definition xml:lang="en">an activity where a formalization is created</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/linkflows/superpattern/terms/PotentialActivity -->
 
 
