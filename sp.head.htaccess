@@ -1,4 +1,4 @@
-RewriteRule ^$ https://larahack.github.io/linkflows_superpattern/doc/sp/index-en.html [R=302,L]
+RewriteRule ^superpattern/$ https://larahack.github.io/linkflows_superpattern/doc/sp/index-en.html [R=302,L]
 
 RewriteCond %{HTTP_ACCEPT} text/html
 RewriteRule ^superpattern/terms/([^/]+)$ https://larahack.github.io/linkflows_superpattern/doc/sp/index-en.html#https://w3id.org/linkflows/superpattern/terms/$1 [R=302,L,NE]
