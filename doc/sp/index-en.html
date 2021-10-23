@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"SuperPattern Ontology", "headline":"This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Thu Jun 03 12:21:05 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/linkflows/superpattern/terms/SP-Ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/linkflows/superpattern/terms/SP-Ontology","name":"SuperPattern Ontology", "headline":"This is an ontology of the SuperPattern with which the main claims of the scientific articles can be expressed.", "datePublished":"Sun Oct 24 00:12:56 EEST 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"},{"@type":"Person","name":"https://orcid.org/0000-0002-7114-6459","url":"https://orcid.org/0000-0002-7114-6459"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -99,6 +99,8 @@ This is an ontology of the SuperPattern with which the main claims of the scient
 |&emsp;&emsp;|___<b>decreases</b>: "[subj] causes the value of [obj] to decrease" <br>
 |&emsp;&emsp;|___<b>requires</b>: "[subj] would not exist if [obj] did not exist" <br>
 |&emsp;&emsp;|___<b>causes</b>: "[subj] causes the existence of [obj]" <br>
+|&emsp;&emsp;|&emsp;&emsp;|___<b>is-necessary-and-sufficient-for</b>:  “[subj] causes the existence of
+[obj], and [obj] would not exist if [subj] did not exist”<br>
 |&emsp;&emsp;|___<b>is caused by</b>: "the existence of [subj] is caused by [obj]" <br>
 |___<b>has spatio-temporal relationship with</b>: "[subj] has a spatial and/or temporal relation with [obj]" <br>
 &emsp;&emsp;|___<b>includes</b>: "[subj] spatiotemporally includes [obj]" <br>
@@ -384,10 +386,10 @@ This ontology has the following classes and properties.</span>
 
 <h3 id="intro" class="list">Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
 
-Instances of a super-pattern consist of a context class, a subject class, a qualifier, a relation and an object class. The "is in context of" property links the instances of the subject and object classes to instances in the context class. The context class is optional and where it is not specified, the default value is then the "Universal context", a class of things that have everything in the context. This is an auxiliary class to be used when there is no specific context for a super-pattern instance. Below we show an example where the context class is "person", the subject class is “obesity and metabolic abnormality”, the qualifier is “generally”, the relation is “co-occurs with” and the object class is “knee osteoarthritis”:</p>
+Instances of a super-pattern consist of a context class, a subject class, a qualifier, a relation and an object class. The "is in context of" property links the instances of the subject and object classes to instances in the context class. The context class is optional and where it is not specified, the default value is then the "Universal context", a class of things that have everything in the context. This is an auxiliary class to be used when there is no specific context for a super-pattern instance. Below we show an example where the context class is "person", the subject class is “obesity and metabolic abnormality”, the qualifier is “frequently”, the relation is “co-occurs with” and the object class is “knee osteoarthritis”:</p>
 <div style="text-align:center;"><img src="sections/sp-example-diagram.svg" alt="" width="50%" height="50%"></div>
 
-<p>This super-pattern instance is stating that in the context of all persons, things of type obesity together with metabolic abnormality generally (in at least 90% of the cases) have a relation of type "co-occurs with" to things of type knee osteoarthritis. So, in other words, people with obesity and metabolic abnormality tend to also suffer from knee osteoarthritis.
+<p>This super-pattern instance is stating that in the context of all persons, things of type obesity together with metabolic abnormality frequently (in at least 10% of the cases) have a relation of type "co-occurs with" to things of type knee osteoarthritis. So, in other words, people with obesity and metabolic abnormality tend to also frequently suffer from knee osteoarthritis.
 </p>
 
 <!--CROSSREF SECTION-->
