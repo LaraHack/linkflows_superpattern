@@ -2,14 +2,14 @@
 
 set -e
 
-USAGE="$ scripts/make-rewrite-rules.sh sp"
+USAGE="$ scripts/make-rewrite-rules.sh"
 
-if [ -z $1 ] || [ ! -z $2 ]; then
+if [ ! -z $1 ]; then
   echo "Usage: $USAGE"; exit 1
 fi
 
-if [ ! -f $1.trig ]; then
-  echo "File $1.trig does not exist"; exit 1
+if [ ! -f sp.trig ]; then
+  echo "File sp.trig does not exist"; exit 1
 fi
 
 (
@@ -18,36 +18,36 @@ fi
   echo "RewriteEngine on";
   echo
 ) \
-  > $1.htaccess
+  > sp.htaccess
 
-if [ -f $1.head.htaccess ]; then
-  cat $1.head.htaccess >> $1.htaccess
+if [ -f sp.head.htaccess ]; then
+  cat sp.head.htaccess >> sp.htaccess
 fi
 
 (
-  echo "RewriteRule ^$1/terms/(.+)$ https://w3id.org/fair/$1/latest/\$1 [R=302,L]";
-  echo "RewriteRule ^$1/np/.+/(RA[A-Za-z0-9_\\-]{43})$ http://purl.org/np/\$1 [R=302,L]";
+  echo "RewriteRule ^superpattern/terms/(.+)$ https://w3id.org/linkflows/superpattern/latest/\$1 [R=302,L]";
+  echo "RewriteRule ^superpattern/np/.+/(RA[A-Za-z0-9_\\-]{43})$ http://purl.org/np/\$1 [R=302,L]";
   echo
 ) \
-  >> $1.htaccess
+  >> sp.htaccess
 
-cat $1.trig \
+cat sp.trig \
   | grep '^@prefix this:' \
   | sed -r 's/^@prefix this: <//' \
   | sed -r 's/> .$//' \
-  | sed -r 's|^https://w3id.org/fair/([^/]+)/np/(.+)/([^/]+)$|RewriteRule ^\1/latest/\2$ http://purl.org/np/\3 [R=302,L]|' \
-  >> $1.htaccess
+  | sed -r 's|^https://w3id.org/linkflows/([^/]+)/np/(.+)/([^/]+)$|RewriteRule ^\1/latest/\2$ http://purl.org/np/\3 [R=302,L]|' \
+  >> sp.htaccess
 
-if [ ! -f $1.index.trig ]; then
+if [ ! -f sp.index.trig ]; then
   exit
 fi
 
-echo >> $1.htaccess
+echo >> sp.htaccess
 
-cat $1.index.trig \
+cat sp.index.trig \
   | grep '^@prefix this:' \
   | tail -1 \
   | sed -r 's/^@prefix this: <//' \
   | sed -r 's/> .$//' \
-  | sed -r 's|^https://w3id.org/fair/([^/]+)/np/(.+)/([^/]+)$|RewriteRule ^\1/latest/\2$ http://purl.org/np/\3 [R=302,L]|' \
-  >> $1.htaccess
+  | sed -r 's|^https://w3id.org/linkflows/([^/]+)/np/(.+)/([^/]+)$|RewriteRule ^\1/latest/\2$ http://purl.org/np/\3 [R=302,L]|' \
+  >> sp.htaccess

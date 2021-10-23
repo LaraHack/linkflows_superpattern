@@ -29,6 +29,6 @@ if [ -f scripts/make-$1-index.sh ]; then
   scripts/make-$1-index.sh
 fi
 
-scripts/make-rewrite-rules.sh $1
+scripts/make-rewrite-rules.sh
 
 scripts/make-doc.sh $1
